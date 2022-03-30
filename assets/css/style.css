@@ -1,0 +1,14 @@
+@font-face {
+    font-family:Kanit;
+    src: url(../fonts/Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Medium.ttf);
+}
