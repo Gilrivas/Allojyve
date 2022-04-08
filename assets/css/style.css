@@ -12,3 +12,163 @@
     font-family: Ubuntu;
     src: url(../fonts/Ubuntu-Medium.ttf);
 }
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h2{
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.header{
+    min-height: 100vh;
+    
+}
+
+.nav{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 10vh;
+
+}
+
+.boxMain{
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+}
+.boxTittle{
+    width: 100%;
+}
+.boxMorbius{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    margin: 20px 0px 20px 0px;
+}
+
+
+.morbius{
+    font-size: 3em;
+    margin: 0px 0px 0px 40px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+   
+}
+
+.tittle{
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+a{
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    margin: 50px;
+}
+
+
+.boxTeaser{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.boxVideo{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.boxText{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+}
+
+.boxText h2{
+    font-size: 2em;
+}
+
+.boxText p{
+    width: 50%;
+    font-size: 1.5em;
+}
+
+#img{
+    width: 300px;
+    height: 100px;
+}
+
+
+
+.movieImg{
+    width: 50px;
+    height: 50px;
+}
+
+#popular{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.titleSection{
+    width: 100%;
+    margin: 0px 0px 80px 0px;
+
+}
+
+.h2Section{
+    
+    font-size: 3em;
+    margin: 0px 0px 0px 40px;
+}
+
+.h2Section::before{
+    position: absolute;
+    content: '';
+    background: #FBDD00;
+    width: 20%;
+    height: 6%;
+    z-index: -1;
+    transform: skew(-50deg);
+    
+
+}
+
+
+#popular .cartes > .card{
+    margin: 10px;
+}
+
+.cartes{
+    display: flex;
+    width: 50%;
+}
+
+.card h2{
+    margin: 0;
+}
