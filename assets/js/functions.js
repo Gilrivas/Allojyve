@@ -12,58 +12,69 @@ function createCard(array, container){
     var card = document.createElement('div');
         card.classList.add('card');
         card.id = element.id;
-        card.setAttribute("data-id", index)
-  
+        
     var title = document.createElement('h2');
         title.innerHTML = element.title;
 
-    var poster = 'https://image.tmdb.org/t/p/w300'
+    var poster = 'https://image.tmdb.org/t/p/w200'
         const moviePoster = element.innerHTML = element.poster_path;
         let photo = poster + moviePoster
+
+    var itemSlide = document.createElement("div")
+        itemSlide.classList.add('itemSlide')
         
 
     var movieImg = document.createElement("img")
     movieImg.src = photo
     
    
-    
-
-    card.appendChild(movieImg)
+    cartes.appendChild(itemSlide);
+    itemSlide.appendChild(card);
+    card.appendChild(movieImg);
     card.appendChild(title);
-    cartes.appendChild(card);
 
-    
     }
+    
 
-    // (function(){
-    //     const sliders = [...document.querySelectorAll(".card__body--show")];
-    //     const arrowNext = document.querySelector("#next")
-    //     const arrowBefore = document.querySelector("#before")
-    //     let value;
+    let slider = tns({
+        container: '.cartes',
+        items: 20,
+        mouseDrag: true,
+        slideBy: 'page',
+        speed: 700,
+        loop: false,
+        touch: true,
+        
+        center: false,
+        
+        nav: false,
+        controlsContainer: '#controls',
+        responsive: {
+            1600:{
+                items: 5,
+                gutter: 20
+            },
+            1024:{
+                items: 3,
+                gutter: 10
+            },
 
-    //     arrowNext.addEventListener('click', ()=>changePosition(+5))
-    //     arrowBefore.addEventListener('click', ()=>changePosition(-5))
+            600:{
+                items: 2,
+                gutter:20
+            },
 
-    //   function changePosition(change){
-    //       const currentElement = Number(document.querySelector(".card__body--show").dataset.id);
-
-    //       value = currentElement;
-    //       value+= change;
-
-    //       if(value === 0 || value == sliders.length+1){
-    //           value = value === 0 ? sliders.length: 1;
-    //       }
-
-          
-    //       sliders[value-1].classList.toggle('card__body--show');
-    //       console.log(sliders)
-    //   }
-       
-    // })()
+            420:{
+                items:1,
+                gutter:20 
+            }
+        
+        }
+        
+    })
 
    
 }
-
 
 
 

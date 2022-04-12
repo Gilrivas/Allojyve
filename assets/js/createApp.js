@@ -1,5 +1,9 @@
 function createApp(main){
+  
 
+
+ 
+  
 
    // HEADER //
     createElement('header', 'header', 'header', main);
@@ -56,12 +60,6 @@ function createApp(main){
 
 
 
-
-
-
-
-
-
     //FIN DE HEADER YOUTUBE VIDEO//
     
 //FIN DE HEADER//
@@ -70,47 +68,36 @@ function createApp(main){
     
     createElement('section', 'section', 'popular', main);
     createElement('div', 'titleSection', 'titleSection', popular);
-    createElement('div', 'leftBoton', 'leftBoton', popular);
-    createElement('div', 'cartes', 'cartes', popular);
+    createElement('div', 'controls', 'controls', popular)
+    createElement('div', 'mySlider', 'mySlider', popular)
+    
+    createElement('div', 'leftBoton', 'leftBoton', controls);
+    createElement('h2', 'h2Section', 'h2Section', titleSection);
+    createElement('div', 'cartes', 'cartes', mySlider);
 
     
-    createElement('div', 'rightBoton', 'rightBoton', popular);
+    createElement('div', 'rightBoton', 'rightBoton', controls);
 
-    createElement('img', 'leftArrow', 'before', leftBoton);
-    before.src = "assets/img/leftArrow.png"
+    createElement('button', 'leftArrow', 'before', leftBoton);
+    before.textContent = "<"
 
-    createElement('img', 'rightArrow', 'next', rightBoton);
-    next.src = "assets/img/rightArrow.png"
+    createElement('button', 'rightArrow', 'next', rightBoton);
+    next.textContent = ">"
 
-    createElement('h2', 'h2Section', 'h2Section', titleSection);
+    
 
     h2Section.textContent = "Films + populaires"
 
-
-
-
-    
-
-
-    
-    
-
-
-    
-
-    
-
-   
-    
-
-
-  
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=en-US&page=1') .then(response => response.json())
     .then(data => {
       var popularList = data.results;
       
-      createCard(popularList, document.getElementById('popular'));
+      createCard(popularList, document.getElementById('itemSlide'));
     });
 
+   
   
-  }
+
+  
+  
+}   

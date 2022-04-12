@@ -13,6 +13,14 @@
     src: url(../fonts/Ubuntu-Medium.ttf);
 }
 
+@font-face{
+    font-family: Maguntia;
+    src:url(../fonts/UnifrakturMaguntia-Book.ttf);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
 body{
     margin: 0;
     box-sizing: border-box;
@@ -73,10 +81,7 @@ p{
     align-items: center;
     flex-wrap: wrap;
 }
-.card{
-    width: 300px;
-   
-}
+
 
 .tittle{
     font-family: "Ubuntu", sans-serif;
@@ -130,9 +135,13 @@ a{
 }
 
 #popular{
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    
+
 }
 
 .titleSection{
@@ -163,12 +172,83 @@ a{
 #popular .cartes > .card{
     margin: 10px;
 }
-
 .cartes{
-    display: flex;
-    width: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mySlider{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .card h2{
-    margin: 0;
+    margin: 0px;
+    font-size: 1.2rem;
 }
+
+.card{
+    margin: 0px;
+    max-width: 200px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+.rightArrow{
+    font-family: 'Maguntia', cursive ;
+    font-size: 7rem;
+    font-weight: 400;
+    cursor: pointer;
+    
+
+   
+}
+
+.leftArrow{
+    font-family: 'Maguntia', cursive;
+    font-size: 7rem;
+    cursor: pointer;
+
+    
+   
+}
+
+.controls {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;    
+    top: 150%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    
+    
+    }
+
+.itemSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls:focus{
+    outline: none;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+}
+   
+
+
+/*                   FIN JORGE                     */ 
