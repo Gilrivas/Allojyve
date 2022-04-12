@@ -27,6 +27,12 @@ body{
     padding: 0;
 }
 
+button{
+    background-color: transparent;
+    border: 0px;
+}
+   
+
 h2{
     font-family: "Ubuntu", sans-serif;
 }
@@ -169,19 +175,15 @@ a{
 }
 
 
-#popular .cartes > .card{
-    margin: 10px;
-}
 .cartes{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    
     
 }
 .mySlider{
-    width: 90%;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    
     
 }
 
@@ -191,23 +193,14 @@ a{
 }
 
 .card{
-    margin: 0px;
-    max-width: 200px;
     cursor: pointer;
-    
-    
 }
-
-
 
 
 .rightArrow{
     font-family: 'Maguntia', cursive ;
     font-size: 7rem;
-    font-weight: 400;
     cursor: pointer;
-    
-
    
 }
 
@@ -216,7 +209,6 @@ a{
     font-size: 7rem;
     cursor: pointer;
 
-    
    
 }
 
@@ -234,21 +226,12 @@ a{
     
     }
 
-.itemSlide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .controls:focus{
     outline: none;
 }
 
-button{
-    background-color: transparent;
-    border: 0px;
-}
-   
+
 
 
 /*                   FIN JORGE                     */ 
