@@ -49,12 +49,29 @@ p{
     
 }
 
+h1{
+    position: relative;
+}
+
+h1::before{
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 5px;
+    width: 100%;
+    background-color: #FBDD00;
+
+}
+
 .nav{
     display: flex;
+    position: fixed;
+    width: 100%;
     background-color: black;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 10vh;
+    z-index: 6;
 
 }
 
@@ -64,8 +81,30 @@ p{
     flex-direction: column;
 }
 .boxTittle{
+    display: flex;
     width: 100%;
+    margin: 140px 0px 0px 0px;
+    align-items: center;
+
 }
+
+.tittle{
+    font-family: "Ubuntu", sans-serif;
+    margin-left: 40px;
+    font-size: 2.5rem;
+}
+
+#img{
+    max-width: 250px;
+    height: 100px;
+}
+
+.menu{
+    margin-right: 60px;
+}
+
+
+
 .boxMorbius{
     background-color: black;
     color: white;
@@ -73,7 +112,7 @@ p{
     height: 100px;
     align-items: center;
     display: flex;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 30px 0px;
 }
 
 
@@ -81,24 +120,15 @@ p{
     font-size: 3em;
     margin: 0px 0px 0px 40px;
 }
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-
-.tittle{
-    font-family: "Ubuntu", sans-serif;
-}
 
 
 a{
     color: white;
     font-family: "Ubuntu", sans-serif;
     text-decoration: none;
-    margin: 50px;
+    margin: 20px;
+    font-size: 1.1em;
 }
 
 
@@ -106,6 +136,7 @@ a{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 30px 0px;
 }
 .boxVideo{
     display: flex;
@@ -115,31 +146,34 @@ a{
 .boxText{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     width: 40%;
 }
 
 .boxText h2{
-    font-size: 2em;
-}
-
-.boxText p{
-    width: 50%;
     font-size: 1.5em;
 }
 
-#img{
-    width: 300px;
-    height: 100px;
+.boxText p{
+    width: 70%;
+    font-size: 1.2em;
+}
+
+.boxImg{
+    margin-left: -7px;
+}
+
+.petitCarre{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 
 
-.movieImg{
-    width: 50px;
-    height: 50px;
-}
 
+/*            SECTION 1                   */
 #popular{
     max-width: 100%;
     min-height: 100vh;
@@ -150,7 +184,17 @@ a{
 
 }
 
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
 .titleSection{
+    position: relative;
     width: 100%;
     margin: 0px 0px 80px 0px;
 
@@ -162,12 +206,15 @@ a{
     margin: 0px 0px 0px 40px;
 }
 
-.h2Section::before{
+
+
+.titleSection::before{
     position: absolute;
     content: '';
     background: #FBDD00;
-    width: 20%;
-    height: 6%;
+    width: 30%;
+    left: 30px;
+    height: 100%;
     z-index: -1;
     transform: skew(-50deg);
     
@@ -177,23 +224,40 @@ a{
 
 .cartes{
     width: 50%;
-    overflow: hidden;
-    
     
 }
+
 .mySlider{
+    position: relative;
     width: 80%;
+
     
     
 }
 
-.card h2{
-    margin: 0px;
-    font-size: 1.2rem;
-}
+.controls {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 95%;    
+    top: 155%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #cartes > .tns-item{
+    margin-left: 4px;
+    font-size: 0px;
+    
+ }
 
 .card{
+    
+    margin-bottom: 20px;
     cursor: pointer;
+    
 }
 
 
@@ -212,26 +276,77 @@ a{
    
 }
 
-.controls {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 100%;    
-    top: 150%;
-    transform: translatey(-50%);
+.card-body{
+
     display: flex;
-    align-items: center;    
-    justify-content: space-between;
-    
-    
-    }
+    filter: drop-shadow(0px 4px 2px #404040);
+    background-color: white;
+    margin: 0px;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-body h2{
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 100;
+}
+
+/*NAV PORTABLE*/
+.none{
+    display: none !important;
+}
+
+.openNav{
+    width: 100% !important;
+    min-height: 100vh !important;
+}
+
+/* FIN NAV PORTABLE*/
 
 
-.controls:focus{
-    outline: none;
+
+.modal{
+    position: fixed;
+    width: 60%;
+    z-index: 56;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background: yellow;
+    display: flex;
+    
+    transition: all 1s ease 0s;
+    flex-direction: row-reverse;
+}
+
+.modaleContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    
+}
+.closeModaleBtn{
+    
+    position: absolute;
+    
+    width: 40px;
+    margin: 20px;
+    cursor: pointer;
 }
 
 
-
+.close{
+    width: 50px;
+   
+}
 
 /*                   FIN JORGE                     */ 

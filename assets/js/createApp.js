@@ -7,27 +7,30 @@ function createApp(main){
    // HEADER //
     createElement('header', 'header', 'header', main);
     createElement('nav', 'nav', 'nav', header)
+    
     createElement('div', 'boxImg', 'logo', nav);
+    createElement('a', 'linkIndex', 'linkIndex', logo);
     createElement('ul', 'menu', 'menu', nav)
-    createElement('img', 'img' , 'img', logo)
+    createElement('img', 'img' , 'img', linkIndex)
     img.src = 'assets/img/logo.png';
+    linkIndex.setAttribute("href", "index.html")
+
+
     //HEADER LINKS//
-    createElement('a', 'accueil', 'accueil', menu)
+  
+
     createElement('a', 'populaires', 'populaires', menu)
     createElement('a', 'lastMovie', 'lastMovie', menu)
     createElement('a', 'aVenir', 'aVenir', menu)
 
-    accueil.textContent = "Accueil"
-    accueil.href =  "index.html"
-
     populaires.textContent = "Populaires"
-    populaires.href = "#"
+    populaires.href = "#popular"
 
     lastMovie.textContent = "Derniers Sortis"
-    lastMovie.href = "#"
+    lastMovie.href = "#nowPlaying"
 
     aVenir.textContent = "À venir"
-    aVenir.href = "#"
+    aVenir.href = "#upcoming"
 
     //FIN DE HEADER LINKS//
     
@@ -35,6 +38,7 @@ function createApp(main){
 
     createElement('div', 'boxMain', 'boxMain', header);
     createElement('div', 'boxTittle', 'boxTittle', boxMain);
+    
     createElement('div', 'boxMorbius', 'boxMorbius', boxMain)
     createElement('div', 'boxTeaser', 'boxTeaser', boxMain)
     createElement('div', 'boxVideo', 'boxVideo', boxTeaser)
@@ -42,6 +46,8 @@ function createApp(main){
     createElement('div', 'boxText', 'boxText', boxTeaser)
     createElement('h1', 'tittle' , 'tittle', boxTittle)
     createElement('h2', 'morbius' , 'morbius', boxMorbius)
+    createElement('img', 'petitCarre', 'petitCarre', boxTittle)
+    petitCarre.src = 'assets/img/carres.png'
     createElement('h2', 'morbiusTitle', 'morbiusTitle', boxText)
     createElement('p', 'morbiusText', 'morbiusText', boxText)
 
@@ -77,11 +83,6 @@ function createApp(main){
 
     createElement('div', 'cartes', 'cartes', mySlider);
     
-
-    
-
-
-
     createElement('div', 'rightBoton', 'rightBoton', controls);
 
     createElement('button', 'leftArrow', 'before', leftBoton);
@@ -90,16 +91,22 @@ function createApp(main){
     createElement('button', 'rightArrow', 'next', rightBoton);
     next.textContent = ">"
     
+   
 
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=en-US&page=1') .then(response => response.json())
+
+  fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1') .then(response => response.json())
 .then(data => {
-  var popularList = data.results;
+  popularList = data.results;
   
   createCard(popularList, document.getElementById("cartes"));
+
+  
+
+  
+  
 });
 
 
 
-  
 }   
 

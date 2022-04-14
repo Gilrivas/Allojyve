@@ -6,6 +6,8 @@ function createElement(el, classname, id, container){
     container.appendChild(element);
 }
 
+
+
   
 function createCard(array, container){
     for (let index = 0; index < array.length; index++) {
@@ -17,14 +19,11 @@ function createCard(array, container){
     var body = document.createElement('div');
         body.classList.add('card-body');
         
-
-   
-
-        
-
     var poster = 'https://image.tmdb.org/t/p/w200'
         const moviePoster = element.innerHTML = element.poster_path;
         let photo = poster + moviePoster  
+
+   
 
     var movieImg = document.createElement("img")
         movieImg.src = photo
@@ -32,21 +31,116 @@ function createCard(array, container){
     var title = document.createElement('h2');
         title.innerHTML = element.title; 
 
+    
 
     card.appendChild(movieImg);
     body.appendChild(title);
     card.appendChild(body);
     container.appendChild(card);
+
+  
+
+  
+
+      
+
+
+
+    card.onclick = function(){
+        
+        popularList.forEach(movie => {
+            if (movie.id === parseInt(this.id)) {
+                createModale(movie);
+            }
+        });
+
+ };
+
+
+    
+   
+}
+
+function createModale(movie){
+    
+    var modale = document.createElement('div');
+    modale.id = 'modale';
+    modale.classList.add('modal');
+
+
+    var modaleContainer =  document.createElement('div');
+        modaleContainer.classList.add('modaleContainer');
+        modaleContainer.id = 'modaleContainer';
+
+
+    var title2 = document.createElement('h2');
+    title2.innerHTML = movie.original_title; 
+
+    var close = document.createElement('img');
+        close.src = "assets/img/close.png";
+        close.classList.add('closeModaleBtn');
+        close.addEventListener('click', function(){
+            this.parentNode.remove();
+        })
+
+    var date = document.createElement('p');
+        date.innerHTML = "Date de Sortie: " +movie.release_date;
+
+    var popularity = document.createElement('p');
+        
+        popularity.innerHTML = 'note: ' + movie.vote_average
+
+    var poster = 'https://image.tmdb.org/t/p/w200'
+    const moviePoster = movie.innerHTML = movie.poster_path;
+    let photo = poster + moviePoster  
+
+    var movieImg = document.createElement("img")
+        movieImg.src = photo
+
+    var synopsis = document.createElement("p")
+        synopsis.innerHTML = movie.overview
+
+
+        var id = movie.id
+   
+
+    fetch('https://api.themoviedb.org/3/movie/' + id +  "/videos?api_key=378bed09fc9b527f1b74e7a56ff4fe3c") .then(response => response.json())
+    .then(data => {
+     
+
+    var movieTrailerUrl = data.results.find(element => element.name.toLowerCase() === 'Official Trailer'.toLowerCase()).key;
+
+
+
+    console.log(movieTrailerUrl);
+
+    var youtube = ' https://www.youtube.com/embed/' + movieTrailerUrl
+
+    document
+    
+});
+
+
     
 
+    
+    modale.appendChild(modaleContainer);
+    modale.appendChild(close);
+    modaleContainer.appendChild(movieImg)
+    modaleContainer.appendChild(title2);
+    modaleContainer.appendChild(date)
+    modaleContainer.appendChild(popularity)
+    modaleContainer.appendChild(synopsis)
+    main.appendChild(modale);
+   
+    
 
 }
-    
+ 
 
     let slider = tns({
         container: '.cartes',
         items: 20,
-        mouseDrag: true,
         slideBy: "page",
         speed: 800,
         loop: false,
@@ -67,17 +161,29 @@ function createCard(array, container){
                 gutter:20
             },
 
-            420:{
+            300:{
                 items:1,
                 gutter:20 
             },
         
         }
+
         
+
+        
+    
     })
 
+    
+
    
-}
+
+};
+
+
+
+
+
 
 
 
