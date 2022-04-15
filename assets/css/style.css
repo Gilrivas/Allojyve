@@ -1109,10 +1109,10 @@ a{
     min-width: 25%;
     margin-top: -75px;
   }
- /* .bandeImg{
+.bandeImg{
     width: 600px;
     height: 400px;
-  }*/
+  }
  }
  
  @media screen and (min-width: 1600px){
@@ -1249,8 +1249,8 @@ p{
 }
 
 .mySlider2{
-    width: 80%;
-    margin-left: 105px;
+    width: 84%;
+    margin-left: -6px;
 }
 
 
@@ -1287,7 +1287,7 @@ p{
 }
 
 #cartes2 > .tns-item{     
-    margin-left: 5px;      
+    margin-left: 3px;      
     font-size: 0px;  
 }
 
@@ -1340,8 +1340,8 @@ p{
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 90%;
-    top: 55%;
+    width: 95%;
+    top: 281%;
     transform: translatey(-50%);
     display: flex;
     align-items: center;
@@ -1361,13 +1361,12 @@ p{
     position: absolute;
     content: '';
     background: #FBDD00;
-    width: 26%;
-    height: 7%;
+    width: 28%;
+    height: 6.5%;
     z-index: -1;
     transform: skew(-50deg);
-    left: 80px;
-    top: 80px;
-    left: calc(58% - 50%);
+    left: calc(53% - 50%);
+    margin-top: -5px;
 }
 
 .titleSection2{
@@ -1376,10 +1375,10 @@ p{
 }
 
 .boxImgS2{
-    margin-top: 10px;
-    width: 2.3%;
+    margin-top: 14px;
+    width: 2.1%;
     height: 10%;
-    margin-left: 150px;
+    margin-left: 112px;
 }
 
 /******************************************Début du Footer **********************/
@@ -1388,6 +1387,7 @@ p{
 
 #Footer{
     width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1396,6 +1396,7 @@ p{
 
 #boxFooter{
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column
 }
@@ -1409,7 +1410,7 @@ p{
 /*********Box Liens réseaux sociaux********/
 
 #boxLiensreseauxsociaux{
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1559,7 +1560,7 @@ p{
 /*********Box Adresse********/
 
 #boxAdresse{
-    width: 35%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
