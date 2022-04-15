@@ -82,16 +82,6 @@ function createApp(main) {
 	createElement('button', 'rightArrow', 'next', rightBoton);
 	next.textContent = '>';
 
-	fetch(
-		'https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
-	)
-		.then((response) => response.json())
-		.then((data) => {
-			popularList = data.results;
-
-			createCard(popularList, document.getElementById('cartes'));
-		});
-
 	/* TITIA  */
 
 	/*Section nowPlaying films derniers sortis*/
@@ -119,16 +109,6 @@ function createApp(main) {
 
 	createElement('button2', 'rightArrow2', 'next2', rightBoton2);
 	next2.textContent = '>';
-
-	/* Récupérer l'api des films sur themoviedb*/
-	fetch(
-		'https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
-	)
-		.then((response) => response.json())
-		.then((data) => {
-			filmsSortis = data.results;
-			createCard(filmsSortis, document.getElementById('cartes2'));
-		});
 
 	/*                  FIN TITIA SECTION 2                    */
 
@@ -212,7 +192,154 @@ function createApp(main) {
 
 	//
 	//
-	/********************** Fetch**key-API ******************************/
+
+	/*Création de la div Footer*/
+	createElement('footer', 'footer', 'Footer', main);
+
+	/*Création de la div BoxFooter*/
+	createElement('div', 'boxFooter', 'boxFooter', Footer);
+
+	/*Création de la div BoxContainer*/
+	createElement('div', 'boxContainer', 'boxContainer', boxFooter);
+
+	/*Création de la div BoxLiensreseauxsociaux*/
+	createElement(
+		'div',
+		'boxLiensreseauxsociaux',
+		'boxLiensreseauxsociaux',
+		boxContainer
+	);
+
+	/*Création de la div BoxTitle*/
+	createElement('div', 'boxTitle', 'boxTitle', boxLiensreseauxsociaux);
+	createElement('h2', 'titleFollow', 'titleFollow', boxTitle);
+	titleFollow.textContent = 'SUIVEZ-NOUS';
+
+	/*Création de la div BoxIcone*/
+	createElement('div', 'boxIcone', 'boxIcone', boxLiensreseauxsociaux);
+
+	/*Facebook*/
+	createElement('div', 'iconeFacebook', 'iconeFacebook', boxIcone);
+
+	createElement('a', 'lienFacebook', 'lienFacebook', iconeFacebook);
+	createElement('img', 'facebook', 'facebook', lienFacebook);
+	facebook.src = 'assets/img/Facebook.svg';
+
+	/*Twitter*/
+	createElement('div', 'iconeTwitter', 'iconeTwitter', boxIcone);
+
+	createElement('a', 'lienTwitter', 'lienTwitter', iconeTwitter);
+	createElement('img', 'twitter', 'twitter', lienTwitter);
+	twitter.src = 'assets/img/Twitter.svg';
+
+	/*Instagram*/
+	createElement('div', 'iconeInstagram', 'iconeInstagram', boxIcone);
+
+	createElement('a', 'lienInstagram', 'lienInstagram', iconeInstagram);
+	createElement('img', 'instagram', 'instagram', lienInstagram);
+	instagram.src = 'assets/img/Instagram.svg';
+
+	/*Création de la div BoxEntreprise*/
+	createElement('div', 'boxEntreprise', 'boxEntreprise', boxContainer);
+	createElement('div', 'boxLogo', 'boxLogo', boxEntreprise);
+
+	createElement('img', 'logoFooter', 'logoFooter', boxLogo);
+	logoFooter.src = 'assets/img/LogoF.png';
+
+	createElement(
+		'div',
+		'boxParagrapheentreprise',
+		'boxParagrapheentreprise',
+		boxEntreprise
+	);
+	createElement('p', 'entreprise', 'entreprise', boxParagrapheentreprise);
+	entreprise.textContent =
+		'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,';
+
+	/*Création de la div BoxAdresse*/
+	createElement('div', 'boxAdresse', 'boxAdresse', boxContainer);
+
+	createElement('div', 'boxTittle', 'boxTittle', boxAdresse);
+
+	createElement('h2', 'titleAdress', 'titleAdress', boxTittle);
+	titleAdress.textContent = 'ADRESSE';
+
+	/*Création de la div BoxParagrapheadresse*/
+	createElement(
+		'div',
+		'boxParagrapheadresse',
+		'boxParagrapheadresse',
+		boxAdresse
+	);
+	createElement(
+		'p',
+		'paragrapheAdresse',
+		'paragrapheAdresse',
+		boxParagrapheadresse
+	);
+	paragrapheAdresse.textContent = '1 rue de la rue ';
+
+	createElement(
+		'p',
+		'paragrapheAdresse2',
+		'paragrapheAdresse2',
+		boxParagrapheadresse
+	);
+	paragrapheAdresse2.textContent = '39000 Lons-Le-Saunier';
+
+	/*Création de la div BoxInformations*/
+	createElement('div', 'boxInformation', 'boxInformation', boxFooter);
+	createElement('div', 'boxLigne1', 'boxLigne1', boxInformation);
+
+	/*Création box ligne 1*/
+	createElement('p', 'infosOne', 'infosOne', boxLigne1);
+	createElement('a', 'lienInfosone', 'lienInfosone', infosOne);
+	lienInfosone.textContent =
+		'Contact | Qui sommes-nous | Publicité | Politique de cookies | Donnés Personelles  |  Les services';
+
+	createElement('span', 'lettreA', 'lettreA', lienInfosone);
+	lettreA.textContent = 'A';
+
+	createElement('a', 'infosTwo', 'infosTwo', lettreA);
+	infosTwo.textContent = 'lloJyvé |';
+
+	createElement('p', 'copyRight', 'copyRight', infosOne);
+	createElement('span', 'infosThree', 'infosThree', copyRight);
+	infosThree.textContent = '©';
+
+	createElement('span', 'lettreA2', 'lettreA2', infosThree);
+	lettreA2.textContent = 'A';
+
+	createElement('span', 'infosFour', 'infosFour', lettreA2);
+	infosFour.textContent = 'lloJyvé';
+
+	/*Création box ligne 2*/
+	createElement('div', 'boxLigne2', 'boxLigne2', boxInformation);
+	createElement('p', 'infosFive', 'infosFive', boxLigne2);
+
+	infosFive.textContent =
+		'Retrouvez tous les horaires et infos de votre cinéma sur le numéro';
+	createElement('span', 'lettreA3', 'lettreA3', infosFive);
+	lettreA3.textContent = 'A';
+
+	createElement('span', 'infosSix', 'infosSix', lettreA3);
+	infosSix.textContent = 'lloJyvé :';
+
+	createElement('p', 'infosSeven', 'infosSeven', boxLigne2);
+	createElement('a', 'numéro', 'numéro', infosSeven);
+	numéro.textContent = '06 06 06 06 06';
+
+	createElement('p', 'infosHeight', 'infosHeight', boxLigne2);
+	infosHeight.textContent = '(Gratuit)';
+
+	createElement('div', 'boxLigne3', 'boxLigne3', boxInformation);
+	createElement('p', 'infosNine', 'infosNine', boxLigne3);
+	infosNine.textContent = 'Un réalisation ';
+
+	createElement('a', 'infosTen', 'infosTen', infosNine);
+	infosTen.textContent = 'FuturDEV';
+
+/********************** Fetch**key-API ******************************/
 
 	fetch(
 		'https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
@@ -243,296 +370,5 @@ function createApp(main) {
 
 			createCard(aVenirList, document.getElementById('cartes3'));
 		});
+	}
 
-	/*Création de la div Footer*/
-	createElement('footer', 'footer', 'Footer', main);
-
-	/*Création de la div BoxFooter*/
-	createElement('div', 'boxFooter', 'boxFooter', Footer);
-
-	/*Création de la div BoxContainer*/
-	createElement('div', 'boxContainer', 'boxContainer', boxFooter);
-
-	/*Création de la div BoxLiensreseauxsociaux*/
-	createElement(
-		'div',
-		'boxLiensreseauxsociaux',
-		'boxLiensreseauxsociaux',
-		boxContainer
-	);
-
-	/*Création de la div BoxTitle*/
-	createElement('div', 'boxTitle', 'boxTitle', boxLiensreseauxsociaux);
-	createElement('h2', 'titleFollow', 'titleFollow', boxTitle);
-	titleFollow.textContent = 'SUIVEZ-NOUS';
-
-	/*Création de la div BoxIcone*/
-	createElement('div', 'boxIcone', 'boxIcone', boxLiensreseauxsociaux);
-
-	/*Facebook*/
-	createElement('div', 'iconeFacebook', 'iconeFacebook', boxIcone);
-
-	createElement('a', 'lienFacebook', 'lienFacebook', iconeFacebook);
-	createElement('img', 'facebook', 'facebook', lienFacebook);
-	facebook.src = 'assets/img/Facebook.svg';
-
-	/*Twitter*/
-	createElement('div', 'iconeTwitter', 'iconeTwitter', boxIcone);
-
-	createElement('a', 'lienTwitter', 'lienTwitter', iconeTwitter);
-	createElement('img', 'twitter', 'twitter', lienTwitter);
-	twitter.src = 'assets/img/Twitter.svg';
-
-	/*Instagram*/
-	createElement('div', 'iconeInstagram', 'iconeInstagram', boxIcone);
-
-	createElement('a', 'lienInstagram', 'lienInstagram', iconeInstagram);
-	createElement('img', 'instagram', 'instagram', lienInstagram);
-	instagram.src = 'assets/img/Instagram.svg';
-
-	/*Création de la div BoxEntreprise*/
-	createElement('div', 'boxEntreprise', 'boxEntreprise', boxContainer);
-	createElement('div', 'boxLogo', 'boxLogo', boxEntreprise);
-
-	createElement('img', 'logoFooter', 'logoFooter', boxLogo);
-	logoFooter.src = 'assets/img/LogoF.png';
-
-	createElement(
-		'div',
-		'boxParagrapheentreprise',
-		'boxParagrapheentreprise',
-		boxEntreprise
-	);
-	createElement('p', 'entreprise', 'entreprise', boxParagrapheentreprise);
-	entreprise.textContent =
-		'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,';
-
-	/*Création de la div BoxAdresse*/
-	createElement('div', 'boxAdresse', 'boxAdresse', boxContainer);
-
-	createElement('div', 'boxTittle', 'boxTittle', boxAdresse);
-
-	createElement('h2', 'titleAdress', 'titleAdress', boxTittle);
-	titleAdress.textContent = 'ADRESSE';
-
-	/*Création de la div BoxParagrapheadresse*/
-	createElement(
-		'div',
-		'boxParagrapheadresse',
-		'boxParagrapheadresse',
-		boxAdresse
-	);
-	createElement(
-		'p',
-		'paragrapheAdresse',
-		'paragrapheAdresse',
-		boxParagrapheadresse
-	);
-	paragrapheAdresse.textContent = '1 rue de la rue ';
-
-	createElement(
-		'p',
-		'paragrapheAdresse2',
-		'paragrapheAdresse2',
-		boxParagrapheadresse
-	);
-	paragrapheAdresse2.textContent = '39000 Lons-Le-Saunier';
-
-	/*Création de la div BoxInformations*/
-	createElement('div', 'boxInformation', 'boxInformation', boxFooter);
-	createElement('div', 'boxLigne1', 'boxLigne1', boxInformation);
-
-	/*Création box ligne 1*/
-	createElement('p', 'infosOne', 'infosOne', boxLigne1);
-	createElement('a', 'lienInfosone', 'lienInfosone', infosOne);
-	lienInfosone.textContent =
-		'Contact | Qui sommes-nous | Publicité | Politique de cookies | Donnés Personelles  |  Les services';
-
-	createElement('span', 'lettreA', 'lettreA', lienInfosone);
-	lettreA.textContent = 'A';
-
-	createElement('a', 'infosTwo', 'infosTwo', lettreA);
-	infosTwo.textContent = 'lloJyvé |';
-
-	createElement('p', 'copyRight', 'copyRight', infosOne);
-	createElement('span', 'infosThree', 'infosThree', copyRight);
-	infosThree.textContent = '©';
-
-	createElement('span', 'lettreA2', 'lettreA2', infosThree);
-	lettreA2.textContent = 'A';
-
-	createElement('span', 'infosFour', 'infosFour', lettreA2);
-	infosFour.textContent = 'lloJyvé';
-
-	/*Création box ligne 2*/
-	createElement('div', 'boxLigne2', 'boxLigne2', boxInformation);
-	createElement('p', 'infosFive', 'infosFive', boxLigne2);
-
-	infosFive.textContent =
-		'Retrouvez tous les horaires et infos de votre cinéma sur le numéro';
-	createElement('span', 'lettreA3', 'lettreA3', infosFive);
-	lettreA3.textContent = 'A';
-
-	createElement('span', 'infosSix', 'infosSix', lettreA3);
-	infosSix.textContent = 'lloJyvé :';
-
-	createElement('p', 'infosSeven', 'infosSeven', boxLigne2);
-	createElement('a', 'numéro', 'numéro', infosSeven);
-	numéro.textContent = '06 06 06 06 06';
-
-	createElement('p', 'infosHeight', 'infosHeight', boxLigne2);
-	infosHeight.textContent = '(Gratuit)';
-
-	createElement('div', 'boxLigne3', 'boxLigne3', boxInformation);
-	createElement('p', 'infosNine', 'infosNine', boxLigne3);
-	infosNine.textContent = 'Un réalisation ';
-
-	createElement('a', 'infosTen', 'infosTen', infosNine);
-	infosTen.textContent = 'FuturDEV';
-
-	/*Création de la div Footer*/
-	createElement('footer', 'footer', 'Footer', main);
-
-	/*Création de la div BoxFooter*/
-	createElement('div', 'boxFooter', 'boxFooter', Footer);
-
-	/*Création de la div BoxContainer*/
-	createElement('div', 'boxContainer', 'boxContainer', boxFooter);
-
-	/*Création de la div BoxLiensreseauxsociaux*/
-	createElement(
-		'div',
-		'boxLiensreseauxsociaux',
-		'boxLiensreseauxsociaux',
-		boxContainer
-	);
-
-	/*Création de la div BoxTitle*/
-	createElement('div', 'boxTitle', 'boxTitle', boxLiensreseauxsociaux);
-	createElement('h2', 'titleFollow', 'titleFollow', boxTitle);
-	titleFollow.textContent = 'SUIVEZ-NOUS';
-
-	/*Création de la div BoxIcone*/
-	createElement('div', 'boxIcone', 'boxIcone', boxLiensreseauxsociaux);
-
-	/*Facebook*/
-	createElement('div', 'iconeFacebook', 'iconeFacebook', boxIcone);
-
-	createElement('a', 'lienFacebook', 'lienFacebook', iconeFacebook);
-	createElement('img', 'facebook', 'facebook', lienFacebook);
-	facebook.src = 'assets/img/Facebook.svg';
-
-	/*Twitter*/
-	createElement('div', 'iconeTwitter', 'iconeTwitter', boxIcone);
-
-	createElement('a', 'lienTwitter', 'lienTwitter', iconeTwitter);
-	createElement('img', 'twitter', 'twitter', lienTwitter);
-	twitter.src = 'assets/img/Twitter.svg';
-
-	/*Instagram*/
-	createElement('div', 'iconeInstagram', 'iconeInstagram', boxIcone);
-
-	createElement('a', 'lienInstagram', 'lienInstagram', iconeInstagram);
-	createElement('img', 'instagram', 'instagram', lienInstagram);
-	instagram.src = 'assets/img/Instagram.svg';
-
-	/*Création de la div BoxEntreprise*/
-	createElement('div', 'boxEntreprise', 'boxEntreprise', boxContainer);
-	createElement('div', 'boxLogo', 'boxLogo', boxEntreprise);
-
-	createElement('img', 'logoFooter', 'logoFooter', boxLogo);
-	logoFooter.src = 'assets/img/LogoF.png';
-
-	createElement(
-		'div',
-		'boxParagrapheentreprise',
-		'boxParagrapheentreprise',
-		boxEntreprise
-	);
-	createElement('p', 'entreprise', 'entreprise', boxParagrapheentreprise);
-	entreprise.textContent =
-		'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,';
-
-	/*Création de la div BoxAdresse*/
-	createElement('div', 'boxAdresse', 'boxAdresse', boxContainer);
-
-	createElement('div', 'boxTittle', 'boxTittle', boxAdresse);
-
-	createElement('h2', 'titleAdress', 'titleAdress', boxTittle);
-	titleAdress.textContent = 'ADRESSE';
-
-	/*Création de la div BoxParagrapheadresse*/
-	createElement(
-		'div',
-		'boxParagrapheadresse',
-		'boxParagrapheadresse',
-		boxAdresse
-	);
-	createElement(
-		'p',
-		'paragrapheAdresse',
-		'paragrapheAdresse',
-		boxParagrapheadresse
-	);
-	paragrapheAdresse.textContent = '1 rue de la rue ';
-
-	createElement(
-		'p',
-		'paragrapheAdresse2',
-		'paragrapheAdresse2',
-		boxParagrapheadresse
-	);
-	paragrapheAdresse2.textContent = '39000 Lons-Le-Saunier';
-
-	/*Création de la div BoxInformations*/
-	createElement('div', 'boxInformation', 'boxInformation', boxFooter);
-	createElement('div', 'boxLigne1', 'boxLigne1', boxInformation);
-
-	/*Création box ligne 1*/
-	createElement('p', 'infosOne', 'infosOne', boxLigne1);
-	createElement('a', 'lienInfosone', 'lienInfosone', infosOne);
-	lienInfosone.textContent =
-		'Contact | Qui sommes-nous | Publicité | Politique de cookies | Donnés Personelles  |  Les services';
-
-	createElement('span', 'lettreA', 'lettreA', lienInfosone);
-	lettreA.textContent = 'A';
-
-	createElement('a', 'infosTwo', 'infosTwo', lettreA);
-	infosTwo.textContent = 'lloJyvé |';
-
-	createElement('p', 'copyRight', 'copyRight', infosOne);
-	createElement('span', 'infosThree', 'infosThree', copyRight);
-	infosThree.textContent = '©';
-
-	createElement('span', 'lettreA2', 'lettreA2', infosThree);
-	lettreA2.textContent = 'A';
-
-	createElement('span', 'infosFour', 'infosFour', lettreA2);
-	infosFour.textContent = 'lloJyvé';
-
-	/*Création box ligne 2*/
-	createElement('div', 'boxLigne2', 'boxLigne2', boxInformation);
-	createElement('p', 'infosFive', 'infosFive', boxLigne2);
-
-	infosFive.textContent =
-		'Retrouvez tous les horaires et infos de votre cinéma sur le numéro';
-	createElement('span', 'lettreA3', 'lettreA3', infosFive);
-	lettreA3.textContent = 'A';
-
-	createElement('span', 'infosSix', 'infosSix', lettreA3);
-	infosSix.textContent = 'lloJyvé :';
-
-	createElement('p', 'infosSeven', 'infosSeven', boxLigne2);
-	createElement('a', 'numéro', 'numéro', infosSeven);
-	numéro.textContent = '06 06 06 06 06';
-
-	createElement('p', 'infosHeight', 'infosHeight', boxLigne2);
-	infosHeight.textContent = '(Gratuit)';
-
-	createElement('div', 'boxLigne3', 'boxLigne3', boxInformation);
-	createElement('p', 'infosNine', 'infosNine', boxLigne3);
-	infosNine.textContent = 'Un réalisation ';
-
-	createElement('a', 'infosTen', 'infosTen', infosNine);
-	infosTen.textContent = 'FuturDEV';
-}
