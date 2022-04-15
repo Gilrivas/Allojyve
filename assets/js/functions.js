@@ -42,31 +42,28 @@ function createCard(array, container){
 
   
 
-      
-
+    
 
 
     card.onclick = function(){
         
-        popularList.forEach(movie => {
+        dataF.forEach(movie => {
             if (movie.id === parseInt(this.id)) {
                 createModale(movie);
             }
         });
 
-        filmsSortis.forEach(movie => {
-            if (movie.id === parseInt(this.id)) {
-                createModale(movie);
-            }
-        });
-
-        aVenirList.forEach(movie => {
-            if (movie.id === parseInt(this.id)) {
-                createModale(movie);
-            }
-        });
-
+    
+    
+  
+        
  };
+    
+
+
+
+
+
 
 
     
@@ -139,12 +136,8 @@ function createModale(movie){
     var movieTrailerUrl = data.results.find(element => element.name.toLowerCase() === 'Official Trailer'.toLowerCase()).key;
 
 
-
-    console.log(movieTrailerUrl);
-
     var youtube2 = 'https://www.youtube.com/embed/' + movieTrailerUrl;
 
-    console.log(youtube2)
 
     var youtubeTrailer = document.createElement('iframe')
         youtubeTrailer.classList.add("youtubeTrailer")
@@ -160,7 +153,9 @@ function createModale(movie){
 });
 
 }
- 
+
+
+
 
     let slider = tns({
         container: '.cartes',
@@ -313,8 +308,6 @@ function createModale(movie){
         });
 
 };
-
-
 
 
 

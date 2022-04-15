@@ -1,8 +1,7 @@
 function createApp(main){
   
 
- 
-  
+
 
    // HEADER //
     createElement('header', 'header', 'header', main);
@@ -37,16 +36,16 @@ function createApp(main){
     //HEADER YOUTUBE VIDEO//
 
     createElement('div', 'boxMain', 'boxMain', header);
-    createElement('div', 'boxTittle', 'boxTittle', boxMain);
+    createElement('div', 'headerTitle', 'headerTitle', boxMain);
     
     createElement('div', 'boxMorbius', 'boxMorbius', boxMain)
     createElement('div', 'boxTeaser', 'boxTeaser', boxMain)
     createElement('div', 'boxVideo', 'boxVideo', boxTeaser)
     createElement('iframe', 'youtube', 'youtube', boxVideo)
     createElement('div', 'boxText', 'boxText', boxTeaser)
-    createElement('h1', 'tittle' , 'tittle', boxTittle)
+    createElement('h1', 'tittle' , 'tittle', headerTitle)
     createElement('h2', 'morbius' , 'morbius', boxMorbius)
-    createElement('img', 'petitCarre', 'petitCarre', boxTittle)
+    createElement('img', 'petitCarre', 'petitCarre', headerTitle)
     petitCarre.src = 'assets/img/carres.png'
     createElement('h2', 'morbiusTitle', 'morbiusTitle', boxText)
     createElement('p', 'morbiusText', 'morbiusText', boxText)
@@ -94,14 +93,7 @@ function createApp(main){
    
 
 
-  fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1') .then(response => response.json())
-.then(data => {
-  popularList = data.results;
-  
-  createCard(popularList, document.getElementById("cartes"));
-
-  
-});
+ 
 
 
 
@@ -134,13 +126,8 @@ function createApp(main){
   createElement('button2', 'rightArrow2', 'next2', rightBoton2);
   next2.textContent = ">";
  
-  /* Récupérer l'api des films sur themoviedb*/
-    fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1')  .then(response => response.json())
-    .then(data => {
-      filmsSortis = data.results;
-      createCard(filmsSortis, document.getElementById('cartes2'));
-    });
-
+ 
+    
 /*                  FIN TITIA SECTION 2                    */
 
 //
@@ -218,17 +205,41 @@ function createApp(main){
 
 	//
 	//
-	/********************** Fetch**key-API  - CHRIS******************************/
-	fetch(
-		'https://api.themoviedb.org/3/movie/upcoming?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
-	)
-		.then((response) => response.json())
+	/********************** Fetch**key-API ******************************/
 
+
+
+
+
+
+fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1') .then(response => response.json())
+    .then(data => {
+      dataF = data.results;
+    
+      createCard(dataF, document.getElementById("cartes"));
+  
+   });
+
+
+fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1')  .then(response => response.json())
+    .then(data => {
+      dataF = data.results;
+
+      createCard(dataF, document.getElementById('cartes2'));
+
+    });
+
+
+fetch(
+		'https://api.themoviedb.org/3/movie/upcoming?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1').then((response) => response.json())
 		.then((data) => {
-			aVenirList = data.results;
-			console.log(aVenirList);
-			createCard(aVenirList, document.getElementById('cartes3'));
+			dataF = data.results;
+
+			createCard(dataF, document.getElementById('cartes3'));
+
 		});
+
+
 
 
 
@@ -296,7 +307,7 @@ function createApp(main){
   createElement('div','boxTittle','boxTittle',boxAdresse);
 
   createElement('h2','titleAdress','titleAdress',boxTittle);
-  titleAdress.textContent='ADRESSE';
+  titleAdress.textContent = 'ADRESSE';
 
   /*Création de la div BoxParagrapheadresse*/
   createElement('div','boxParagrapheadresse','boxParagrapheadresse',boxAdresse);

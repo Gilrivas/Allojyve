@@ -80,7 +80,7 @@ h1::before{
     min-height: 90vh;
     flex-direction: column;
 }
-.boxTittle{
+.headerTitle{
     display: flex;
     width: 100%;
     margin: 140px 0px 0px 0px;
