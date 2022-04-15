@@ -166,46 +166,40 @@ a{
     z-index: -1;
     transform: skew(-50deg);
 }
+.controls {
+    top: 175%;
+}
+/*Carrousel section1 Jorge /section2 Laeti / Section3 Chris*/
 .cartes{
     width: 50%;
-    
 }
-.mySlider{
+.mySlider, .mySlider2, .mySlider3{
     position: relative;
-    width: 80%;
-    background-color: #FBDD00;
+    width: 91%;
+    min-height: 42vh; 
+    margin-left: 0px;
 }
-.controls {
+.controls, .controls2, .controls3{
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 95%;    
-    top: 155%;
+    width: 95%; 
     transform: translatey(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
- #cartes > .tns-item{
-    margin-left: 4px;
+#cartes, #cartes2, #cartes3> .tns-item{
+    margin-left: 1px;
     font-size: 0px;
-}
+ }
 .card{
-    
     margin-bottom: 20px;
     cursor: pointer;
-    
 }
-.rightArrow{
-    font-family: 'Maguntia', cursive ;
-    font-size: 7rem;
-    cursor: pointer;
-   
-}
-.leftArrow{
-    font-family: 'Maguntia', cursive;
-    font-size: 7rem;
-    cursor: pointer;
+.card h2{
+    margin: 0px;
+    font-size: 1.2rem;
 }
 .card-body{
     display: flex;
@@ -213,14 +207,43 @@ a{
     background-color: white;
     margin: 0px;
     width: 200px;
-    height: 100px;
+    height: 50px;
     align-items: center;
     justify-content: center;
 }
-.card-body h2{
-    text-align: center;
-    font-size: 0.95rem;
-    font-weight: 100;
+.rightArrow, .rightArrow2, .rightArrow3{
+    font-family: 'Maguntia', cursive ;
+    font-size: 7rem;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+}
+.leftArrow, .leftArrow2, .leftArrow3{
+    font-family: 'Maguntia', cursive;
+    font-size: 7rem;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+}
+#leftBoton, #leftBoton2, #leftBoton3{
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+#leftBoton, #leftBoton2, #leftBoton3 :hover{
+    transform: scale(1.1) ;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+#rightBoton, #leftBoton2, #leftBoton3{
+    right: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+#rightBoton, #leftBoton2, #leftBoton3:hover{
+    transform: scale(1.1) ;
+    opacity: 0.6;
+    transition: all 0.3s ease;
 }
 
 /*NAV PORTABLE*/
@@ -232,7 +255,6 @@ a{
     min-height: 100vh !important;
 }
 /* FIN NAV PORTABLE*/
-
 .modal{
     position: fixed;
     width: 60%;
@@ -267,12 +289,8 @@ a{
    
 }
 /*                   FIN JORGE                     */ 
-
-
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*       CHRIS */
-
+/*                   DEBUT CHRIS                 */
 /*-***************************PARTIR SECTION 3  FILM A VENIR - CHRIS - PC*******************************-*/
 #upcoming{
     max-width: 100%;
@@ -309,44 +327,16 @@ a{
     margin-left: 108px;
 }
 /*titre film carrousel CHRIS */
+.controls3 {
+    top: 373%;   
+}
 .cartes3{
     width: 150%;
     overflow: hidden;
 }
-.mySlider3{
-    position: relative;
-    width: 91%;
-    min-height: 42vh; 
-    top: 372%;
-    margin-left:0px;
-   
-    
-}
-#cartes3 > .tns-item{
-    margin-left: 1px;
-    font-size: 0px;
- }
 #cartes3-iw{
     margin-left: 40px; 
     min-height: 5vh;
-}
-.card h2{
-    margin: 0px;
-    font-size: 1.2rem;
-}
-.card{
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.card-body{
-    display: flex;
-    filter: drop-shadow(0px 4px 2px #404040);
-    background-color: white;
-    margin: 0px;
-    width: 200px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
 }
 .card-body h2{
     text-align: center;
@@ -357,55 +347,12 @@ a{
     background-color: transparent;
     border: 0px;
 }
-.controls3 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 95%;
-    top: 380%;   
-    transform: translatey(-50%);
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
-    color: black;
-}
+
 .controls3:focus{
     outline: none;
 }
-.rightArrow3{
-    font-family: 'Maguntia', cursive ;
-    font-size: 7rem;
-    cursor: pointer;
-    width: 100%;
-    height: 50%;
-}
-.leftArrow3{
-    font-family: 'Maguntia', cursive;
-    font-size: 7rem;
-    cursor: pointer;
-    width: 100%;
-    height: 50%;
-}
-#leftBoton3{
-    left: 0;
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-#leftBoton3:hover{
-    transform: scale(1.1) ;
-    opacity: 0.6;
-    transition: all 0.3s ease;
-}
-#rightBoton3{
-    right: 0;
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-#rightBoton3:hover{
-    transform: scale(1.1) ;
-    opacity: 0.6;
-    transition: all 0.3s ease;
-}
+
+
 /*-******************Partie section 4  Bande Annonce - CHRIS - PC**********-*/
 #bandeFilm{
     width: 100%;
@@ -501,28 +448,6 @@ a{
     display: flex;
     flex-direction: column;
 }
-.mySlider2{
-    width: 80%;
-    margin-left: -6px;
-}
-.card{     
-    margin-bottom: 20px;    
-    cursor: pointer; 
-} 
-.card h2{
-    margin: 0px;
-    font-size: 1.2rem;
-}
-.card-body{      
-    display: flex;     
-    filter: drop-shadow(0px 4px 2px #404040);    
-    background-color: white;     
-    margin: 0px;     
-    width: 200px;     
-    height: 50px;     
-    align-items: center;    
-    justify-content: center; 
-}
 .card-body h2{     
     text-align: center;     
     font-size: 0.95rem;     
@@ -532,34 +457,11 @@ a{
     width: 50%;
     overflow: hidden;
 }
-#cartes2 > .tns-item{     
-    margin-left: 3px;      
-    font-size: 0px;  
-}
+
 /*********Flèche********/
 .button2{
     background-color: transparent;
     border: 0px;
-}
-#leftBoton2{     
-    left: 0;     
-    opacity: 1;     
-    transition: all 0.3s ease; 
-} 
-#leftBoton2:hover{     
-    transform: scale(1.1) ;     
-    opacity: 0.6;     
-    transition: all 0.3s ease; 
-} 
-#rightBoton2{     
-    right: 0;     
-    opacity: 1;     
-    transition: all 0.3s ease; 
-} 
-#rightBoton2:hover{     
-    transform: scale(1.1) ;     
-    opacity: 0.6;    
-    transition: all 0.3s ease; 
 }
 .rightArrow2{
     width: 100%;     
@@ -576,15 +478,7 @@ a{
     cursor: pointer;
 }
 .controls2{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 95%;
-    top: 281%;
-    transform: translatey(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    top: 274%;
 }
 .controls2:focus{
     outline: none;
