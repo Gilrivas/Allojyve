@@ -231,13 +231,12 @@ a{
 }
 
 .card-body{
-
     display: flex;
     filter: drop-shadow(0px 4px 2px #404040);
     background-color: white;
     margin: 0px;
     width: 200px;
-    height: 100px;
+    height: 50px;
     align-items: center;
     justify-content: center;
 
@@ -362,16 +361,7 @@ a{
     margin-bottom: 20px;
     cursor: pointer;
 }
-.card-body{
-    display: flex;
-    filter: drop-shadow(0px 4px 2px #404040);
-    background-color: white;
-    margin: 0px;
-    width: 200px;
-    height: 45px;
-    align-items: center;
-    justify-content: center;
-}
+
 .card-body h2{
     text-align: center;
     font-size: 0.95rem;
@@ -570,16 +560,7 @@ p{
     margin: 0px;
     font-size: 1.2rem;
 }
-.card-body{      
-    display: flex;     
-    filter: drop-shadow(0px 4px 2px #404040);    
-    background-color: white;     
-    margin: 0px;     
-    width: 200px;     
-    height: 50px;     
-    align-items: center;    
-    justify-content: center; 
-}
+
 .card-body h2{     
     text-align: center;     
     font-size: 0.95rem;     
@@ -636,9 +617,6 @@ p{
     margin: 0;
     padding: 0;
     position: absolute;
-
-    width: 95%;
-    top: 281%;
     width: 90%;
     top: 280%;
     transform: translatey(-50%);
@@ -646,6 +624,7 @@ p{
     align-items: center;
     justify-content: space-between;
 }
+
 .controls2:focus{
     outline: none;
 }
@@ -994,19 +973,5 @@ p{
     cursor: pointer;
 }
 
-/******************************************Fin du Footer ***************************/
-
-
-/**************************************Début des médias query 375px **********************/
-
-
-
-/******************************************Fin des médias query 375px  ***************************/
-
-/**************************************Début des médias query 800px **********************/
-
-
-
-/**************************************Fin des médias query 800px **********************/
 
 /* MEDIA QUERY ICI*/

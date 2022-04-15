@@ -210,37 +210,32 @@ function createApp(main){
 
 
 
-
-
-fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1') .then(response => response.json())
+    fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1') .then(response => response.json())
     .then(data => {
-      dataF = data.results;
+      popularList = data.results;
     
-      createCard(dataF, document.getElementById("cartes"));
+      createCard(popularList, document.getElementById("cartes"));
   
    });
 
 
-fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1')  .then(response => response.json())
+    fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1')  .then(response => response.json())
     .then(data => {
-      dataF = data.results;
+      filmsSortis = data.results;
 
-      createCard(dataF, document.getElementById('cartes2'));
+      createCard(filmsSortis, document.getElementById('cartes2'));
 
     });
 
-
-fetch(
+    fetch(
 		'https://api.themoviedb.org/3/movie/upcoming?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1').then((response) => response.json())
 		.then((data) => {
-			dataF = data.results;
+      
+			aVenirList = data.results;
 
-			createCard(dataF, document.getElementById('cartes3'));
+			createCard(aVenirList, document.getElementById('cartes3'));
 
 		});
-
-
-
 
 
 

@@ -47,7 +47,7 @@ function createCard(array, container){
 
     card.onclick = function(){
         
-        dataF.forEach(movie => {
+        popularList.forEach(movie => {
             if (movie.id === parseInt(this.id)) {
                 createModale(movie);
             }
@@ -179,11 +179,9 @@ function createModale(movie){
         
         }
 
-        
-
-        
     
     })
+
     let slider2 = tns({         
         container: '.cartes2',         
         items: 20,         
