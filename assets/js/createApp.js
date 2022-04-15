@@ -1,149 +1,138 @@
-function createApp(main){
-  
+function createApp(main) {
+	// HEADER //
+	createElement('header', 'header', 'header', main);
+	createElement('nav', 'nav', 'nav', header);
 
- 
-  
+	createElement('div', 'boxImg', 'logo', nav);
+	createElement('a', 'linkIndex', 'linkIndex', logo);
+	createElement('ul', 'menu', 'menu', nav);
+	createElement('img', 'img', 'img', linkIndex);
+	img.src = 'assets/img/logo.png';
+	linkIndex.setAttribute('href', 'index.html');
 
-   // HEADER //
-    createElement('header', 'header', 'header', main);
-    createElement('nav', 'nav', 'nav', header)
-    
-    createElement('div', 'boxImg', 'logo', nav);
-    createElement('a', 'linkIndex', 'linkIndex', logo);
-    createElement('ul', 'menu', 'menu', nav)
-    createElement('img', 'img' , 'img', linkIndex)
-    img.src = 'assets/img/logo.png';
-    linkIndex.setAttribute("href", "index.html")
+	//HEADER LINKS//
 
+	createElement('a', 'populaires', 'populaires', menu);
+	createElement('a', 'lastMovie', 'lastMovie', menu);
+	createElement('a', 'aVenir', 'aVenir', menu);
 
-    //HEADER LINKS//
-  
+	populaires.textContent = 'Populaires';
+	populaires.href = '#popular';
 
-    createElement('a', 'populaires', 'populaires', menu)
-    createElement('a', 'lastMovie', 'lastMovie', menu)
-    createElement('a', 'aVenir', 'aVenir', menu)
+	lastMovie.textContent = 'Derniers Sortis';
+	lastMovie.href = '#nowPlaying';
 
-    populaires.textContent = "Populaires"
-    populaires.href = "#popular"
+	aVenir.textContent = 'À venir';
+	aVenir.href = '#upcoming';
 
-    lastMovie.textContent = "Derniers Sortis"
-    lastMovie.href = "#nowPlaying"
+	//FIN DE HEADER LINKS//
 
-    aVenir.textContent = "À venir"
-    aVenir.href = "#upcoming"
+	//HEADER YOUTUBE VIDEO//
 
-    //FIN DE HEADER LINKS//
-    
-    //HEADER YOUTUBE VIDEO//
+	createElement('div', 'boxMain', 'boxMain', header);
+	createElement('div', 'headerTitle', 'headerTitle', boxMain);
 
-    createElement('div', 'boxMain', 'boxMain', header);
-    createElement('div', 'boxTittle', 'boxTittle', boxMain);
-    
-    createElement('div', 'boxMorbius', 'boxMorbius', boxMain)
-    createElement('div', 'boxTeaser', 'boxTeaser', boxMain)
-    createElement('div', 'boxVideo', 'boxVideo', boxTeaser)
-    createElement('iframe', 'youtube', 'youtube', boxVideo)
-    createElement('div', 'boxText', 'boxText', boxTeaser)
-    createElement('h1', 'tittle' , 'tittle', boxTittle)
-    createElement('h2', 'morbius' , 'morbius', boxMorbius)
-    createElement('img', 'petitCarre', 'petitCarre', boxTittle)
-    petitCarre.src = 'assets/img/carres.png'
-    createElement('h2', 'morbiusTitle', 'morbiusTitle', boxText)
-    createElement('p', 'morbiusText', 'morbiusText', boxText)
+	createElement('div', 'boxMorbius', 'boxMorbius', boxMain);
+	createElement('div', 'boxTeaser', 'boxTeaser', boxMain);
+	createElement('div', 'boxVideo', 'boxVideo', boxTeaser);
+	createElement('iframe', 'youtube', 'youtube', boxVideo);
+	createElement('div', 'boxText', 'boxText', boxTeaser);
+	createElement('h1', 'tittle', 'tittle', headerTitle);
+	createElement('h2', 'morbius', 'morbius', boxMorbius);
+	createElement('img', 'petitCarre', 'petitCarre', headerTitle);
+	petitCarre.src = 'assets/img/carres.png';
+	createElement('h2', 'morbiusTitle', 'morbiusTitle', boxText);
+	createElement('p', 'morbiusText', 'morbiusText', boxText);
 
-    youtube.setAttribute("src", "https://www.youtube.com/embed/oZ6iiRrz1SY",)
-    youtube.setAttribute('allowFullscreen', 'True')
-    youtube.setAttribute("frameborder", "0")
-    youtube.style.width = "640px";
-    youtube.style.height = "480px";
+	youtube.setAttribute('src', 'https://www.youtube.com/embed/oZ6iiRrz1SY');
+	youtube.setAttribute('allowFullscreen', 'True');
+	youtube.setAttribute('frameborder', '0');
+	youtube.style.width = '640px';
+	youtube.style.height = '480px';
 
-    tittle.textContent = 'Bande-Annonce à ne pas manquer'
-    morbius.textContent = 'MORBIUS'
-    morbiusTitle.textContent = 'Film : Action, Aventure, Fantastique'
-  	morbiusText.textContent = 'Gravement atteint d’une rare maladie sanguine, et déterminé à sauver toutes les victimes de cette pathologie, le Dr Morbius tente un pari désespéré. Alors que son expérience semble être un succès, le remède déclenche un effet sinistre. '
+	tittle.textContent = 'Bande-Annonce à ne pas manquer';
+	morbius.textContent = 'MORBIUS';
+	morbiusTitle.textContent = 'Film : Action, Aventure, Fantastique';
+	morbiusText.textContent =
+		'Gravement atteint d’une rare maladie sanguine, et déterminé à sauver toutes les victimes de cette pathologie, le Dr Morbius tente un pari désespéré. Alors que son expérience semble être un succès, le remède déclenche un effet sinistre. ';
 
+	//FIN DE HEADER YOUTUBE VIDEO//
 
+	//FIN DE HEADER//
 
+	//SECTION FILM POPULAIRES//
 
-    //FIN DE HEADER YOUTUBE VIDEO//
-    
-//FIN DE HEADER//
+	createElement('section', 'section', 'popular', main);
+	createElement('div', 'titleSection', 'titleSection', popular);
 
-    //SECTION FILM POPULAIRES//
-    
-    createElement('section', 'section', 'popular', main);
-    createElement('div', 'titleSection', 'titleSection', popular);
-   
-    createElement('div', 'controls', 'controls', popular)
-    createElement('div', 'mySlider', 'mySlider', popular)
-    
-    createElement('div', 'leftBoton', 'leftBoton', controls);
-    createElement('h2', 'h2Section', 'h2Section', titleSection);
-    h2Section.textContent = "Films + populaires"
+	createElement('div', 'controls', 'controls', popular);
+	createElement('div', 'mySlider', 'mySlider', popular);
 
-    createElement('div', 'cartes', 'cartes', mySlider);
-    
-    createElement('div', 'rightBoton', 'rightBoton', controls);
+	createElement('div', 'leftBoton', 'leftBoton', controls);
+	createElement('h2', 'h2Section', 'h2Section', titleSection);
+	h2Section.textContent = 'Films + populaires';
 
-    createElement('button', 'leftArrow', 'before', leftBoton);
-    before.textContent = "<"
+	createElement('div', 'cartes', 'cartes', mySlider);
 
-    createElement('button', 'rightArrow', 'next', rightBoton);
-    next.textContent = ">"
-    
-   
+	createElement('div', 'rightBoton', 'rightBoton', controls);
 
+	createElement('button', 'leftArrow', 'before', leftBoton);
+	before.textContent = '<';
 
-  fetch('https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1') .then(response => response.json())
-.then(data => {
-  popularList = data.results;
-  
-  createCard(popularList, document.getElementById("cartes"));
+	createElement('button', 'rightArrow', 'next', rightBoton);
+	next.textContent = '>';
 
-  
-});
+	fetch(
+		'https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			popularList = data.results;
 
+			createCard(popularList, document.getElementById('cartes'));
+		});
 
+	/* TITIA  */
 
-/* TITIA  */
+	/*Section nowPlaying films derniers sortis*/
+	createElement('section', 'section', 'nowPlaying', main);
+	createElement('div', 'titleSection2', 'titleSection2', nowPlaying);
 
+	/*Création img et icon dans section films derniers sortis*/
+	createElement('img', 'boxImgS2', 'boxImgS2', titleSection2);
+	boxImgS2.src = './assets/img/cinéma.svg';
+	boxImgS2.alt = "icon d'une  pellicule de film";
 
-  /*Section nowPlaying films derniers sortis*/
-  createElement('section', 'section', 'nowPlaying', main);
-  createElement('div', 'titleSection2', 'titleSection2', nowPlaying);
+	createElement('div', 'controls2', 'controls2', nowPlaying);
+	createElement('div', 'mySlider2', 'mySlider2', nowPlaying);
 
-  /*Création img et icon dans section films derniers sortis*/
-  createElement('img', 'boxImgS2', 'boxImgS2', titleSection2);
-  boxImgS2.src = './assets/img/cinéma.svg';
-  boxImgS2.alt = "icon d'une  pellicule de film";
+	createElement('div', 'leftBoton2', 'leftBoton2', controls2);
+	createElement('h2', 'h2Section2', 'h2Section2', titleSection2);
+	h2Section2.textContent = 'Films derniers sortis';
 
-  createElement('div', 'controls2', 'controls2', nowPlaying)
-  createElement('div', 'mySlider2', 'mySlider2', nowPlaying)
+	createElement('div', 'cartes2', 'cartes2', mySlider2);
 
-  createElement('div', 'leftBoton2', 'leftBoton2', controls2);
-  createElement('h2', 'h2Section2', 'h2Section2', titleSection2);
-  h2Section2.textContent = "Films derniers sortis";
+	createElement('div', 'rightBoton2', 'rightBoton2', controls2);
 
-  createElement('div', 'cartes2', 'cartes2', mySlider2);
+	createElement('button2', 'leftArrow2', 'before2', leftBoton2);
+	before2.textContent = '<';
 
-  createElement('div', 'rightBoton2', 'rightBoton2', controls2);
+	createElement('button2', 'rightArrow2', 'next2', rightBoton2);
+	next2.textContent = '>';
 
-  createElement('button2', 'leftArrow2', 'before2', leftBoton2);
-  before2.textContent = "<";
+	/* Récupérer l'api des films sur themoviedb*/
+	fetch(
+		'https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			filmsSortis = data.results;
+			createCard(filmsSortis, document.getElementById('cartes2'));
+		});
 
-  createElement('button2', 'rightArrow2', 'next2', rightBoton2);
-  next2.textContent = ">";
- 
-  /* Récupérer l'api des films sur themoviedb*/
-    fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1')  .then(response => response.json())
-    .then(data => {
-      filmsSortis = data.results;
-      createCard(filmsSortis, document.getElementById('cartes2'));
-    });
+	/*                  FIN TITIA SECTION 2                    */
 
-/*                  FIN TITIA SECTION 2                    */
-
-//
+	//
 	/*************************************SECTION FILM A VENIR - CHRIS*************************************/
 
 	createElement('section', 'section', 'upcoming', main);
@@ -230,131 +219,149 @@ function createApp(main){
 			createCard(aVenirList, document.getElementById('cartes3'));
 		});
 
+	/*Création de la div Footer*/
+	createElement('footer', 'footer', 'Footer', main);
 
+	/*Création de la div BoxFooter*/
+	createElement('div', 'boxFooter', 'boxFooter', Footer);
 
+	/*Création de la div BoxContainer*/
+	createElement('div', 'boxContainer', 'boxContainer', boxFooter);
 
+	/*Création de la div BoxLiensreseauxsociaux*/
+	createElement(
+		'div',
+		'boxLiensreseauxsociaux',
+		'boxLiensreseauxsociaux',
+		boxContainer
+	);
 
+	/*Création de la div BoxTitle*/
+	createElement('div', 'boxTitle', 'boxTitle', boxLiensreseauxsociaux);
+	createElement('h2', 'titleFollow', 'titleFollow', boxTitle);
+	titleFollow.textContent = 'SUIVEZ-NOUS';
 
+	/*Création de la div BoxIcone*/
+	createElement('div', 'boxIcone', 'boxIcone', boxLiensreseauxsociaux);
 
+	/*Facebook*/
+	createElement('div', 'iconeFacebook', 'iconeFacebook', boxIcone);
 
+	createElement('a', 'lienFacebook', 'lienFacebook', iconeFacebook);
+	createElement('img', 'facebook', 'facebook', lienFacebook);
+	facebook.src = 'assets/img/Facebook.svg';
 
-  /*Création de la div Footer*/
-  createElement('footer','footer','Footer',main);
+	/*Twitter*/
+	createElement('div', 'iconeTwitter', 'iconeTwitter', boxIcone);
 
-  /*Création de la div BoxFooter*/
-  createElement('div','boxFooter','boxFooter',Footer);
+	createElement('a', 'lienTwitter', 'lienTwitter', iconeTwitter);
+	createElement('img', 'twitter', 'twitter', lienTwitter);
+	twitter.src = 'assets/img/Twitter.svg';
 
-  /*Création de la div BoxContainer*/
-  createElement('div','boxContainer','boxContainer',boxFooter);
+	/*Instagram*/
+	createElement('div', 'iconeInstagram', 'iconeInstagram', boxIcone);
 
-  /*Création de la div BoxLiensreseauxsociaux*/
-  createElement('div', 'boxLiensreseauxsociaux','boxLiensreseauxsociaux', boxContainer);
+	createElement('a', 'lienInstagram', 'lienInstagram', iconeInstagram);
+	createElement('img', 'instagram', 'instagram', lienInstagram);
+	instagram.src = 'assets/img/Instagram.svg';
 
-  /*Création de la div BoxTitle*/
-  createElement('div','boxTitle', 'boxTitle',boxLiensreseauxsociaux);
-  createElement('h2','titleFollow','titleFollow',boxTitle);
-  titleFollow.textContent = 'SUIVEZ-NOUS';
+	/*Création de la div BoxEntreprise*/
+	createElement('div', 'boxEntreprise', 'boxEntreprise', boxContainer);
+	createElement('div', 'boxLogo', 'boxLogo', boxEntreprise);
 
-   /*Création de la div BoxIcone*/
-  createElement('div','boxIcone', 'boxIcone',boxLiensreseauxsociaux);
+	createElement('img', 'logoFooter', 'logoFooter', boxLogo);
+	logoFooter.src = 'assets/img/LogoF.png';
 
-  /*Facebook*/
-  createElement('div', 'iconeFacebook','iconeFacebook',boxIcone);
+	createElement(
+		'div',
+		'boxParagrapheentreprise',
+		'boxParagrapheentreprise',
+		boxEntreprise
+	);
+	createElement('p', 'entreprise', 'entreprise', boxParagrapheentreprise);
+	entreprise.textContent =
+		'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,';
 
-  createElement('a', 'lienFacebook', 'lienFacebook',iconeFacebook);
-  createElement('img','facebook','facebook',lienFacebook);
-  facebook.src='assets/img/Facebook.svg'
+	/*Création de la div BoxAdresse*/
+	createElement('div', 'boxAdresse', 'boxAdresse', boxContainer);
 
-  /*Twitter*/
-  createElement('div', 'iconeTwitter','iconeTwitter',boxIcone);
+	createElement('div', 'boxTittle', 'boxTittle', boxAdresse);
 
-  createElement('a', 'lienTwitter', 'lienTwitter',iconeTwitter);
-  createElement('img','twitter','twitter',lienTwitter);
-  twitter.src='assets/img/Twitter.svg'
+	createElement('h2', 'titleAdress', 'titleAdress', boxTittle);
+	titleAdress.textContent = 'ADRESSE';
 
-  /*Instagram*/
-  createElement('div', 'iconeInstagram','iconeInstagram',boxIcone);
+	/*Création de la div BoxParagrapheadresse*/
+	createElement(
+		'div',
+		'boxParagrapheadresse',
+		'boxParagrapheadresse',
+		boxAdresse
+	);
+	createElement(
+		'p',
+		'paragrapheAdresse',
+		'paragrapheAdresse',
+		boxParagrapheadresse
+	);
+	paragrapheAdresse.textContent = '1 rue de la rue ';
 
-  createElement('a', 'lienInstagram', 'lienInstagram',iconeInstagram);
-  createElement('img','instagram','instagram',lienInstagram);
-  instagram.src='assets/img/Instagram.svg'
+	createElement(
+		'p',
+		'paragrapheAdresse2',
+		'paragrapheAdresse2',
+		boxParagrapheadresse
+	);
+	paragrapheAdresse2.textContent = '39000 Lons-Le-Saunier';
 
-  /*Création de la div BoxEntreprise*/
-  createElement('div','boxEntreprise','boxEntreprise',boxContainer);
-  createElement('div', 'boxLogo','boxLogo',boxEntreprise);
+	/*Création de la div BoxInformations*/
+	createElement('div', 'boxInformation', 'boxInformation', boxFooter);
+	createElement('div', 'boxLigne1', 'boxLigne1', boxInformation);
 
-  createElement('img','logoFooter','logoFooter',boxLogo);
-  logoFooter.src='assets/img/LogoF.png'
+	/*Création box ligne 1*/
+	createElement('p', 'infosOne', 'infosOne', boxLigne1);
+	createElement('a', 'lienInfosone', 'lienInfosone', infosOne);
+	lienInfosone.textContent =
+		'Contact | Qui sommes-nous | Publicité | Politique de cookies | Donnés Personelles  |  Les services';
 
-  createElement('div','boxParagrapheentreprise','boxParagrapheentreprise', boxEntreprise);
-  createElement('p','entreprise','entreprise', boxParagrapheentreprise);
-  entreprise.textContent='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,';
+	createElement('span', 'lettreA', 'lettreA', lienInfosone);
+	lettreA.textContent = 'A';
 
-  /*Création de la div BoxAdresse*/
-  createElement('div','boxAdresse','boxAdresse',boxContainer);
+	createElement('a', 'infosTwo', 'infosTwo', lettreA);
+	infosTwo.textContent = 'lloJyvé |';
 
-  createElement('div','boxTittle','boxTittle',boxAdresse);
+	createElement('p', 'copyRight', 'copyRight', infosOne);
+	createElement('span', 'infosThree', 'infosThree', copyRight);
+	infosThree.textContent = '©';
 
-  createElement('h2','titleAdress','titleAdress',boxTittle);
-  titleAdress.textContent='ADRESSE';
+	createElement('span', 'lettreA2', 'lettreA2', infosThree);
+	lettreA2.textContent = 'A';
 
-  /*Création de la div BoxParagrapheadresse*/
-  createElement('div','boxParagrapheadresse','boxParagrapheadresse',boxAdresse);
-  createElement('p','paragrapheAdresse','paragrapheAdresse',boxParagrapheadresse);
-  paragrapheAdresse.textContent='1 rue de la rue ';
+	createElement('span', 'infosFour', 'infosFour', lettreA2);
+	infosFour.textContent = 'lloJyvé';
 
-  createElement('p','paragrapheAdresse2','paragrapheAdresse2',boxParagrapheadresse);
-  paragrapheAdresse2.textContent='39000 Lons-Le-Saunier';
+	/*Création box ligne 2*/
+	createElement('div', 'boxLigne2', 'boxLigne2', boxInformation);
+	createElement('p', 'infosFive', 'infosFive', boxLigne2);
 
-  /*Création de la div BoxInformations*/
-  createElement('div','boxInformation','boxInformation',boxFooter);
-  createElement('div','boxLigne1','boxLigne1',boxInformation);
+	infosFive.textContent =
+		'Retrouvez tous les horaires et infos de votre cinéma sur le numéro';
+	createElement('span', 'lettreA3', 'lettreA3', infosFive);
+	lettreA3.textContent = 'A';
 
-  /*Création box ligne 1*/
-  createElement('p','infosOne','infosOne',boxLigne1);
-  createElement('a','lienInfosone','lienInfosone',infosOne);
-  lienInfosone.textContent='Contact | Qui sommes-nous | Publicité | Politique de cookies | Donnés Personelles  |  Les services';
+	createElement('span', 'infosSix', 'infosSix', lettreA3);
+	infosSix.textContent = 'lloJyvé :';
 
-  createElement('span','lettreA','lettreA',lienInfosone);
-  lettreA.textContent='A'; 
+	createElement('p', 'infosSeven', 'infosSeven', boxLigne2);
+	createElement('a', 'numéro', 'numéro', infosSeven);
+	numéro.textContent = '06 06 06 06 06';
 
-  createElement('a','infosTwo','infosTwo',lettreA);
-  infosTwo.textContent='lloJyvé |';
+	createElement('p', 'infosHeight', 'infosHeight', boxLigne2);
+	infosHeight.textContent = '(Gratuit)';
 
-  createElement('p','copyRight','copyRight',infosOne);
-  createElement('span','infosThree','infosThree',copyRight);
-  infosThree.textContent='©';
+	createElement('div', 'boxLigne3', 'boxLigne3', boxInformation);
+	createElement('p', 'infosNine', 'infosNine', boxLigne3);
+	infosNine.textContent = 'Un réalisation ';
 
-  createElement('span','lettreA2','lettreA2',infosThree);
-  lettreA2.textContent='A';
-
-  createElement('span','infosFour','infosFour',lettreA2);
-  infosFour.textContent='lloJyvé';
-
-  /*Création box ligne 2*/
-  createElement('div','boxLigne2','boxLigne2',boxInformation);
-  createElement('p','infosFive','infosFive',boxLigne2);
-
-  infosFive.textContent='Retrouvez tous les horaires et infos de votre cinéma sur le numéro';
-  createElement('span','lettreA3','lettreA3',infosFive);
-  lettreA3.textContent='A'; 
-  
-  createElement('span','infosSix','infosSix',lettreA3);
-  infosSix.textContent='lloJyvé :';
-
-  createElement('p','infosSeven','infosSeven',boxLigne2);
-  createElement('a','numéro','numéro',infosSeven);
-  numéro.textContent= '06 06 06 06 06';
-
-  createElement('p','infosHeight','infosHeight',boxLigne2);
-  infosHeight.textContent= '(Gratuit)';
-
-  createElement('div','boxLigne3','boxLigne3',boxInformation);
-  createElement('p','infosNine','infosNine',boxLigne3);
-  infosNine.textContent='Un réalisation ';
-
-  createElement('a','infosTen','infosTen',infosNine);
-  infosTen.textContent='FuturDEV';
-
-}   
-
+	createElement('a', 'infosTen', 'infosTen', infosNine);
+	infosTen.textContent = 'FuturDEV';
+}

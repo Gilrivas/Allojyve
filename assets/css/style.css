@@ -60,7 +60,7 @@ h1::before{
     min-height: 90vh;
     flex-direction: column;
 }
-.boxTittle{
+.headerTitle{
     display: flex;
     width: 100%;
     margin: 140px 0px 0px 0px;
@@ -131,7 +131,6 @@ a{
     width: 40px;
     height: 40px;
 }
-
 /*            SECTION 1                   */
 #popular{
     max-width: 100%;
@@ -146,22 +145,17 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-
 .titleSection{
     position: relative;
     width: 100%;
     margin: 0px 0px 80px 0px;
 
 }
-
 .h2Section{
     
     font-size: 3em;
     margin: 0px 0px 0px 40px;
 }
-
-
-
 .titleSection::before{
     position: absolute;
     content: '';
@@ -171,24 +165,16 @@ a{
     height: 100%;
     z-index: -1;
     transform: skew(-50deg);
-    
-
 }
-
-
 .cartes{
     width: 50%;
     
 }
-
 .mySlider{
     position: relative;
     width: 80%;
-
-    
-    
+    background-color: #FBDD00;
 }
-
 .controls {
     margin: 0;
     padding: 0;
@@ -199,39 +185,29 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
- }
-
+}
  #cartes > .tns-item{
     margin-left: 4px;
     font-size: 0px;
-    
- }
-
+}
 .card{
     
     margin-bottom: 20px;
     cursor: pointer;
     
 }
-
-
 .rightArrow{
     font-family: 'Maguntia', cursive ;
     font-size: 7rem;
     cursor: pointer;
    
 }
-
 .leftArrow{
     font-family: 'Maguntia', cursive;
     font-size: 7rem;
     cursor: pointer;
-
-   
 }
-
 .card-body{
-
     display: flex;
     filter: drop-shadow(0px 4px 2px #404040);
     background-color: white;
@@ -240,9 +216,7 @@ a{
     height: 100px;
     align-items: center;
     justify-content: center;
-
 }
-
 .card-body h2{
     text-align: center;
     font-size: 0.95rem;
@@ -253,15 +227,11 @@ a{
 .none{
     display: none !important;
 }
-
 .openNav{
     width: 100% !important;
     min-height: 100vh !important;
 }
-
 /* FIN NAV PORTABLE*/
-
-
 
 .modal{
     position: fixed;
@@ -275,11 +245,9 @@ a{
     background: white;
     display: flex;
     border: 1px solid black;
-    
     transition: all 1s ease 0s;
     flex-direction: row-reverse;
 }
-
 .modaleContainer{
     display: flex;
     width: 100%;
@@ -287,23 +255,17 @@ a{
     align-items: flex-start;
     justify-content: center;
     text-align: start;
-    
 }
 .closeModaleBtn{
-    
     position: absolute;
-    
     width: 20px;
     margin: 20px;
     cursor: pointer;
 }
-
-
 .close{
     width: 50px;
    
 }
-
 /*                   FIN JORGE                     */ 
 
 
@@ -317,12 +279,12 @@ a{
     min-height: 100vh;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .titleSection3{
     width: 100%;
-    margin: 0px 0px -100px 20px;
     display: flex;
+    margin: 0px 0px 80px 0px;
 }
 .h2Section3{
     font-size: 3em;
@@ -352,7 +314,21 @@ a{
     overflow: hidden;
 }
 .mySlider3{
-    width: 80%;
+    position: relative;
+    width: 91%;
+    min-height: 42vh; 
+    top: 372%;
+    margin-left:0px;
+   
+    
+}
+#cartes3 > .tns-item{
+    margin-left: 1px;
+    font-size: 0px;
+ }
+#cartes3-iw{
+    margin-left: 40px; 
+    min-height: 5vh;
 }
 .card h2{
     margin: 0px;
@@ -368,7 +344,7 @@ a{
     background-color: white;
     margin: 0px;
     width: 200px;
-    height: 45px;
+    height: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -377,10 +353,6 @@ a{
     font-size: 0.95rem;
     font-weight: 100;
 }
-#cartes3 > .tns-item{
-    margin-left: 1px;
-    font-size: 0px;
- }
 .button3{
     background-color: transparent;
     border: 0px;
@@ -390,7 +362,7 @@ a{
     padding: 0;
     position: absolute;
     width: 95%;
-    top: 371%;   
+    top: 380%;   
     transform: translatey(-50%);
     display: flex;
     align-items: center;    
@@ -445,7 +417,7 @@ a{
 }
 #boxBandeFilm{
     width: 100%;
-    height: 10vh;
+    height: 150px;
     background: #000000;
     display: flex;
     align-items: center;
@@ -455,7 +427,6 @@ a{
 }
 #boxBande1{
     width: 100%;
-    min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -470,7 +441,6 @@ a{
 }
 #boxBande2{
     width: 100%;
-    min-height:15vh;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -503,7 +473,6 @@ a{
 }
 #boxBandeH3{
     width: 100%;
-    height: 85vh;
     display:flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -515,673 +484,14 @@ a{
     margin-left: 20px;
     margin-top: 75px;
 }
-#boxBandeH3>.bandeImg{
-    width: 100%;
-    height: 70vh;
-    cursor: pointer;
-    position: relative;
-    z-index: 20;
-}
-.youtube2{
+.boxYoutube{
    margin-left: 20px;
 }
-/*-**************************************RESPONSIVE SECTION 3 PHONE -CHRIS*-*******************************-*/
-@media screen and (min-width: 375px){
-    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 375PX*/
-    .h2Section3{
-        font-size: 1.5em;
-        margin: -90px 0 0 10px;
-    }
-    .h2Section3::before{
-        width: 60%;
-        height: 5%;
-        left: calc(58% - 50%);
-        margin-top: -6px;
-    }
-    /*Icon Film*/
-    .boxImgS3{
-        margin-top: -89px;
-        max-width: 23px;
-        height: 23px;
-        margin-left: 40px;
-    }
-    #cartes3 > .tns-item{
-        margin-left: 1px;
-        font-size: 0px;
-     }
-     #cartes3 img{
-        width: 100px;
-     }
-    .card-body{
-        width: 100px;
-        height: 30px;
-    }
-    .card-body h2{
-        text-align: center;
-        font-size: 0.7rem;
-        font-weight: 100;
-    }
-    .mySlider3{
-        width: 80%;
-        margin-left: 9px;
-        margin-top: -250px;
-    }
-    .controls3 {
-        width: 25%;
-        top: 35%; 
-        margin-left: 215px;  
-    }
-    .youtube2{
-        max-width: 100%;
-        min-height: 35vh;
-      
-    }
-    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 375px*/
-    #bandeFilm{
-        height: 0vh;
-    }
-    #boxBandeH3>.bandeImg{
-        height: 27vh;
-    }
-     #boxBande1{
-        min-height: 1vh;
-    }
-    #boxBande1>.bande1{
-        font-size: 1.2em;
-        margin: 60px 0 10px 25px;
-    }
-    #boxBande2{
-        min-height:9vh;
-        }
-    #boxBande2>.bande2{
-        font-size: 1em;
-        margin: 0 0 10px 25px;
-    }
-    .boxCarreJaune>.carre1{
-        height: 25px;
-        width: 25px;
-        background:#FBDD00;
-        margin-top: -75px;
-    }
-    .boxCarreJaune>.carre2{
-        height: 25px;
-        width: 25px;
-        background:#FBDD00;
-        margin-top: -25px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 0.9em;
-        margin-top: 50px;
-        margin-left: 25px;
-    }
-}
-@media screen and (min-width: 390px){
-    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 390PX*/
-    .h2Section3{
-        font-size: 1.5em;
-    }
-    .h2Section3::before{
-        width: 60%;
-        height: 5%;
-        left: calc(68% - 50%);
-        margin-top: -6px;
-    }
-    /*Icon Film*/
-    .boxImgS3{
-        margin-top: 2px;
-        max-width: 23px;
-        height: 23px;
-        margin-left: 84px;
-    }
-    .mySlider3{
-        width: 80%;
-        margin-left: 100px;
-    }
-    #cartes3 > .tns-item{
-        margin-left: 1px;
-     }
-     #cartes3 img{
-        width: 200px;
-     }
-     .card-body{
-        height: 50px;
-    }
-    .controls3 {
-        width: 20%;
-        top: 30%; 
-        margin-left: 230px;  
-    }
-    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 390px*/
-    #bandeFilm{
-        height: 0vh;
-    }
-    #boxBandeH3>.bandeImg{
-        height: 27vh;
-    }
-     #boxBande1{
-        min-height: 1vh;
-    }
-    #boxBande1>.bande1{
-        font-size: 1.2em;
-        margin-left: 20px;
-    }
-    #boxBande2{
-        min-height:9vh;
-        }
-    #boxBande2>.bande2{
-        font-size: 1em;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-    .boxCarreJaune>.carre1{
-        height: 25px;
-        width: 25px;
-        background:#FBDD00;
-        margin-top: -75px;
-    }
-    .boxCarreJaune>.carre2{
-        height: 25px;
-        width: 25px;
-        background:#FBDD00;
-        margin-top: -25px;
-    }
-    #boxBandeH3{
-        height: 0vh;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 0.8em;
-        margin-top: 40px;
-    }
-    #boxBandeH3>.bandeImg{
-        height: 26vh;
-    }
-}
-@media screen and (min-width: 500px) {
-    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 500PX*/
-    .h2Section3{
-        font-size: 2em;
-        margin: 100px 0px 0px 10px;
-    }
-    .h2Section3::before{
-        width: 50%;
-        height: 6%;
-        left: calc(56% - 50%);
-        margin-top: -8px;
-    }
-    /*Icon Film*/
-    .boxImgS3{
-        margin-top: 105px;
-        max-width: 28px;
-        height: 28px;
-        margin-left: 50px;
-    }
-    .mySlider3{
-        width: 90%;
-        margin-left: -25px;
-    }
-    .controls3 {
-        width: 20%;
-        top: 33%; 
-        margin-left: 300px;  
-    }
-    #cartes3 > .tns-item{
-        margin-left: 1px;
-    }
-    #cartes3 img{
-        width: 200px;
-     }
-    .card-body{
-        width: 200px;
-        height: 50px;
-    }
-    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 600px*/
-    #boxBande1{
-        min-height: 1vh;
-    }
-    #boxBande1>.bande1{
-        font-size: 1.8em;
-        margin-left: 20px;
-    }
-    #boxBande2{
-        min-height:9vh;
-        }
-    #boxBande2>.bande2{
-        font-size: 1.5em;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-    .boxCarreJaune>.carre1{
-        height: 30px;
-        width: 30px;
-        background-color: #FBDD00;
-        margin-top: -90px;
-    }
-    .boxCarreJaune>.carre2{
-        height: 30px;
-        width: 30px;
-        background-color: #FBDD00;
-        margin-top: -30px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 1.3em;
-        margin-top: 110px;
-    }
-    #boxBandeH3>.bandeImg{
-        height: 35vh;
-    }
-}
-@media screen and (min-width: 600px) {
-    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 600PX*/
-    .h2Section3{
-        font-size: 2em;
-        margin: 100px 0px 0px 10px;
-    }
-    .h2Section3::before{
-        width: 50%;
-        height: 6%;
-        left: calc(56% - 50%);
-        margin-top: -8px;
-    }
-    /*Icon Film*/
-    .boxImgS3{
-        margin-top: 105px;
-        max-width: 28px;
-        height: 28px;
-        margin-left: 50px;
-    }
-    .mySlider3{
-        width: 80%;
-        margin-left: 0px;
-    }
-    .controls3 {
-        width: 20%;
-        top: 33%; 
-        margin-left: 300px;  
-    }
-    #cartes3 > .tns-item{
-        margin-left: 1px;
-    }
-    #cartes3 img{
-        width: 200px;
-     }
-    .card-body{
-        width: 200px;
-        height: 50px;
-    }
-    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 600px*/
-    #boxBande1{
-        min-height: 1vh;
-    }
-    #boxBande1>.bande1{
-        font-size: 1.8em;
-        margin-left: 20px;
-        margin-top: 0px;
-    }
-    #boxBande2{
-        min-height:9vh;
-        }
-    #boxBande2>.bande2{
-        font-size: 1.5em;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-    .boxCarreJaune>.carre1{
-        height: 30px;
-        width: 30px;
-        background-color: #FBDD00;
-        margin-top: -90px;
-    }
-    .boxCarreJaune>.carre2{
-        height: 30px;
-        width: 30px;
-        background-color: #FBDD00;
-        margin-top: -30px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 1.3em;
-        margin-top: 110px;
-    }
-    #boxBandeH3>.bandeImg{
-        height: 35vh;
-    }
-}
-/*-********************************************RESPONSIVE SECTION 3 TABLETTE -CHRIS************************-*/
-@media screen and (min-width: 800px) {
-     /*SECTION 3 CARROUSEL-CHRIS REPONSIBLE TAB 800PX*/
-    .h2Section3{
-        font-size: 2em;
-        margin: 100px 0px 0px 10px;
-    }
-    .h2Section3::before{
-        width: 50%;
-        height: 6%;
-        left: calc(56% - 50%);
-        margin-top: -8px;
-    }
-    /*Icon Film*/
-    .boxImgS3{
-        margin-top: 105px;
-        max-width: 28px;
-        height: 28px;
-        margin-left: 50px;
-    }
-    .mySlider3{
-        width: 83%;
-        margin-left: 15px;
-    }
-    .controls3 {
-        width: 95%;
-        top: 63%; 
-        margin-left: 0px;  
-    }
-     .card-body{
-        height: 50px;
-    }
-    #cartes3 img{
-        width: 200px;
-     }
-   /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIBLE TAB 800px*/
-    #boxBande1{
-        min-height: 1vh;
-    }
-    #boxBande1>.bande1{
-        font-size: 1.8em;
-        margin: 75px 0 0 25px;
-    }
-    #boxBande2{
-        min-height:9vh;
-        }
-    #boxBande2>.bande2{
-        font-size: 1.5em;
-        margin: 10px 0 10px 25px;
-        
-    }
-    .boxCarreJaune>.carre1{
-        height: 35px;
-        width: 35px;
-        background-color:#FBDD00;
-        margin-top: -105px;
-        }
-    .boxCarreJaune>.carre2{
-        height: 35px;
-        width: 35px;
-        background:#FBDD00;
-        margin-top: -36px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 1.3em;
-        margin-top: 110px;
-    }
-    #boxBandeH3>.bandeImg{
-        height: 35vh;
-    }
-}
-@media screen and (min-width: 1024px) {
-    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE TAB 1024PX*/
-    .h2Section3{
-        font-size: 1.875em;
-        margin: -5px 0px 0px 10px;
-    }
-    .h2Section3::before{
-        width: 35%;
-        height: 6%;
-        left: calc(56% - 50%);
-        margin-top: 0px;
-    }
-    .titleSection3{
-        margin: -50px 0px -100px 20px;
-    }
-        /*Icon Film*/
-    .boxImgS3{
-        margin: 0px 0 0 121px;
-        max-width: 25px;
-        height: 25px;
-    }
-    .mySlider3{
-        width: 80%;
-        margin-left: 52px;
-    }
-    .controls3 {
-        width: 95%;
-        top: 55%; 
-        margin-left: 0px;  
-    }
-    #cartes3 img{
-        width: 200px;
-     }
-   /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIBLE TAB 1024px*/
-#bandeFilm{
-    height: 30vh;
-}
-#boxBandeFilm{
-    height: 15vh;
-}
-#boxBande1>.bande1{
-    font-size: 2.5em;
-    margin: 100px 0 0 20px;
-}
-
-#boxBande2{
-    min-height:15vh;
-}
-#boxBande2>.bande2{
-    margin-bottom: 28px;
-}
-.boxCarreJaune>.carre1{
-    height: 40px;
-    width: 40px;
-    background-color: #FBDD00;
-    margin-top: -125px;
-}
-.boxCarreJaune>.carre2{
-    height: 40px;
-    width: 40px;
-    background: #FBDD00;
-    margin-top: -48px;
-}
-#boxBandeH3>.bandeImg{
-    height: 100vh;
-}
-}
-/*-********************************************RESPONSIVE SECTION 3 TABLETTE/PC -CHRIS************************-*/
-@media screen and (min-width: 1280px) {
-      /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE  TAB /PC 1280PX*/
-     
-    .h2Section3::before{
-        width: 35%;
-        height: 6%;
-        left: calc(56% - 50%);
-        margin-top: -6px;
-    }
-    .controls3 {
-        width: 95%;
-        top: 53%; 
-        margin-left: 0px;  
-    }
-    #cartes3 img{
-        width: 200px;
-     }
-}
-<<<<<<< HEAD
-@media screen and (min-width: 1440px){
-
-    #cartes3 img{
-        width: 200px;
-        height: 280px;
-     }
-     .card-body{
-        width: 200px;
-        height: 35px;
-     }
-     .mySlider3{
-        width: 90%;
-        margin-left: 26px;
-        background-color: #FBDD00;
-        margin-bottom: 20px;
-    }
-    #cartes3 > .tns-item{
-        margin-left: 2px;
-     }
-    /*SECTION 3/4 CARROUSEL-CHRIS RESPONSIVE PC 1440PX*/
-.boxImgS3{
-    margin-left: 165px;
-}
-.boxCarreJaune>.carre1{
-    height: 40px;
-    width: 40px;
-    background: #FBDD00;
-    margin-top: -114px;
-}
-.boxCarreJaune>.carre2{
-    height: 40px;
-    width: 40px;
-    background: #FBDD00;
-    margin-top: -34px;
-}
-#boxBande1>.bande1 {
-    font-size: 2.5em;
-    margin-left: 20px;
-}
-#boxBande2>.bande2 {
-    font-size: 2em;
-    margin-left: 20px;
-    margin-bottom: 38px;
-}
-#boxBandeH3 > .bandeH3 {
-    font-size: 1.3em;
-    margin-top: 60px;
-  }
-.boxYoutube{
-      width: 100%;
-      min-height: 50vh;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: row;
-  }
-.boxYoutube>.youtube2, .bandeImg{
-    min-width: 25%;
-    margin-top: -75px;
-  }
-.bandeImg{
-    width: 600px;
-    height: 400px;
-  }
- }
- 
- @media screen and (min-width: 1600px){
-     
-=======
-@media screen and (min-width: 1600px){
->>>>>>> c4b87ed0eebf8fe64e527ce3bce33a4aea573843
-}
-@media screen and (min-width: 1750px){
-}
-@media screen and (min-width: 1900px){
-}
-@media screen and (min-width: 2560px){
-}
-@media screen and (min-height: 320px) and (max-height:500px){
-   /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE  HORIZONTAL PHONE 500PX*/
-.h2Section3{
-    font-size: 1.5em;
-    margin-top: -50px;
-}
-.h2Section3::before{
-    width: 45%;
-    height: 10%;
-    left: calc(55% - 50%);
-    margin-top: -4px;
-}
-#cartes3 img{
-    width: 100px;
-}
-.card-body{
-    width: 100px;
-    height: 28px;
-    align-items: center;
-    justify-content: space-between;
-}
-/*Icon Film*/
-.boxImgS3{
-    margin-top: -45px;
-    max-width: 18px;
-    height: 18px;
-    margin-left: 40px;
-}
-#cartes3 > .tns-item{
-    margin-left: 5px;
- }
- .cartes3-mw{
-     height: 226px;
- }
- .card-body h2{
-    text-align: center;
-    font-size: 0.5rem;
-    font-weight: 100px;
-}
-.mySlider3{
-    width: 63%;
-    margin-left: 0px;
-    background-color: #FBDD00;
-    height: 220px;
-}
-  .controls3 {
-    width: 78%;
-    top: 54%; 
-    margin-left: 0px;  
-}
-/*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 375px*/
-#bandeFilm{
-    height: 0vh;
-}
-#boxBandeH3>.bandeImg{
-    height: 27vh;
-}
- #boxBande1{
-    min-height: 1vh;
-}
-#boxBande1>.bande1{
-    font-size: 1.2em;
-    margin-left: 20px;
-}
-#boxBande2{
-    min-height:9vh;
-    }
-#boxBande2>.bande2{
-    font-size: 1em;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-.boxCarreJaune>.carre1{
-    height: 25px;
-    width: 25px;
-    background:#FBDD00;
-    margin-top: -75px;
-}
-.boxCarreJaune>.carre2{
-    height: 25px;
-    width: 25px;
-    background:#FBDD00;
-    margin-top: -25px;
-}
-#boxBandeH3{
-    height: 0vh;
-}
-#boxBandeH3>.bandeH3{
-    font-size: 0.8em;
-    margin-top: 40px;
-}
-#boxBandeH3>.bandeImg{
-    height: 26vh;
-}
-}  
 /*                   FIN CHRIS                    */
 
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
 /* LAETITIA */
-
 
 /*************************************Début du carousel films derniers sortis **********************/
 #nowPlaying{
@@ -1189,22 +499,11 @@ a{
     min-height: 100vh;
     align-items: center;
     display: flex;
-    flex-direction: row;
-}
-h2{
-    font-family: "Ubuntu", sans-serif;
-}
-p{
-    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
 }
 .mySlider2{
-<<<<<<< HEAD
-    width: 84%;
+    width: 80%;
     margin-left: -6px;
-=======
-    width: 89%;
-    margin-left: 0px;
->>>>>>> c4b87ed0eebf8fe64e527ce3bce33a4aea573843
 }
 .card{     
     margin-bottom: 20px;    
@@ -1229,7 +528,7 @@ p{
     font-size: 0.95rem;     
     font-weight: 100; 
 } 
-cartes2{
+.cartes2{
     width: 50%;
     overflow: hidden;
 }
@@ -1280,13 +579,8 @@ cartes2{
     margin: 0;
     padding: 0;
     position: absolute;
-<<<<<<< HEAD
     width: 95%;
     top: 281%;
-=======
-    width: 90%;
-    top: 280%;
->>>>>>> c4b87ed0eebf8fe64e527ce3bce33a4aea573843
     transform: translatey(-50%);
     display: flex;
     align-items: center;
@@ -1296,14 +590,13 @@ cartes2{
     outline: none;
 }
 .h2Section2{
-    font-size: 2em;
-    margin: 9px 0px 0px 15px;
+    font-size: 3em;
 }
 .h2Section2::before{
     position: absolute;
     content: '';
     background: #FBDD00;
-    width: 28%;
+    width: 500px;
     height: 6.5%;
     z-index: -1;
     transform: skew(-50deg);
@@ -1315,10 +608,7 @@ cartes2{
     display: flex;
 }
 .boxImgS2{
-    margin-top: 14px;
-    width: 2.1%;
-    height: 10%;
-    margin-left: 112px;
+    margin-left: 82px;
 }
 /******************************************Début du Footer **********************/
 
@@ -1326,7 +616,7 @@ cartes2{
 
 #Footer{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1334,7 +624,6 @@ cartes2{
 }
 #boxFooter{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column
 }
@@ -1343,9 +632,7 @@ cartes2{
     height: 30vh;
     display: flex;
 }
-
 /*********Box Liens réseaux sociaux********/
-
 #boxLiensreseauxsociaux{
     width: 50%;
     display: flex;
@@ -1374,9 +661,7 @@ cartes2{
     font-weight: 500;
     margin: 10px 10px 30px 10px;
 }
-
 /*********Box Icone********/
-
 #boxLiensreseauxsociaux > #boxIcone {
     width: 90%;
     height: 7vh;
@@ -1385,7 +670,6 @@ cartes2{
     justify-content: space-between; 
 }
 /*********Facebook********/
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook{
     width: 30%;
     display: flex;
@@ -1404,9 +688,7 @@ cartes2{
     justify-content: center;
     cursor: pointer;
 }
-
 /*********Twitter********/
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter{
     width: 30%;
     display: flex;
@@ -1425,9 +707,7 @@ cartes2{
     justify-content: center;
     cursor: pointer;
 }
-
 /*********Instagram********/
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram{
     width: 30%;
     display: flex;
@@ -1446,9 +726,7 @@ cartes2{
     justify-content: center;
     cursor: pointer;
 }
-
 /*********Box Entreprise********/
-
 #boxEntreprise{
     width: 100%;
     display: flex;
@@ -1480,9 +758,7 @@ cartes2{
 #boxEntreprise > #boxParagrapheentreprise > p{
     margin: 0px 0px 0px 0px;
 }
-
 /*********Box Adresse********/
-
 #boxAdresse{
     width: 50%;
     display: flex;
@@ -1537,9 +813,7 @@ cartes2{
     line-height: 14.06px;
     margin: 0px 0px 0px 0px;
 }
-
 /*********Box Information********/
-
 #boxInformation{
     width: 100%;
     display: flex;
@@ -1548,9 +822,7 @@ cartes2{
     flex-direction: column;
     margin: 20px 0px 20px 0px ;
 }
-
 /*********Box Ligne 1********/
-
 #boxInformation > #boxLigne1{
     margin: 0px;
 }
@@ -1577,9 +849,7 @@ cartes2{
 #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2 > span.infosFour{
     color: white;
 }
-
 /*********Box Ligne 2********/
-
 #boxInformation > #boxLigne2{
     margin: 0px;
     display: flex;
@@ -1620,9 +890,7 @@ cartes2{
 #boxInformation > #boxLigne2 > #infosHeight > p{
     font-size: 1.56rem;
 }
-
 /*********Box Ligne 3********/
-
 #boxInformation > #boxLigne3{
     margin:0px;
     display: flex;  
@@ -1639,13 +907,660 @@ cartes2{
     font-weight: 500;
     cursor: pointer;
 }
-
 /******************************************Fin du Footer ***************************/
+/*-**************************************RESPONSIVE SECTION 3 PHONE -CHRIS*-*******************************-*/
+/*@media screen and (min-width: 375px){
+    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 375PX*/
+   /* .h2Section3{
+        font-size: 1.5em;
+        margin: -90px 0 0 10px;
+    }
+    .h2Section3::before{
+        width: 60%;
+        height: 5%;
+        left: calc(58% - 50%);
+        margin-top: -6px;
+    }
+    /*Icon Film*/
+    /*.boxImgS3{
+        margin-top: -89px;
+        max-width: 23px;
+        height: 23px;
+        margin-left: 40px;
+    }
+    #cartes3 > .tns-item{
+        margin-left: 1px;
+        font-size: 0px;
+     }
+     #cartes3 img{
+        width: 100px;
+     }
+    .card-body{
+        width: 100px;
+        height: 30px;
+    }
+    .card-body h2{
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 100;
+    }
+    .mySlider3{
+        width: 80%;
+        margin-left: 9px;
+        margin-top: -250px;
+    }
+    .controls3 {
+        width: 25%;
+        top: 35%; 
+        margin-left: 215px;  
+    }
+    .youtube2{
+        max-width: 100%;
+        min-height: 35vh;
+      
+    }
+    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 375px*/
+    /*#bandeFilm{
+        height: 0vh;
+    }
+    #boxBandeH3>.bandeImg{
+        height: 27vh;
+    }
+     #boxBande1{
+        min-height: 1vh;
+    }
+    #boxBande1>.bande1{
+        font-size: 1.2em;
+        margin: 60px 0 10px 25px;
+    }
+    #boxBande2{
+        min-height:9vh;
+        }
+    #boxBande2>.bande2{
+        font-size: 1em;
+        margin: 0 0 10px 25px;
+    }
+    .boxCarreJaune>.carre1{
+        height: 25px;
+        width: 25px;
+        background:#FBDD00;
+        margin-top: -75px;
+    }
+    .boxCarreJaune>.carre2{
+        height: 25px;
+        width: 25px;
+        background:#FBDD00;
+        margin-top: -25px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 0.9em;
+        margin-top: 50px;
+        margin-left: 25px;
+    }
+}
+@media screen and (min-width: 390px){
+    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 390PX*/
+    /*.h2Section3{
+        font-size: 1.5em;
+    }
+    .h2Section3::before{
+        width: 60%;
+        height: 5%;
+        left: calc(68% - 50%);
+        margin-top: -6px;
+    }
+    /*Icon Film*/
+    /*.boxImgS3{
+        margin-top: 2px;
+        max-width: 23px;
+        height: 23px;
+        margin-left: 84px;
+    }
+    .mySlider3{
+        width: 80%;
+        margin-left: 100px;
+    }
+    #cartes3 > .tns-item{
+        margin-left: 1px;
+     }
+     #cartes3 img{
+        width: 200px;
+     }
+     .card-body{
+        height: 50px;
+    }
+    .controls3 {
+        width: 20%;
+        top: 30%; 
+        margin-left: 230px;  
+    }
+    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 390px*/
+    /*#bandeFilm{
+        height: 0vh;
+    }
+    #boxBandeH3>.bandeImg{
+        height: 27vh;
+    }
+     #boxBande1{
+        min-height: 1vh;
+    }
+    #boxBande1>.bande1{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    #boxBande2{
+        min-height:9vh;
+        }
+    #boxBande2>.bande2{
+        font-size: 1em;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .boxCarreJaune>.carre1{
+        height: 25px;
+        width: 25px;
+        background:#FBDD00;
+        margin-top: -75px;
+    }
+    .boxCarreJaune>.carre2{
+        height: 25px;
+        width: 25px;
+        background:#FBDD00;
+        margin-top: -25px;
+    }
+    #boxBandeH3{
+        height: 0vh;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 0.8em;
+        margin-top: 40px;
+    }
+    #boxBandeH3>.bandeImg{
+        height: 26vh;
+    }
+}
+@media screen and (min-width: 500px) {
+    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 500PX*/
+   /* .h2Section3{
+        font-size: 2em;
+        margin: 100px 0px 0px 10px;
+    }
+    .h2Section3::before{
+        width: 50%;
+        height: 6%;
+        left: calc(56% - 50%);
+        margin-top: -8px;
+    }
+    /*Icon Film*/
+    /*.boxImgS3{
+        margin-top: 105px;
+        max-width: 28px;
+        height: 28px;
+        margin-left: 50px;
+    }
+    .mySlider3{
+        width: 90%;
+        margin-left: -25px;
+    }
+    .controls3 {
+        width: 20%;
+        top: 33%; 
+        margin-left: 300px;  
+    }
+    #cartes3 > .tns-item{
+        margin-left: 1px;
+    }
+    #cartes3 img{
+        width: 200px;
+     }
+    .card-body{
+        width: 200px;
+        height: 50px;
+    }
+    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 600px*/
+    /*#boxBande1{
+        min-height: 1vh;
+    }
+    #boxBande1>.bande1{
+        font-size: 1.8em;
+        margin-left: 20px;
+    }
+    #boxBande2{
+        min-height:9vh;
+        }
+    #boxBande2>.bande2{
+        font-size: 1.5em;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .boxCarreJaune>.carre1{
+        height: 30px;
+        width: 30px;
+        background-color: #FBDD00;
+        margin-top: -90px;
+    }
+    .boxCarreJaune>.carre2{
+        height: 30px;
+        width: 30px;
+        background-color: #FBDD00;
+        margin-top: -30px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 1.3em;
+        margin-top: 110px;
+    }
+    #boxBandeH3>.bandeImg{
+        height: 35vh;
+    }
+}
+@media screen and (min-width: 600px) {
+    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE PHONE 600PX*/
+   /* .h2Section3{
+        font-size: 2em;
+        margin: 100px 0px 0px 10px;
+    }
+    .h2Section3::before{
+        width: 50%;
+        height: 6%;
+        left: calc(56% - 50%);
+        margin-top: -8px;
+    }
+    /*Icon Film*/
+   /* .boxImgS3{
+        margin-top: 105px;
+        max-width: 28px;
+        height: 28px;
+        margin-left: 50px;
+    }
+    .mySlider3{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .controls3 {
+        width: 20%;
+        top: 33%; 
+        margin-left: 300px;  
+    }
+    #cartes3 > .tns-item{
+        margin-left: 1px;
+    }
+    #cartes3 img{
+        width: 200px;
+     }
+    .card-body{
+        width: 200px;
+        height: 50px;
+    }
+    /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 600px*/
+   /* #boxBande1{
+        min-height: 1vh;
+    }
+    #boxBande1>.bande1{
+        font-size: 1.8em;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    #boxBande2{
+        min-height:9vh;
+        }
+    #boxBande2>.bande2{
+        font-size: 1.5em;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .boxCarreJaune>.carre1{
+        height: 30px;
+        width: 30px;
+        background-color: #FBDD00;
+        margin-top: -90px;
+    }
+    .boxCarreJaune>.carre2{
+        height: 30px;
+        width: 30px;
+        background-color: #FBDD00;
+        margin-top: -30px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 1.3em;
+        margin-top: 110px;
+    }
+    #boxBandeH3>.bandeImg{
+        height: 35vh;
+    }
+}
+/*-********************************************RESPONSIVE SECTION 3 TABLETTE -CHRIS************************-*/
+/*@media screen and (min-width: 800px) {
+     /*SECTION 3 CARROUSEL-CHRIS REPONSIBLE TAB 800PX*/
+    /*.h2Section3{
+        font-size: 2em;
+        margin: 100px 0px 0px 10px;
+    }
+    .h2Section3::before{
+        width: 50%;
+        height: 6%;
+        left: calc(56% - 50%);
+        margin-top: -8px;
+    }
+    /*Icon Film*/
+   /* .boxImgS3{
+        margin-top: 105px;
+        max-width: 28px;
+        height: 28px;
+        margin-left: 50px;
+    }
+    .mySlider3{
+        width: 83%;
+        margin-left: 15px;
+    }
+    .controls3 {
+        width: 95%;
+        top: 63%; 
+        margin-left: 0px;  
+    }
+     .card-body{
+        height: 50px;
+    }
+    #cartes3 img{
+        width: 200px;
+     }
+   /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIBLE TAB 800px*/
+    /*#boxBande1{
+        min-height: 1vh;
+    }
+    #boxBande1>.bande1{
+        font-size: 1.8em;
+        margin: 75px 0 0 25px;
+    }
+    #boxBande2{
+        min-height:9vh;
+        }
+    #boxBande2>.bande2{
+        font-size: 1.5em;
+        margin: 10px 0 10px 25px;
+        
+    }
+    .boxCarreJaune>.carre1{
+        height: 35px;
+        width: 35px;
+        background-color:#FBDD00;
+        margin-top: -105px;
+        }
+    .boxCarreJaune>.carre2{
+        height: 35px;
+        width: 35px;
+        background:#FBDD00;
+        margin-top: -36px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 1.3em;
+        margin-top: 110px;
+    }
+    #boxBandeH3>.bandeImg{
+        height: 35vh;
+    }
+}
+@media screen and (min-width: 1024px) {
+    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE TAB 1024PX*/
+   /* .h2Section3{
+        font-size: 1.875em;
+        margin: -5px 0px 0px 10px;
+    }
+    .h2Section3::before{
+        width: 35%;
+        height: 6%;
+        left: calc(56% - 50%);
+        margin-top: 0px;
+    }
+    .titleSection3{
+        margin: -50px 0px -100px 20px;
+    }
+        /*Icon Film*/
+   /* .boxImgS3{
+        margin: 0px 0 0 121px;
+        max-width: 25px;
+        height: 25px;
+    }
+    .mySlider3{
+        width: 80%;
+        margin-left: 52px;
+    }
+    .controls3 {
+        width: 95%;
+        top: 55%; 
+        margin-left: 0px;  
+    }
+    #cartes3 img{
+        width: 200px;
+     }
+   /*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIBLE TAB 1024px*/
+/*#bandeFilm{
+    height: 30vh;
+}
+#boxBandeFilm{
+    height: 15vh;
+}
+#boxBande1>.bande1{
+    font-size: 2.5em;
+    margin: 100px 0 0 20px;
+}
 
+#boxBande2{
+    min-height:15vh;
+}
+#boxBande2>.bande2{
+    margin-bottom: 28px;
+}
+.boxCarreJaune>.carre1{
+    height: 40px;
+    width: 40px;
+    background-color: #FBDD00;
+    margin-top: -125px;
+}
+.boxCarreJaune>.carre2{
+    height: 40px;
+    width: 40px;
+    background: #FBDD00;
+    margin-top: -48px;
+}
+#boxBandeH3>.bandeImg{
+    height: 100vh;
+}
+}
+/*-********************************************RESPONSIVE SECTION 3 TABLETTE/PC -CHRIS************************-*/
+/*@media screen and (min-width: 1280px) {
+      /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE  TAB /PC 1280PX*/
+     
+   /* .h2Section3::before{
+        width: 35%;
+        height: 6%;
+        left: calc(56% - 50%);
+        margin-top: -6px;
+    }
+    .controls3 {
+        width: 95%;
+        top: 53%; 
+        margin-left: 0px;  
+    }
+    #cartes3 img{
+        width: 200px;
+     }
+}
+
+/*@media screen and (min-width: 1440px){
+
+    #cartes3 img{
+        width: 200px;
+        height: 280px;
+     }
+     .card-body{
+        width: 200px;
+        height: 35px;
+     }
+     .mySlider3{
+        width: 90%;
+        margin-left: 26px;
+        background-color: #FBDD00;
+        margin-bottom: 20px;
+    }
+    #cartes3 > .tns-item{
+        margin-left: 2px;
+     }
+    /*SECTION 3/4 CARROUSEL-CHRIS RESPONSIVE PC 1440PX*/
+/*.boxImgS3{
+    margin-left: 165px;
+}
+.boxCarreJaune>.carre1{
+    height: 40px;
+    width: 40px;
+    background: #FBDD00;
+    margin-top: -114px;
+}
+.boxCarreJaune>.carre2{
+    height: 40px;
+    width: 40px;
+    background: #FBDD00;
+    margin-top: -34px;
+}
+#boxBande1>.bande1 {
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+#boxBande2>.bande2 {
+    font-size: 2em;
+    margin-left: 20px;
+    margin-bottom: 38px;
+}
+#boxBandeH3 > .bandeH3 {
+    font-size: 1.3em;
+    margin-top: 60px;
+  }
+.boxYoutube{
+      width: 100%;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+  }
+.boxYoutube>.youtube2, .bandeImg{
+    min-width: 25%;
+    margin-top: -75px;
+  }
+.bandeImg{
+    width: 600px;
+    height: 400px;
+  }
+ }*/
+/* @media screen and (min-width: 1600px){
+     
+ }
+
+@media screen and (min-width: 1750px){
+}
+@media screen and (min-width: 1900px){
+}
+@media screen and (min-width: 2560px){
+}
+@media screen and (min-height: 320px) and (max-height:500px){
+   /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE  HORIZONTAL PHONE 500PX*/
+/*.h2Section3{
+    font-size: 1.5em;
+    margin-top: -50px;
+}
+.h2Section3::before{
+    width: 45%;
+    height: 10%;
+    left: calc(55% - 50%);
+    margin-top: -4px;
+}
+#cartes3 img{
+    width: 100px;
+}
+.card-body{
+    width: 100px;
+    height: 28px;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Icon Film*/
+/*.boxImgS3{
+    margin-top: -45px;
+    max-width: 18px;
+    height: 18px;
+    margin-left: 40px;
+}
+#cartes3 > .tns-item{
+    margin-left: 5px;
+ }
+ .cartes3-mw{
+     height: 226px;
+ }
+ .card-body h2{
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 100px;
+}
+.mySlider3{
+    width: 63%;
+    margin-left: 0px;
+    background-color: #FBDD00;
+    height: 220px;
+}
+  .controls3 {
+    width: 78%;
+    top: 54%; 
+    margin-left: 0px;  
+}
+/*SECTION 4 BANDE ANNONCE-CHRIS RESPONSIVE PHONE 375px*/
+/*#bandeFilm{
+    height: 0vh;
+}
+#boxBandeH3>.bandeImg{
+    height: 27vh;
+}
+ #boxBande1{
+    min-height: 1vh;
+}
+#boxBande1>.bande1{
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+#boxBande2{
+    min-height:9vh;
+    }
+#boxBande2>.bande2{
+    font-size: 1em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.boxCarreJaune>.carre1{
+    height: 25px;
+    width: 25px;
+    background:#FBDD00;
+    margin-top: -75px;
+}
+.boxCarreJaune>.carre2{
+    height: 25px;
+    width: 25px;
+    background:#FBDD00;
+    margin-top: -25px;
+}
+#boxBandeH3{
+    height: 0vh;
+}
+#boxBandeH3>.bandeH3{
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+#boxBandeH3>.bandeImg{
+    height: 26vh;
+}
+}  
+/*                   FIN CHRIS                    */
 
 /**************************************Début des médias query 375px **********************/
 
-@media screen and (max-width:375px){
+/*@media screen and (max-width:375px){
 
 .h2Section2{
     font-size: 20px;
@@ -1666,9 +1581,9 @@ cartes2{
 .boxImgS2{
     width: 7.3%;
     margin-left: 14px;
-}
+}*/
 
-/*********Footer********/
+/*********Footer********
 
 #boxContainer{
     width: 100%;
@@ -1677,7 +1592,7 @@ cartes2{
     flex-direction: column;
 }
 
-/*********Box Liens réseaux sociaux********/
+/*********Box Liens réseaux sociaux********
 
 #boxLiensreseauxsociaux{
     width: 100%;
@@ -1688,25 +1603,25 @@ cartes2{
     margin: 0px 0px 0px 0px;
 }
 
-/*********Box Icone********/
+/*********Box Icone********
 
 #boxLiensreseauxsociaux > #boxIcone {
     margin: 21px 0px 20px 0px;
 }
 
-/*********Twitter********/
+/*********Twitter********
 
 #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
     padding: 15px 10px; 
 }
 
-/*********Instagram********/
+/*********Instagram********
 
 #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
     padding: 13px 10px;  
 }
 
-/*********Box Entreprise********/
+/*********Box Entreprise********
 
 #boxEntreprise{
     margin-top: -13px;
@@ -1720,7 +1635,7 @@ cartes2{
     margin: 5px 0px 30px 0px;
 }
 
-/*********Box Adresse********/
+/*********Box Adresse********
 
 #boxAdresse{
     width: 100%;
@@ -1733,11 +1648,11 @@ cartes2{
 
 /*********Box Information********/
 
-#boxInformation{
+/*#boxInformation{
    margin: 284px 0px 0px 0px;
 }
 
-/*********Box Ligne 1********/
+/*********Box Ligne 1********
 
 #boxInformation > #boxLigne1{
     margin: 0px;
@@ -1749,14 +1664,14 @@ cartes2{
     text-align: center;
 }
 
-/*********Box Ligne 2********/
+/*********Box Ligne 2********
 
 #boxInformation > #boxLigne2{
     font-size: 12px;
     flex-direction: column;
     text-align: center;
 }
-/*********Box Ligne 3********/
+/*********Box Ligne 3********
 
 #boxInformation > #boxLigne3 > p.infosNine{
     font-size: 12px;
@@ -1767,15 +1682,15 @@ cartes2{
 
 /**************************************Début des médias query 800px **********************/
 
-@media screen and (max-width:800px){
+/*@media screen and (max-width:800px){
 
-    /********Footer*************************/
+    /*******Footer*************************
 
     #boxContainer{
        height: 27vh;
     }
    
-    /*********Twitter********/
+    /*********Twitter********
 
     #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
         padding: 14px 10px;
@@ -1783,7 +1698,7 @@ cartes2{
 
 
 
-    /*********Box Entreprise********/
+    /*********Box Entreprise********
 
     #boxEntreprise > #boxLogo > img.logoFooter{
         width: 80%;
@@ -1793,7 +1708,7 @@ cartes2{
         width: 80%;
     }
     
-    /*********Box Ligne 1********/
+    /*********Box Ligne 1********
     
     #boxInformation > #boxLigne1{
         margin: 0px;
@@ -1803,12 +1718,12 @@ cartes2{
         font-size: 12px;
     }
     
-    /*********Box Ligne 2********/
+    /*********Box Ligne 2********
     
     #boxInformation > #boxLigne2{
         font-size: 12px;
-    }
-    /*********Box Ligne 3********/
+    
+    /*********Box Ligne 3********
     
     #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 12px;
