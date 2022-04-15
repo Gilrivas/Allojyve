@@ -288,10 +288,7 @@ a{
     width: 50px;
    
 }
-/*                   FIN JORGE                     */ 
-/*-------------------------------------------------------------------------------------------------------------------------------------------*/
-/*                   DEBUT CHRIS                 */
-/*-***************************PARTIR SECTION 3  FILM A VENIR - CHRIS - PC*******************************-*/
+
 #upcoming{
     max-width: 100%;
     min-height: 100vh;
@@ -352,8 +349,6 @@ a{
     outline: none;
 }
 
-
-/*-******************Partie section 4  Bande Annonce - CHRIS - PC**********-*/
 #bandeFilm{
     width: 100%;
     height: 100vh;
