@@ -2,57 +2,41 @@
     font-family:Kanit;
     src: url(../fonts/Kanit-Bold.ttf);
 }
-
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
 @font-face {
     font-family: Ubuntu;
     src: url(../fonts/Ubuntu-Medium.ttf);
 }
-
 @font-face{
     font-family: Maguntia;
     src:url(../fonts/UnifrakturMaguntia-Book.ttf);
 }
-
-
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
 body{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-
 button{
     background-color: transparent;
     border: 0px;
 }
-   
-
 h2{
     font-family: "Ubuntu", sans-serif;
 }
-
-
 p{
     font-family: 'Roboto', sans-serif;
 }
-
-
-
+/*------------------------------JORGE----------------------------------------*/
 .header{
     min-height: 100vh;
-    
 }
-
 h1{
     position: relative;
 }
-
 h1::before{
     position: absolute;
     content: '';
@@ -60,9 +44,7 @@ h1::before{
     height: 5px;
     width: 100%;
     background-color: #FBDD00;
-
 }
-
 .nav{
     display: flex;
     position: fixed;
@@ -72,9 +54,7 @@ h1::before{
     justify-content: space-between;
     min-height: 10vh;
     z-index: 6;
-
 }
-
 .boxMain{
     display: flex;
     min-height: 90vh;
@@ -85,26 +65,19 @@ h1::before{
     width: 100%;
     margin: 140px 0px 0px 0px;
     align-items: center;
-
 }
-
 .tittle{
     font-family: "Ubuntu", sans-serif;
     margin-left: 40px;
     font-size: 2.5rem;
 }
-
 #img{
     max-width: 250px;
     height: 100px;
 }
-
 .menu{
     margin-right: 60px;
 }
-
-
-
 .boxMorbius{
     background-color: black;
     color: white;
@@ -114,15 +87,10 @@ h1::before{
     display: flex;
     margin: 20px 0px 30px 0px;
 }
-
-
 .morbius{
     font-size: 3em;
     margin: 0px 0px 0px 40px;
 }
-
-
-
 a{
     color: white;
     font-family: "Ubuntu", sans-serif;
@@ -130,8 +98,6 @@ a{
     margin: 20px;
     font-size: 1.1em;
 }
-
-
 .boxTeaser{
     display: flex;
     justify-content: center;
@@ -150,28 +116,21 @@ a{
     flex-direction: column;
     width: 40%;
 }
-
 .boxText h2{
     font-size: 1.5em;
 }
-
 .boxText p{
     width: 70%;
     font-size: 1.2em;
 }
-
 .boxImg{
     margin-left: -7px;
 }
-
 .petitCarre{
     margin-left: 10px;
     width: 40px;
     height: 40px;
 }
-
-
-
 
 /*            SECTION 1                   */
 #popular{
@@ -180,18 +139,13 @@ a{
     align-items: center;
     display: flex;
     flex-direction: column;
-    
-
 }
-
 .section{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 .titleSection{
     position: relative;
@@ -358,7 +312,6 @@ a{
 /*       CHRIS */
 
 /*-***************************PARTIR SECTION 3  FILM A VENIR - CHRIS - PC*******************************-*/
-
 #upcoming{
     max-width: 100%;
     min-height: 100vh;
@@ -415,7 +368,7 @@ a{
     background-color: white;
     margin: 0px;
     width: 200px;
-    height: 50px;
+    height: 45px;
     align-items: center;
     justify-content: center;
 }
@@ -425,7 +378,7 @@ a{
     font-weight: 100;
 }
 #cartes3 > .tns-item{
-    margin-left: 5px;
+    margin-left: 1px;
     font-size: 0px;
  }
 .button3{
@@ -437,7 +390,7 @@ a{
     padding: 0;
     position: absolute;
     width: 95%;
-    top: 67%;   
+    top: 371%;   
     transform: translatey(-50%);
     display: flex;
     align-items: center;    
@@ -1049,85 +1002,14 @@ a{
         width: 200px;
      }
 }
-@media screen and (min-width: 1440px){
-
-    #cartes3 img{
-        width: 200px;
-        height: 280px;
-     }
-     .card-body{
-        width: 200px;
-        height: 35px;
-     }
-     .mySlider3{
-        width: 90%;
-        margin-left: 26px;
-        background-color: #FBDD00;
-        margin-bottom: 20px;
-    }
-    #cartes3 > .tns-item{
-        margin-left: 2px;
-     }
-    /*SECTION 3/4 CARROUSEL-CHRIS RESPONSIVE PC 1440PX*/
-.boxImgS3{
-    margin-left: 165px;
-}
-.boxCarreJaune>.carre1{
-    height: 40px;
-    width: 40px;
-    background: #FBDD00;
-    margin-top: -114px;
-}
-.boxCarreJaune>.carre2{
-    height: 40px;
-    width: 40px;
-    background: #FBDD00;
-    margin-top: -34px;
-}
-#boxBande1>.bande1 {
-    font-size: 2.5em;
-    margin-left: 20px;
-}
-#boxBande2>.bande2 {
-    font-size: 2em;
-    margin-left: 20px;
-    margin-bottom: 38px;
-}
-#boxBandeH3 > .bandeH3 {
-    font-size: 1.3em;
-    margin-top: 60px;
-  }
-.boxYoutube{
-      width: 100%;
-      min-height: 50vh;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: row;
-  }
-.boxYoutube>.youtube2, .bandeImg{
-    min-width: 25%;
-    margin-top: -75px;
-  }
- /* .bandeImg{
-    width: 600px;
-    height: 400px;
-  }*/
- }
- 
- @media screen and (min-width: 1600px){
-     
+@media screen and (min-width: 1600px){
 }
 @media screen and (min-width: 1750px){
-     
 }
 @media screen and (min-width: 1900px){
-     
 }
 @media screen and (min-width: 2560px){
-     
 }
-
 @media screen and (min-height: 320px) and (max-height:500px){
    /*SECTION 3 CARROUSEL-CHRIS RESPONSIVE  HORIZONTAL PHONE 500PX*/
 .h2Section3{
@@ -1231,7 +1113,6 @@ a{
 
 
 /*************************************Début du carousel films derniers sortis **********************/
-
 #nowPlaying{
     max-width: 100%;
     min-height: 100vh;
@@ -1239,31 +1120,24 @@ a{
     display: flex;
     flex-direction: row;
 }
-
 h2{
     font-family: "Ubuntu", sans-serif;
 }
-
 p{
     font-family: 'Roboto', sans-serif;
 }
-
 .mySlider2{
-    width: 80%;
-    margin-left: 105px;
+    width: 89%;
+    margin-left: 0px;
 }
-
-
 .card{     
     margin-bottom: 20px;    
     cursor: pointer; 
 } 
-
 .card h2{
     margin: 0px;
     font-size: 1.2rem;
 }
-    
 .card-body{      
     display: flex;     
     filter: drop-shadow(0px 4px 2px #404040);    
@@ -1274,36 +1148,29 @@ p{
     align-items: center;    
     justify-content: center; 
 }
-
 .card-body h2{     
     text-align: center;     
     font-size: 0.95rem;     
     font-weight: 100; 
 } 
-
-.cartes2{
+cartes2{
     width: 50%;
     overflow: hidden;
 }
-
 #cartes2 > .tns-item{     
-    margin-left: 5px;      
+    margin-left: 3px;      
     font-size: 0px;  
 }
-
 /*********Flèche********/
-
 .button2{
     background-color: transparent;
     border: 0px;
 }
-
 #leftBoton2{     
     left: 0;     
     opacity: 1;     
     transition: all 0.3s ease; 
 } 
-    
 #leftBoton2:hover{     
     transform: scale(1.1) ;     
     opacity: 0.6;     
@@ -1319,7 +1186,6 @@ p{
     opacity: 0.6;    
     transition: all 0.3s ease; 
 }
-
 .rightArrow2{
     width: 100%;     
     height: 50%;
@@ -1327,7 +1193,6 @@ p{
     font-size: 7rem;
     cursor: pointer;
 }
-
 .leftArrow2{
     width: 100%;     
     height: 50%;
@@ -1335,28 +1200,24 @@ p{
     font-size: 7rem;
     cursor: pointer;
 }
-
 .controls2{
     margin: 0;
     padding: 0;
     position: absolute;
     width: 90%;
-    top: 55%;
+    top: 280%;
     transform: translatey(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .controls2:focus{
     outline: none;
 }
-
 .h2Section2{
     font-size: 2em;
     margin: 9px 0px 0px 15px;
 }
-
 .h2Section2::before{
     position: absolute;
     content: '';
@@ -1369,19 +1230,16 @@ p{
     top: 80px;
     left: calc(58% - 50%);
 }
-
 .titleSection2{
     width: 100%;
     display: flex;
 }
-
 .boxImgS2{
     margin-top: 10px;
     width: 2.3%;
     height: 10%;
     margin-left: 150px;
 }
-
 /******************************************Début du Footer **********************/
 
 /*********Footer********/
@@ -1393,13 +1251,11 @@ p{
     justify-content: center;
     background-color: black;
 }
-
 #boxFooter{
     width: 100%;
     display: flex;
     flex-direction: column
 }
-
 #boxContainer{
     width: 100%;
     height: 30vh;
@@ -1420,7 +1276,6 @@ p{
     border-right-width: thin;
     border-color:#C4C4C480;
 }
-
 #boxLiensreseauxsociaux > #boxTitle{
     width: 100%;
     height: 10vh;
@@ -1428,7 +1283,6 @@ p{
     align-items: center;
     justify-content: center;
 }
-
 #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
     color: white;
     text-decoration: underline;
@@ -1448,7 +1302,6 @@ p{
     align-items: center;
     justify-content: space-between; 
 }
-
 /*********Facebook********/
 
 #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook{
@@ -1456,12 +1309,10 @@ p{
     display: flex;
     justify-content: center;
 }
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > img.lienFacebook {
     width: 35px;
     height: 25px;
 }
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
     background-color: white;
     border-radius: 50%;
@@ -1479,12 +1330,10 @@ p{
     display: flex;
     justify-content: center;
 }
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > img.lienTwitter {
     width: 35px;
     height: 25px;
 }
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
     background-color: white;
     border-radius: 50%;
@@ -1502,12 +1351,10 @@ p{
     display: flex;
     justify-content: center;
 }
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > img.lienInstagram{
     width: 35px;
     height: 25px;
 }
-
 #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
     background-color: white;
     border-radius: 50%;
@@ -1532,7 +1379,6 @@ p{
     border-right-width: thin;
     border-color:#C4C4C480;
 }
-
 #boxEntreprise > #boxLogo{
     width: 100%;
     height: 13vh;
@@ -1540,8 +1386,6 @@ p{
     align-items: center;
     justify-content: center;
 }
-
-
 #boxEntreprise > #boxParagrapheentreprise{
     width: 60%;
     text-align: center; 
@@ -1551,7 +1395,6 @@ p{
     font-weight: 400;
     line-height: 14.06px;
 } 
-
 #boxEntreprise > #boxParagrapheentreprise > p{
     margin: 0px 0px 0px 0px;
 }
@@ -1570,7 +1413,6 @@ p{
     border-right-width: thin;
     border-color:#C4C4C480;
 }
-
 #boxAdresse > #boxTittle{
     width: 100%;
     height: 10vh;
@@ -1578,7 +1420,6 @@ p{
     align-items: center;
     justify-content: center;
 }
-
 #boxAdresse > #boxTittle > #titleAdress{
     color: white;
     text-decoration: underline;
@@ -1588,7 +1429,6 @@ p{
     font-weight: 500;
     margin: 0px;
 }
-
 #boxAdresse > #boxParagrapheadresse{
     width: 100%;
     display: flex;
@@ -1596,7 +1436,6 @@ p{
     justify-content: center;
     flex-direction: column;
 }
-
 #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
     width: 40%;
     text-align: center; 
@@ -1607,7 +1446,6 @@ p{
     line-height: 14.06px;
     margin: 0px 0px 0px 0px;
 }
-
 #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
     text-align: center; 
     color: white;
@@ -1634,7 +1472,6 @@ p{
 #boxInformation > #boxLigne1{
     margin: 0px;
 }
-
 #boxInformation > #boxLigne1 > #infosOne{
     color: white;
     font-family: Roboto;
@@ -1643,23 +1480,18 @@ p{
     display: flex;
     align-items: center;
 }
-
 #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
     cursor: pointer;
 }
-
 #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA{
     color:#FBDD00;
 }
-
 #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
     color: white;
 }
-
 #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
     color:#FBDD00;
 }
-
 #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2 > span.infosFour{
     color: white;
 }
@@ -1671,31 +1503,25 @@ p{
     display: flex;
     align-items: center;
 }
-
 #boxInformation > #boxLigne2 > #infosFive{
     color: white;
     font-family: Roboto;
     font-weight: 500;
     margin: 0px;
 }
-
 #boxInformation > #boxLigne2 > #infosFive > p{
     font-size: 1.56rem;
 }
-
 #boxInformation > #boxLigne2 > #infosFive > span.lettreA3{
     color:#FBDD00;
     margin: 5px;
 }
-
 #boxInformation > #boxLigne2 > #infosFive > span.lettreA3 > span.infosSix{
     color: white;
 }
-
 #boxInformation > #boxLigne2 > #infosSeven> p{
     font-size: 1.56rem;
 }
-
 #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
     color: #FBDD00;
     font-family: Roboto;
@@ -1703,14 +1529,12 @@ p{
     margin: 0px 15px ;
     cursor: pointer;
 }
-
 #boxInformation > #boxLigne2 > #infosHeight{
     color: white;
     font-family: Roboto;
     font-weight: 500;
     margin: 0px 0px;
 }
-
 #boxInformation > #boxLigne2 > #infosHeight > p{
     font-size: 1.56rem;
 }
@@ -1722,13 +1546,11 @@ p{
     display: flex;  
     align-items: center;
 }
-
 #boxInformation > #boxLigne3 > p.infosNine{
     color: white;
     font-family: Roboto;
     font-weight: 500;
 }
-
 #boxInformation > #boxLigne3 > p.infosNine > a.infosTen{
     color: #FBDD00;
     font-family: Roboto;
@@ -1911,6 +1733,6 @@ p{
     }
 }
 
-
+/**************************************Fin des médias query 800px **********************/
 
 /* MEDIA QUERY ICI*/
