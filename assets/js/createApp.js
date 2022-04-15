@@ -185,14 +185,6 @@ function createApp(main) {
 	youtube2.style.width = '600px';
 	youtube2.style.height = '400px';
 
-	/*createElement('img', 'bandeImg1', 'bandeImg1', boxBandeH3);
-	bandeImg1.src = './assets/img/ellipse1.png';
-	createElement('img', 'bandeImg2', 'bandeImg2', boxBandeH3);
-	bandeImg2.src = './assets/img/polygon2.png';*/
-
-	//
-	//
-
 	/*Création de la div Footer*/
 	createElement('footer', 'footer', 'Footer', main);
 

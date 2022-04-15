@@ -32,12 +32,27 @@ function createCard(array, container) {
 		container.appendChild(card);
 
 		card.onclick = function () {
-			popularList.forEach((movie) => {
-				if (movie.id === parseInt(this.id)) {
-					createModale(movie);
-				}
+			getMovieInfos(this.id).then((res) => {
+				createModale(res);
 			});
 		};
+	}
+
+	function getMovieInfos(id) {
+		return new Promise((resolve, reject) => {
+			var xhr = new XMLHttpRequest();
+			xhr.open(
+				'GET',
+				'https://api.themoviedb.org/3/movie/' +
+					id +
+					'?api_key=6c904723a32a3fd1ccc74a46870a083b&language=fr-FR'
+			);
+			xhr.onload = () => {
+				var res = JSON.parse(xhr.response);
+				resolve(res);
+			};
+			xhr.send();
+		});
 	}
 
 	function createModale(movie) {
