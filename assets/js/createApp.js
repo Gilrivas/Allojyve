@@ -82,7 +82,7 @@ function createApp(main) {
 	createElement('button', 'rightArrow', 'next', rightBoton);
 	next.textContent = '>';
 
-	
+
 	/* TITIA  */
 
 	/*Section nowPlaying films derniers sortis*/
@@ -110,6 +110,7 @@ function createApp(main) {
 
 	createElement('button2', 'rightArrow2', 'next2', rightBoton2);
 	next2.textContent = '>';
+
 
 	
 	/*                  FIN TITIA SECTION 2                    */
@@ -187,8 +188,9 @@ function createApp(main) {
 	youtube2.style.width = '600px';
 	youtube2.style.height = '400px';
 
+
 	
-	
+
 
 	/*Création de la div Footer*/
 	createElement('footer', 'footer', 'Footer', main);
@@ -336,37 +338,41 @@ function createApp(main) {
 	createElement('a', 'infosTen', 'infosTen', infosNine);
 	infosTen.textContent = 'FuturDEV';
 
-	
+
+
+
+
+/********************** Fetch**key-API ******************************/
+
+	fetch(
+		'https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			popularList = data.results;
+
+			createCard(popularList, document.getElementById('cartes'));
+		});
+
+	fetch(
+		'https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			filmsSortis = data.results;
+
+			createCard(filmsSortis, document.getElementById('cartes2'));
+		});
+
+	fetch(
+		'https://api.themoviedb.org/3/movie/upcoming?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			aVenirList = data.results;
+
+			createCard(aVenirList, document.getElementById('cartes3'));
+		});
+
 }
 
-fetch(
-  'https://api.themoviedb.org/3/movie/popular?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
-)
-  .then((response) => response.json())
-  .then((data) => {
-    popularList = data.results;
-
-    createCard(popularList, document.getElementById('cartes'));
-  });
-
-
-fetch(
-  'https://api.themoviedb.org/3/movie/now_playing?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
-)
-  .then((response) => response.json())
-  .then((data) => {
-    filmsSortis = data.results;
-
-    createCard(filmsSortis, document.getElementById('cartes2'));
-  });
-  
-
-fetch(
-  'https://api.themoviedb.org/3/movie/upcoming?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR&page=1'
-)
-  .then((response) => response.json())
-  .then((data) => {
-    aVenirList = data.results;
-
-    createCard(aVenirList, document.getElementById('cartes3'));
-  });
