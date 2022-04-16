@@ -809,7 +809,7 @@ a{
 
 /* MEDIA QUERY ICI*/
 
-/********************************************Media query Laetitia*********************************************/
+/********************************************Média query Laetitia 375 PX*********************************************/
 @media  screen and (max-width:375px) {
     
     #boxContainer{
@@ -823,4 +823,217 @@ a{
     #boxLiensreseauxsociaux{
         width: 100%;
     }
+
+    #boxLiensreseauxsociaux > #boxIcone{
+        margin-bottom: 39px;
+        height: 2vh;
+    }
+
+    #boxEntreprise > #boxLogo{
+        height: 10vh;
+    }
+
+    #boxEntreprise > #boxParagrapheentreprise > p{
+        margin-bottom: 12px;
+    }
+
+    #boxEntreprise > #boxLogo > #logoFooter{
+        width: 70%;
+    }
+
+    #boxAdresse{
+        width: 100%;
+        margin: 37px 0px 0px 0px;
+    }
+
+    #boxAdresse > #boxTittle{
+        height: 3vh;
+    }
+
+
+    #boxInformation{
+        margin-top: 284px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne{
+        flex-direction: column;
+        margin-bottom: 24px;  
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
+        margin: 0px;
+        text-align: center;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
+        margin: 13px 0px 0px 0px;
+        text-align: center;
+    }
+
+    #boxInformation > #boxLigne2 > #infosSeven{
+        margin: 10px 0px 10px 0px ;
+    }
+
+    #boxInformation > #boxLigne3 > p.infosNine{
+        margin: 13px;
+    }
+
 }
+/********************************************Fin média query Laetitia 375 PX*******************************************/
+
+/********************************************Média query Laetitia 475 PX *********************************************/
+@media  screen and (max-width:475px){
+    #boxContainer{
+        flex-direction: column;
+    }
+
+    #boxFooter{
+        height: 100vh;
+    }
+
+    #boxLiensreseauxsociaux{
+        width: 100%;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone{
+        margin-bottom: 39px;
+        height: 2vh;
+    }
+
+    #boxEntreprise > #boxLogo{
+        height: 10vh;
+    }
+
+    #boxEntreprise > #boxParagrapheentreprise > p{
+        margin-bottom: 12px;
+    }
+
+    #boxEntreprise > #boxLogo > #logoFooter{
+        width: 70%;
+    }
+
+    #boxAdresse{
+        width: 100%;
+        margin: 36px 0px 0px 0px;
+    }
+
+    #boxAdresse > #boxTittle{
+        height: 5vh;
+    }
+
+    #boxAdresse > #boxParagrapheadresse{
+        margin: 0px 0px 12px 0px;
+    }
+
+    #boxInformation{
+        margin-top: 284px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne{
+        flex-direction: column;
+        margin-bottom: 14px;  
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
+        margin: 2px 0px 0px 5px;
+        text-align: center;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
+        margin: 13px 0px 0px 0px;
+        text-align: center;
+    }
+
+    #boxInformation > #boxLigne2{
+        flex-direction: column;
+        text-align: center;
+        margin: 11px 18px 4px 11px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosSeven{
+        margin: 10px 0px 10px 0px ;
+    }
+
+    #boxInformation > #boxLigne3 > p.infosNine{
+        margin: 13px;
+    }
+}
+
+/********************************************Fin média query Laetitia 475 PX *********************************************/
+
+/********************************************Média query Laetitia 768 PX *********************************************
+
+@media  screen and (max-width:768px){
+    #boxLiensreseauxsociaux{
+        width: 30%;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
+        padding: 11px 20px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
+        padding: 17px 17px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
+        padding: 17px 17px;
+    }
+
+    #boxEntreprise{
+        width: 50%;
+    }
+
+    #boxEntreprise > #boxParagrapheentreprise{
+        width: 85%;
+    }
+
+    #boxEntreprise > #boxParagrapheentreprise > p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #boxAdresse > #boxParagrapheadresse{
+        margin: -21px 0px -3px 1px;
+    }
+
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
+        margin: 5px 0px 0px 0px;
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
+        font-size: 13px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
+        font-size: 13px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
+        font-size: 13px;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    #boxInformation > #boxLigne2 > #infosFive{
+        font-size: 13px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
+        font-size: 13px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosHeight{
+        font-size: 13px;
+    }
+
+    #boxInformation > #boxLigne3 > p.infosNine{
+        font-size: 13px;
+    }
+}
+
