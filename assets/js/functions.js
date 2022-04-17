@@ -177,6 +177,10 @@ function createCard(array, container) {
 				items: 2,
 				gutter: 20,
 			},
+			375: {
+				items: 2,
+				gutter: 20,
+			},
 			300: {
 				items: 1,
 				gutter: 20,
@@ -229,6 +233,10 @@ function createCard(array, container) {
 				gutter: 20,
 			},
 			500: {
+				items: 2,
+				gutter: 20,
+			},
+			375: {
 				items: 2,
 				gutter: 20,
 			},
@@ -290,6 +298,10 @@ function createCard(array, container) {
 			375: {
 				items: 2,
 				gutter: 10,
+			},
+			375: {
+				items: 2,
+				gutter: 20,
 			},
 			300: {
 				items: 1,

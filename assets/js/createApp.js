@@ -47,8 +47,6 @@ function createApp(main) {
 	youtube.setAttribute('src', 'https://www.youtube.com/embed/oZ6iiRrz1SY');
 	youtube.setAttribute('allowFullscreen', 'True');
 	youtube.setAttribute('frameborder', '0');
-	youtube.style.width = '640px';
-	youtube.style.height = '480px';
 
 	tittle.textContent = 'Bande-Annonce à ne pas manquer';
 	morbius.textContent = 'MORBIUS';
@@ -64,6 +62,10 @@ function createApp(main) {
 
 	createElement('section', 'section', 'popular', main);
 	createElement('div', 'titleSection', 'titleSection', popular);
+	//création img icon dans section films populaire
+	createElement('img', 'boxImgS', 'boxImgS', titleSection);
+	boxImgS.src = './assets/img/vectorFilm.png';
+	boxImgS.alt = "icon d'une  pellicule de film";
 
 	createElement('div', 'controls', 'controls', popular);
 	createElement('div', 'mySlider', 'mySlider', popular);
@@ -112,7 +114,7 @@ function createApp(main) {
 
 	/*                  FIN TITIA SECTION 2                    */
 
-	createElement('button2', 'rightArrow2', 'next2', rightBoton2);
+	createElement('button', 'rightArrow2', 'next2', rightBoton2);
 	next2.textContent = '>';
 
 	/*                  FIN TITIA SECTION 2                    */
@@ -138,7 +140,7 @@ function createApp(main) {
 	createElement('div', 'cartes3', 'cartes3', mySlider3);
 
 	createElement('div', 'rightBoton3', 'rightBoton3', controls3);
-	createElement('button3', 'leftArrow3', 'before3', leftBoton3);
+	createElement('button', 'leftArrow3', 'before3', leftBoton3);
 	before3.textContent = '<';
 	createElement('button3', 'rightArrow3', 'next3', rightBoton3);
 	next3.textContent = '>';
@@ -163,8 +165,8 @@ function createApp(main) {
 	//
 	//création div dans boxBande
 	createElement('div', 'boxCarreJaune', 'boxCarreJaune', boxBandeFilm);
-	createElement('div', 'carre1', 'carre1', boxCarreJaune);
-	createElement('div', 'carre2', 'carre2', boxCarreJaune);
+	createElement('img', 'petitCarre3', 'petitCarre3', boxCarreJaune);
+	petitCarre3.src = 'assets/img/carres.png';
 	//
 	/*-************************* BANDE ANNONCE AVANT FOOTER - CHRIS****************************************-*/
 	//création div box pour la bande annonde
@@ -175,15 +177,11 @@ function createApp(main) {
 
 	//création img bande annonce
 	createElement('div', 'boxYoutube', 'boxYoutube', boxBandeH3);
-	/*createElement('img', 'bandeImg', 'bandeImg', boxYoutube);
-	bandeImg.src = './assets/img/AfficheLesAnimauxFantastiques.png';*/
 
 	createElement('iframe', 'youtube2', 'youtube2', boxYoutube);
 	youtube2.setAttribute('src', 'https://www.youtube.com/embed/VkiwSNPxDg4');
 	youtube2.setAttribute('allowFullscreen', 'True');
 	youtube2.setAttribute('frameborder', '0');
-	youtube2.style.width = '600px';
-	youtube2.style.height = '400px';
 
 	/*Création de la div Footer*/
 	createElement('footer', 'footer', 'Footer', main);

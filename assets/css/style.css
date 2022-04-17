@@ -20,10 +20,6 @@ body{
     box-sizing: border-box;
     padding: 0;
 }
-button{
-    background-color: transparent;
-    border: 0px;
-}
 h2{
     font-family: "Ubuntu", sans-serif;
 }
@@ -122,6 +118,7 @@ a{
 .boxText p{
     width: 70%;
     font-size: 1.2em;
+    text-align: justify;
 }
 .boxImg{
     margin-left: -7px;
@@ -131,7 +128,7 @@ a{
     width: 40px;
     height: 40px;
 }
-/*            SECTION 1                   */
+/*            SECTION 1    JORGE               */
 #popular{
     max-width: 100%;
     min-height: 100vh;
@@ -145,54 +142,107 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-.titleSection{
+/*-*****************************************************************************************-*/
+/*Titres: Section1 Film Populaire / Section 2 Film derniers sortis / Section 3 Films à venir */
+.titleSection, .titleSection2, .titleSection3 {
     position: relative;
     width: 100%;
     margin: 0px 0px 80px 0px;
-
+    display: flex;
 }
-.h2Section{
-    
+.h2Section, .h2Section2,.h2Section3{
     font-size: 3em;
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 10px;
 }
 .titleSection::before{
     position: absolute;
     content: '';
     background: #FBDD00;
     width: 500px;
-    left: 30px;
     height: 100%;
     z-index: -1;
-    transform: skew(-50deg);
+    transform: skew(-60deg);
+    left: calc(54% - 50%);
 }
-.controls {
-    top: 175%;
+.h2Section2::before{
+    position: absolute;
+    content: '';
+    background: #FBDD00;
+    width: 500px;
+    height: 100%;
+    z-index: -1;
+    transform: skew(-60deg);
+    left: calc(54% - 50%);
 }
-/*Carrousel section1 Jorge /section2 Laeti / Section3 Chris*/
-.cartes{
-    width: 50%;
+.h2Section3::before{
+    position: absolute;
+    content: '';
+    background: #FBDD00;
+    width: 500px;
+    height: 100%;
+    z-index: -1;
+    transform: skew(-60deg);
+    left: calc(54% - 50%);
 }
-.mySlider, .mySlider2, .mySlider3{
+/*Icon Film-*/
+.boxImgS, .boxImgS2,.boxImgS3{
+    margin-top: 10px;
+    max-width: 38px;
+    height: 38px;
+    margin-left: 89px;
+}
+/*-*****************Carrousel section1 Jorge /section2 Laeti / Section3 Chris******************************-*/
+.mySlider, .mySlider2, .mySlider3 {
     position: relative;
     width: 91%;
-    min-height: 42vh; 
     margin-left: 0px;
-}
-.controls, .controls2, .controls3{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 95%; 
-    transform: translatey(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#cartes, #cartes2, #cartes3> .tns-item{
-    margin-left: 1px;
-    font-size: 0px;
+    margin-right: 0px;
  }
+/*-****cartes****-*/
+.cartes, .cartes2, .cartes3{
+    width: 30%;
+    overflow: hidden;
+}
+#cartes> .tns-item{
+    margin-left: 0px;
+    font-size: 0px;
+    padding-left: 25px;
+}
+#cartes2> .tns-item{
+    margin-left: 0px;
+    font-size: 0px;
+    padding-left: 30px;
+}
+#cartes3> .tns-item{
+    margin-left: -1px;
+    font-size: 0px;
+    padding-left: 35px;
+}
+#cartes-mw{
+    margin-left: -20px;
+    padding: 25px;
+}
+#cartes2-mw{
+    margin-left: -20px;
+    padding: 25px;
+    padding-bottom: 35px;
+}
+#cartes3-mw{
+    margin-left: -20px;
+    padding: 25px;
+}
+#cartes>div>img{
+    width: 200px;
+    height: 300px;
+}
+#cartes2>div>img{
+    width: 200px;
+    height: 300px;
+}
+#cartes3>div>img{
+    width: 200px;
+    height: 300px;
+}
 .card{
     margin-bottom: 20px;
     cursor: pointer;
@@ -210,6 +260,38 @@ a{
     height: 50px;
     align-items: center;
     justify-content: center;
+}
+.card-body h2{
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 100;
+}
+/*-****Fléches****-*/
+button {
+    background-color: transparent;
+    border: 0px;
+}
+.controls, .controls2, .controls3{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 97%; 
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls {
+    top: 172%;
+}
+.controls2{
+    top: 278%;
+}
+.controls3 {
+    top: 375%;   
+}
+.controls1,.controls2, .controls3:focus{
+    outline: none;
 }
 .rightArrow, .rightArrow2, .rightArrow3{
     font-family: 'Maguntia', cursive ;
@@ -245,8 +327,7 @@ a{
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
-/*NAV PORTABLE*/
+/*NAV PORTABLE JORGE*/
 .none{
     display: none !important;
 }
@@ -254,7 +335,7 @@ a{
     width: 100% !important;
     min-height: 100vh !important;
 }
-/* FIN NAV PORTABLE*/
+/* FIN NAV PORTABLE JORGE*/
 .modal{
     position: fixed;
     width: 60%;
@@ -286,12 +367,10 @@ a{
 }
 .close{
     width: 50px;
-   
 }
-/*                   FIN JORGE                     */ 
+/*   FIN JORGE        */ 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
-/*                   DEBUT CHRIS                 */
-/*-***************************PARTIR SECTION 3  FILM A VENIR - CHRIS - PC*******************************-*/
+/*                   DEBUT CHRIS   PARTIE SECRTION 3 FILM A VENIR -CHRIS -PC              */
 #upcoming{
     max-width: 100%;
     min-height: 100vh;
@@ -299,60 +378,6 @@ a{
     display: flex;
     flex-direction: column;
 }
-.titleSection3{
-    width: 100%;
-    display: flex;
-    margin: 0px 0px 80px 0px;
-}
-.h2Section3{
-    font-size: 3em;
-    margin: 0px 0px 0px 10px;
-}
-.h2Section3::before{
-    position: absolute;
-    content: '';
-    background: #FBDD00;
-    width: 40%;
-    height: 7%;
-    z-index: -1;
-    transform: skew(-60deg);
-    left: calc(53% - 50%);
-    margin-top: 0px;
-}
-/*Icon Film*/
-.boxImgS3{
-    margin-top: 10px;
-    max-width: 38px;
-    height: 38px;
-    margin-left: 108px;
-}
-/*titre film carrousel CHRIS */
-.controls3 {
-    top: 373%;   
-}
-.cartes3{
-    width: 150%;
-    overflow: hidden;
-}
-#cartes3-iw{
-    margin-left: 40px; 
-    min-height: 5vh;
-}
-.card-body h2{
-    text-align: center;
-    font-size: 0.95rem;
-    font-weight: 100;
-}
-.button3{
-    background-color: transparent;
-    border: 0px;
-}
-
-.controls3:focus{
-    outline: none;
-}
-
-
 /*-******************Partie section 4  Bande Annonce - CHRIS - PC**********-*/
 #bandeFilm{
     width: 100%;
@@ -383,7 +408,7 @@ a{
    color:white;
    font-family: Ubuntu;
    font-size: 3.125em;
-   margin-left: 20px;
+   margin-left: 40px;
    margin-bottom: -40px;
 }
 #boxBande2{
@@ -397,7 +422,7 @@ a{
     color:white;
     font-family: Ubuntu;
     font-size: 2.5em;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .boxCarreJaune{
     width:100%;
@@ -406,17 +431,14 @@ a{
     justify-content: flex-end;
     flex-direction:row;
 }
-.boxCarreJaune>.carre1{
-    height: 40px;
-    width: 40px;
-    background-color: #FBDD00;
-    margin-top: -120px;
-}
-.boxCarreJaune>.carre2{
-    height: 40px;
-    width: 40px;
-    background-color: #FBDD00;
-    margin-top: -40px;
+.petitCarre3{
+    position: relative;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(90deg);
+    margin-top: -100px;
+   
 }
 #boxBandeH3{
     width: 100%;
@@ -428,18 +450,15 @@ a{
 #boxBandeH3>.bandeH3{
     font-family: Roboto;
     font-size: 1.563em;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 75px;
 }
 .boxYoutube{
-   margin-left: 20px;
+   margin-left: 40px;
 }
-/*                   FIN CHRIS                    */
-
+/*     FIN CHRIS    */
 /*---------------------------------------------------------------------------------------------------------------------------*/
-
 /* LAETITIA */
-
 /*************************************Début du carousel films derniers sortis **********************/
 #nowPlaying{
     max-width: 100%;
@@ -448,66 +467,7 @@ a{
     display: flex;
     flex-direction: column;
 }
-.card-body h2{     
-    text-align: center;     
-    font-size: 0.95rem;     
-    font-weight: 100; 
-} 
-.cartes2{
-    width: 50%;
-    overflow: hidden;
-}
-
-/*********Flèche********/
-.button2{
-    background-color: transparent;
-    border: 0px;
-}
-.rightArrow2{
-    width: 100%;     
-    height: 50%;
-    font-family: 'Maguntia', cursive ;
-    font-size: 7rem;
-    cursor: pointer;
-}
-.leftArrow2{
-    width: 100%;     
-    height: 50%;
-    font-family: 'Maguntia', cursive;
-    font-size: 7rem;
-    cursor: pointer;
-}
-.controls2{
-    top: 274%;
-}
-.controls2:focus{
-    outline: none;
-}
-.h2Section2{
-    font-size: 3em;
-}
-.h2Section2::before{
-    position: absolute;
-    content: '';
-    background: #FBDD00;
-    width: 500px;
-    height: 6.5%;
-    z-index: -1;
-    transform: skew(-50deg);
-    left: calc(53% - 50%);
-    margin-top: -5px;
-}
-.titleSection2{
-    width: 100%;
-    display: flex;
-}
-.boxImgS2{
-    margin-left: 82px;
-}
-/******************************************Début du Footer **********************/
-
-/*********Footer********/
-
+/********* Début du Footer********/
 #Footer{
     width: 100%;
     display: flex;
@@ -811,21 +771,971 @@ a{
     cursor: pointer;
 }
 /******************************************Fin du Footer ***************************/
-
-/* MEDIA QUERY ICI*/
-
-/********************************************Media query Laetitia*********************************************/
+                                        /* MEDIA QUERY ICI*/
+/****Media query Jorge*********************************************/
+@media  screen and (max-width:375px){
+.headerTitle{
+    width: 100%;
+}
+.nav {
+    width: 100%;
+    min-height: 10vh;
+}
+#img{
+    max-width: 173px;
+    height: 70px;
+    margin-left: -10px;
+}
+.tittle{
+    font-size: 1.1em;
+    margin-top: 0px;
+    margin-left: 20px;
+    }
+.menu{
+        display: none;
+}
+.boxMorbius{
+    width: 100%;
+    height: 64px;
+    }
+.morbius{
+    font-size: 2.188em;
+    font-weight: 100;
+    margin-left: 20px;
+}
+.boxTeaser{
+    width: 100%;
+}
+.boxVideo{
+    width: 100%;
+    margin-left: 0px;
+}
+.boxText{
+    display: none;
+}
+.boxText h2{
+    display: none;
+}
+.boxText p{
+    display: none;
+}
+.youtube{
+    width: 375px;
+    height: 280px;
+}
+.petitCarre{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -35px;
+}
+#popular{
+    max-width: 100%;
+    min-height: 60vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+}
+/****Media query Chris*********************************************/
+@media  screen and (max-width:375px){
+    /*Titres: Section1 Film Populaire / Section 2 Film derniers sortis / Section 3 Films à venir */
+    #nowPlaying{
+        max-width: 100%;
+        min-height: 60vh;
+    }
+    #upcoming{
+        max-width: 100%;
+        min-height: 80vh;
+    }
+    .h2Section{
+        font-size: 1em;
+        margin: 10px 0px 0px 10px;
+    }
+    .h2Section2,.h2Section3{
+        font-size: 1em;
+        margin: 10px 0px 0px 10px;
+    }
+    .titleSection::before{
+        width: 190px;
+        height: 35px;
+        left: calc(59% - 50%);
+    }
+    .h2Section2::before{
+        width: 190px;
+        height:35px;
+        left: calc(59% - 50%);
+        margin-top:-10px;
+    }
+    .h2Section3::before{
+        width: 190px;
+        height: 35px;
+        left: calc(59% - 50%);
+        margin-top:-10px;
+    }
+    /*Icon Film-*/
+    .boxImgS,.boxImgS2,.boxImgS3{
+        margin-top: 12px;
+        max-width: 15px;
+        height: 15px;
+        margin-left: 44px;
+    }
+    /*-*****************Carrousel section1 Jorge /section2 Laeti / Section3 Chris******************************-*/
+    /*-****cartes****-*/
+    .mySlider, .mySlider2, .mySlider3 {
+        width: 85%;
+        margin-left:-4px;
+     }
+    #cartes> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes2> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes3> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes-mw{
+        margin-left: -5px;
+        padding: 10px;
+    }
+    #cartes2-mw{
+        margin-left: -3px;
+        padding: 12px;
+        padding-top: 0px;
+    }
+    #cartes3-mw{
+        margin-left: 10px;
+        padding: 10px;
+    }
+    #cartes>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    #cartes2>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    #cartes3>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    .card h2{
+        margin: 0px;
+        font-size: 0.70em;
+    }
+    .card-body{
+        margin: 0px;
+        width: 120px;
+        height: 35px;
+    }
+    .card-body h2{
+        text-align: center;
+        font-size: 0.70rem;
+        font-weight: 100;
+    }
+    /*-****Fléches****-*/
+    .controls, .controls2, .controls3{
+        width:100%;
+        margin-left: 0px; 
+    }
+    .controls {
+        top: 137%;
+    }
+    .controls2{
+        top: 199%;
+        margin-left: 15px; 
+    }
+    .controls3 {
+        top: 270%; 
+    }
+    .rightArrow, .rightArrow2, .rightArrow3{
+        font-size: 6rem;
+        width: 80%;
+        height: 40%;
+    }
+    .leftArrow, .leftArrow2, .leftArrow3{
+        width: 80%;
+        height: 40%;
+        font-size: 6rem;
+    }
+    #leftBoton, #leftBoton2, #leftBoton3{
+        left: 0;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    #leftBoton, #leftBoton2, #leftBoton3 :hover{
+        transform: scale(1.1) ;
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+    #rightBoton, #leftBoton2, #leftBoton3{
+        right: 0;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    #rightBoton, #leftBoton2, #leftBoton3:hover{
+        transform: scale(1.1) ;
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+    /*-*****section bande annonce*-****************/
+    #boxBandeFilm{
+        width: 100%;
+        height: 150px;
+        margin-top: 100px;
+    }
+    #boxBande1>.bande1{
+       font-size: 1.25em;
+       margin-left: 20px;
+       margin-top: 40px;
+    }
+    #boxBande2>.bande2{
+        font-size: 1em;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .petitCarre3{
+        margin-top: -40px;
+        width: 40px;
+        height: 40px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 0.75em;
+    }
+    .boxYoutube{
+       margin-left: 0px;
+    } 
+    .youtube2{
+        width: 375px;
+        height: 300px;
+    }
+    }
+/****Media query Laetitia*********************************************/
 @media  screen and (max-width:375px) {
     
     #boxContainer{
         flex-direction: column;
     }
-
     #boxFooter{
         height: 100vh;
     }
-
     #boxLiensreseauxsociaux{
         width: 100%;
     }
 }
+/****Media query Jorge*********************************************/
+@media  screen and (max-width:390px){
+    .headerTitle{
+        width: 100%;
+    }
+    .nav {
+        width: 59%;
+        min-height: 10vh;
+    }
+    #img{
+        max-width: 173px;
+        height: 70px;
+        margin-left: -10px;
+    }
+    .tittle{
+        font-size: 1.1em;
+        margin-top: 0px;
+        margin-left: 20px;
+        }
+    .petitCarre{
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        margin-top: -35px;
+        }
+    .menu{
+            display: none;
+    }
+    .boxMorbius{
+        width: 100%;
+        height: 64px;
+        }
+    .morbius{
+        font-size: 2.188em;
+        font-weight: 100;
+        margin-left: 20px;
+    }
+    .boxTeaser{
+        width: 100%;
+    }
+    .boxVideo{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .boxText{
+        display: none;
+    }
+    .boxText h2{
+        display: none;
+    }
+    .boxText p{
+        display: none;
+    }
+    .youtube{
+        width: 390px;
+        height: 280px;
+    }
+    #popular{
+        max-width: 100%;
+        min-height: 60vh;
+    }
+    .boxMain{
+        min-height: 80vh;
+    }
+    .header{
+        min-height: 80vh ; 
+    }
+}
+/****Media query Chris*********************************************/
+@media  screen and (max-width:390px){
+    /*Titres: Section1 Film Populaire / Section 2 Film derniers sortis / Section 3 Films à venir */
+    #nowPlaying{
+        max-width: 100%;
+        min-height: 75vh;
+    }
+    #upcoming{
+        max-width: 100%;
+        min-height: 40vh;
+    }
+    .h2Section{
+        font-size: 1em;
+        margin: 10px 0px 0px 10px;
+    }
+    .h2Section2,.h2Section3{
+        font-size: 1em;
+        margin: 10px 0px 0px 10px;
+    }
+    .titleSection::before{
+        width: 190px;
+        height: 35px;
+        left: calc(59% - 50%);
+    }
+    .h2Section2::before{
+        width: 190px;
+        height:35px;
+        left: calc(59% - 50%);
+        margin-top:-10px;
+    }
+    .h2Section3::before{
+        width: 190px;
+        height: 35px;
+        left: calc(59% - 50%);
+        margin-top:-10px;
+    }
+    /*Icon Film-*/
+    .boxImgS,.boxImgS2,.boxImgS3{
+        margin-top: 12px;
+        max-width: 15px;
+        height: 15px;
+        margin-left: 44px;
+    }
+    /*-*****************Carrousel section1 Jorge /section2 Laeti / Section3 Chris******************************-*/
+    /*-****cartes****-*/
+    .mySlider, .mySlider2, .mySlider3 {
+        width: 85%;
+        margin-left:-4px;
+     }
+    #cartes> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes2> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes3> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes-mw{
+        margin-left: -5px;
+        padding: 10px;
+    }
+    #cartes2-mw{
+        margin-left: -3px;
+        padding: 12px;
+        padding-top: 0px;
+    }
+    #cartes3-mw{
+        margin-left: 10px;
+        padding: 10px;
+    }
+    #cartes>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    #cartes2>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    #cartes3>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    .card h2{
+        margin: 0px;
+        font-size: 0.60em;
+    }
+    .card-body{
+        margin: 0px;
+        width: 120px;
+        height: 35px;
+    }
+    .card-body h2{
+        text-align: center;
+        font-size: 0.60rem;
+        font-weight: 100;
+    }
+    /*-****Fléches****-*/
+    .controls, .controls2, .controls3{
+        width:100%;
+        margin-left: 0px; 
+    }
+    .controls {
+        top: 115%;
+    }
+    .controls2{
+        top: 183%;
+        margin-left: 15px; 
+    }
+    .controls3 {
+        top: 236%; 
+    }
+    /*-*****section bande annonce*-****************/
+    #boxBandeFilm{
+        width: 100%;
+        height: 8vh;
+    }
+    #boxBande1>.bande1{
+       font-size: 1.25em;
+       margin-left: 20px;
+       margin-top: 0px;
+       font-weight: 100;
+    }
+    #boxBande2>.bande2{
+        font-size: 1.1em;
+        margin-left: 20px;
+        margin-top: 35px;
+        font-weight: 100;
+    }
+    .petitCarre3{
+        margin-top: -42px;
+        width: 40px;
+        height: 40px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 0.75em;
+    }
+    .boxYoutube{
+       margin-left: 0px;
+    } 
+    .youtube2{
+        width: 390px;
+        height: 300px;
+    }
+}
+/****Media query Jorge*********************************************/
+@media  screen and (max-width:428px){
+    .headerTitle{
+        width: 100%;
+    }
+    .nav {
+        width: 65%;
+        min-height: 10vh;
+    }
+    #img{
+        max-width: 173px;
+        height: 70px;
+        margin-left: -10px;
+    }
+    .tittle{
+        font-size: 1.1em;
+        margin-top: 0px;
+        margin-left: 20px;
+        }
+    .petitCarre{
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        margin-top: -25px;
+        }
+    .menu{
+            display: none;
+    }
+    .boxMorbius{
+        width: 100%;
+        height: 64px;
+        }
+    .morbius{
+        font-size: 2.188em;
+        font-weight: 100;
+        margin-left: 20px;
+    }
+    .boxTeaser{
+        width: 100%;
+    }
+    .boxVideo{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .boxText{
+        display: none;
+    }
+    .boxText h2{
+        display: none;
+    }
+    .boxText p{
+        display: none;
+    }
+    .youtube{
+        width: 428px;
+        height: 280px;
+    }
+    #popular{
+        max-width: 100%;
+        min-height: 40vh;
+    }
+    .boxMain{
+        min-height: 75vh;
+    }
+    .header{
+        min-height: 80vh ; 
+    }
+}
+/****Media query Chris*********************************************/
+@media  screen and (max-width:428px){
+    /*Titres: Section1 Film Populaire / Section 2 Film derniers sortis / Section 3 Films à venir */
+    #nowPlaying{
+        max-width: 100%;
+        min-height: 75vh;
+    }
+    #upcoming{
+        max-width: 100%;
+        min-height: 40vh;
+    }
+    .h2Section{
+        font-size: 1em;
+        margin: 10px 0px 0px 10px;
+    }
+    .h2Section2,.h2Section3{
+        font-size: 1em;
+        margin: 10px 0px 0px 10px;
+    }
+    .titleSection::before{
+        width: 190px;
+        height: 35px;
+        left: calc(59% - 50%);
+    }
+    .h2Section2::before{
+        width: 190px;
+        height:35px;
+        left: calc(59% - 50%);
+        margin-top:-10px;
+    }
+    .h2Section3::before{
+        width: 190px;
+        height: 35px;
+        left: calc(59% - 50%);
+        margin-top:-10px;
+    }
+    /*Icon Film-*/
+    .boxImgS,.boxImgS2,.boxImgS3{
+        margin-top: 12px;
+        max-width: 15px;
+        height: 15px;
+        margin-left: 44px;
+    }
+    /*-*****************Carrousel section1 Jorge /section2 Laeti / Section3 Chris******************************-*/
+    /*-****cartes****-*/
+    .mySlider, .mySlider2, .mySlider3 {
+        width: 85%;
+        margin-left:20px;
+     }
+    #cartes> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes2> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes3> .tns-item{
+        margin-left: 0.5px;
+        font-size: 0px;
+        padding-left: 0px;
+    }
+    #cartes-mw{
+        margin-left: -5px;
+        padding: 10px;
+    }
+    #cartes2-mw{
+        margin-left: -3px;
+        padding: 12px;
+        padding-top: 0px;
+    }
+    #cartes3-mw{
+        margin-left: 10px;
+        padding: 10px;
+    }
+    #cartes>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    #cartes2>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    #cartes3>div>img{
+        width: 120px;
+        height: 180px;
+    }
+    .card h2{
+        margin: 0px;
+        font-size: 0.60em;
+    }
+    .card-body{
+        margin: 0px;
+        width: 120px;
+        height: 35px;
+    }
+    .card-body h2{
+        text-align: center;
+        font-size: 0.60rem;
+        font-weight: 100;
+    }
+    /*-****Fléches****-*/
+    .controls, .controls2, .controls3{
+        width:95%;
+    }
+    .controls {
+        top: 105%;
+        margin-left: 2px; 
+    }
+    .controls2{
+        top: 166%;
+        margin-left: 15px; 
+    }
+    .controls3 {
+        top: 223%; 
+        margin-left: 0px;
+    }
+    /*-*****section bande annonce*-****************/
+    #boxBandeFilm{
+        width: 100%;
+        height: 8vh;
+    }
+    #boxBande1>.bande1{
+       font-size: 1.25em;
+       margin-left: 20px;
+       margin-top: 0px;
+       font-weight: 100;
+    }
+    #boxBande2>.bande2{
+        font-size: 1.1em;
+        margin-left: 20px;
+        margin-top: 35px;
+        font-weight: 100;
+    }
+    .petitCarre3{
+        margin-top: -37px;
+        width: 40px;
+        height: 40px;
+    }
+    #boxBandeH3>.bandeH3{
+        font-size: 0.75em;
+    }
+    .boxYoutube{
+       margin-left: 0px;
+    } 
+    .youtube2{
+        width: 428px;
+        height: 242px;
+    }
+}
+/****Media query Jorge*********************************************/
+@media  screen and (max-width:820px){
+.header{
+    min-height: 75vh;
+    }
+.nav{
+    width: 100%;
+    min-height: 10vh;
+    }
+.boxMain{
+    min-height: 75vh;
+       
+    }
+.headerTitle{
+    width: 100%;
+    margin: 140px 0px 0px 0px;
+}
+.tittle{
+    margin-left: 20px;
+    font-size: 2.375em;
+    }
+#img{
+        max-width: 250px;
+        height: 100px;
+        margin-left: -20px;
+    }
+.menu{
+    display: none;
+    }
+.boxMorbius{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0px 30px 0px;
+    }
+.morbius{
+    font-size: 3.125em;
+    margin: 0px 0px 0px 40px;
+    }
+.boxTeaser{
+    width: 100%;
+    margin: 30px 0px;
+    }
+.boxVideo{
+    width: 60%;
+    }
+.boxText{
+    width: 40%;
+    }
+.boxText h2{
+        font-size: 1.15em;
+        margin-left: 0px;
+    }
+.boxText p{
+    width: 70%;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 0px;
+}
+.petitCarre{
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+.youtube{
+        width: 428px;
+        height: 280px;
+    }
+    /*            SECTION 1    JORGE               */
+#popular{
+        max-width: 100%;
+        min-height: 40vh;
+    }
+}
+/****Media query Chris*********************************************/
+@media  screen and (max-width:820px){
+/*Titres: Section1 Film Populaire / Section 2 Film derniers sortis / Section 3 Films à venir */
+#nowPlaying{
+    max-width: 100%;
+    min-height: 50vh
+}
+#upcoming{
+    max-width: 100%;
+    min-height: 65vh;
+}
+.titleSection, .titleSection2, .titleSection3 {
+    position: relative;
+    width: 100%;
+    margin: 0px 0px 80px 0px;
+    display: flex;
+}
+.h2Section, .h2Section2,.h2Section3{
+    font-size: 1.875em;
+    margin: 0px 0px 0px 10px;
+}
+.titleSection::before{
+    width: 500px;
+    height: 100%;
+    left: calc(54% - 50%);
+}
+.h2Section2::before{
+    width: 500px;
+    height: 100%;
+    left: calc(54% - 50%);
+}
+.h2Section3::before{
+    width: 500px;
+    height: 100%;
+    left: calc(54% - 50%);
+}
+/*Icon Film-*/
+.boxImgS, .boxImgS2,.boxImgS3{
+    margin-top: 4px;
+    max-width: 28px;
+    height: 28px;
+    margin-left: 76px;
+}
+/*-*****************Carrousel section1 Jorge /section2 Laeti / Section3 Chris******************************-*/
+.mySlider, .mySlider2, .mySlider3 {
+    position: relative;
+    width: 91%;
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+/*-****cartes****-*/
+.cartes, .cartes2, .cartes3{
+    width: 30%;
+    overflow: hidden;
+}
+#cartes> .tns-item{
+    margin-left: 0px;
+    font-size: 0px;
+    padding-left: 25px;
+}
+#cartes2> .tns-item{
+    margin-left: 0px;
+    font-size: 0px;
+    padding-left: 30px;
+}
+#cartes3> .tns-item{
+    margin-left: -1px;
+    font-size: 0px;
+    padding-left: 35px;
+}
+#cartes-mw{
+    margin-left: -20px;
+    padding: 25px;
+}
+#cartes2-mw{
+    margin-left: -20px;
+    padding: 25px;
+    padding-bottom: 35px;
+}
+#cartes3-mw{
+    margin-left: -20px;
+    padding: 25px;
+}
+#cartes>div>img{
+    width: 200px;
+    height: 300px;
+}
+#cartes2>div>img{
+    width: 200px;
+    height: 300px;
+}
+#cartes3>div>img{
+    width: 200px;
+    height: 300px;
+}
+.card{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.card h2{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+.card-body{
+    margin: 0px;
+    width: 200px;
+    height: 50px;
+}
+.card-body h2{
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 100;
+}
+/*-****Fléches****-*/
+.controls, .controls2, .controls3{
+    margin: 0;
+    padding: 0;
+    width: 97%; 
+}
+.controls {
+    top: 105%;
+}
+.controls2{
+    top: 162%;
+}
+.controls3 {
+    top: 215%;   
+}
+.rightArrow, .rightArrow2, .rightArrow3{
+    width: 100%;
+    height: 50%;
+}
+.leftArrow, .leftArrow2, .leftArrow3{
+    width: 100%;
+    height: 50%;
+}
+#leftBoton, #leftBoton2, #leftBoton3{
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+#leftBoton, #leftBoton2, #leftBoton3 :hover{
+    transform: scale(1.1) ;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+#rightBoton, #leftBoton2, #leftBoton3{
+    right: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+#rightBoton, #leftBoton2, #leftBoton3:hover{
+    transform: scale(1.1) ;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}  
+#bandeFilm{
+    width: 100%;
+    height: 40vh;
+}
+#boxBandeFilm{
+    width: 100%;
+    height: 150px;
+    margin-top: 100px;
+}
+#boxBande1>.bande1{
+   font-size: 2.25em;
+   margin-left: 20px;
+   margin-bottom: -40px;
+   font-weight: 100;
+}
+#boxBande2>.bande2{   
+    font-size: 2.5em;
+    margin-left: 20px;
+    font-weight: 100;
+}
+.petitCarre3{
+    position: relative;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(90deg);
+    margin-top: -80px;
+}
+#boxBandeH3>.bandeH3{
+    font-size: 1.563em;
+    margin-left: 20px;
+    margin-top: 75px;
+}
+.youtube2{
+    width: 820px;
+    height: 300px;
+    margin-left: -40px;
+
+}
+}
+
