@@ -657,7 +657,7 @@ button {
 }
 #boxContainer{
     width: 100%;
-    height: 30vh;
+    
     display: flex;
 }
 /*-********Box Liens réseaux sociaux********/
@@ -945,7 +945,7 @@ button {
 /*-*****************************************Fin du Footer **************************-*/
 /* MEDIA QUERY ICI*/
 /*-***Media query- PC***-*/
-@media  screen and (min-width:102px) and (max-width:1439px) {
+@media  screen and (min-width:1024px) and (max-width:1439px) {
 
     
     .tittle{
@@ -2443,9 +2443,7 @@ button {
         font-size: 15px;
     }
 
-    #boxInformation{
-        margin-top: 305px;
-    }
+    
 
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
@@ -2478,256 +2476,14 @@ button {
 
     
 }
-@media  screen and (min-width:426px) and (max-width:500px){
-    .bars{
-        display: block;
-    }
-    .headerTitle{
-        width: 100%;
-    }
-    .nav {
-        width: 100%;
-        min-height: 6vh;
-    }
-    #img{
-        width: 173px;
-        margin-left: -10px;
-    }
-    .tittle{
-        font-size: 1.3em;
-        margin-top: 0px;
-        margin-left: 20px;
-        }
-    .petitCarre{
-        margin-left: 10px;
-        width: 30px;
-        height: 30px;
-        margin-top: -25px;
-        }
-    .menu{
-            display: none;
-    }
-    .boxMorbius{
-        width: 100%;
-        height: 64px;
-        }
-    #morbius{
-        font-size: 3em;
-        font-weight: 100;
-        margin-left: 20px;
-    }
-    .boxTeaser{
-        width: 100%;
-    }
-    .boxText{
-        display: block;
-        width: 55%;
-    }
-    .boxText h2{
-        display: block;
-        font-size: 1em;
-        margin-left: 10px;
-    }
-    .boxText p{
-        width: 100%;
-        display: block;
-        font-size: 0.95em;
-        margin: 10px;
-        text-align: justify;
-    }
-    #morbiusText{
-       width: auto;
-       height: auto;
-   }
-    .boxVideo{
-        display: flex;
-        justify-content: left;
-        width: 45%;
-        margin-left: 20px;
-        }
-    .youtube{
-        width:100%;
-        height: 100%;
-    }
-    #popular{
-        max-width: 100%;
-        min-height: 40vh;
-    }
-    .boxMain{
-        min-height: 75vh;
-    }
-    .header{
-        min-height: 80vh ; 
-    }
-/*-***Media query Chris - 428px***-*/
-    #nowPlaying{
-        max-width: 100%;
-        min-height: 75vh;
-    }
-    #upcoming{
-        max-width: 100%;
-        min-height: 40vh;
-    }
-    .h2Section{
-        font-size: 1.8em;
-        margin: 10px 0px 0px 10px;
-    }
-    .h2Section2,.h2Section3{
-        font-size: 1.8em;
-        margin: 10px 0px 0px 10px;
-    }
-    .titleSection::before{
-        width: 294px;
-        height: 32px;
-        left: calc(57% - 50%);
-        margin-top: 13px;
-    }
-    .h2Section2::before{
-        width: 294px;
-        height: 32px;
-        left: calc(57% - 50%);
-        margin-top: 2px;
-    }
-    .h2Section3::before{
-        width: 294px;
-        height: 32px;
-        left: calc(57% - 50%);
-        margin-top: 2px;
-    }
-        /*Icon Film-*/
-    .boxImgS,.boxImgS2,.boxImgS3{
-        margin-top: 17px;
-        max-width: 22px;
-        height: 22px;
-        margin-left: 47px;
-    }
-    /*-****cartes****-*/
-    .mySlider{
-        width: 83%;
-        margin-left: -12px;
-    }   
-    .mySlider2{
-        width: 82%;
-        margin-left:-3px;
-    }
-    .mySlider3 {
-        width: 83%;
-        margin-left:20px;
-    }
-    #cartes> .tns-item{
-        margin-left: 0.5px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-    #cartes2> .tns-item{
-        margin-left: 0px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-    #cartes3> .tns-item{
-        margin-left: 0px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-    #cartes-mw{
-        margin-left: -5px;
-        padding: 10px;
-    }
-    #cartes2-mw{
-        margin-left: -3px;
-        padding: 12px;
-        padding-top: 0px;
-    }
-    #cartes3-mw{
-        margin-left: -5px;
-        padding: 8px;
-        margin-top: -8px;
-    
-    }
-    #cartes>div>img{
-        width: 150px;
-        height: 220px;
-    }
-    #cartes2>div>img{
-        width: 150px;
-        height: 220px;
-    }
-    #cartes3>div>img{
-        width: 150px;
-        height: 220px;
-    }
-    .card h2{
-        margin: 0px;
-        font-size: 0.60em;
-    }
-    .card-body{
-        margin: 0px;
-        width: 150px;
-        height: 35px;
-    }
-    .card-body h2{
-        text-align: center;
-        font-size: 0.60rem;
-        font-weight: 100;
-    }
-    /*-****Fléches****-*/
-    .controls, .controls2, .controls3{
-        width:98%;
-    }
-    .controls {
-        top: 112%;
-        margin-left: 0px; 
-    }
-    .controls2{
-        top: 178%;
-        margin-left: 15px; 
-    }
-    .controls3 {
-        top: 237%; 
-        margin-left: 0px;
-    }
-    /*-****section bande annonce****/
-    #boxBandeFilm{
-        width: 100%;
-        height: 8vh;
-    }
-    #boxBande1>.bande1{
-       font-size: 1.5em;
-       margin-left: 20px;
-       margin-top: 0px;
-       font-weight: 100;
-    }
-    #boxBande2>.bande2{
-        font-size: 1.3em;
-        margin-left: 20px;
-        margin-top: 35px;
-        font-weight: 100;
-    }
-    #petitCarre3{
-        margin-top: -51px;
-        width: 40px;
-        height: 40px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 1.2em;
-        margin-left: 20px;
-    }
-    .boxYoutube{
-       margin-left: 0px;
-    } 
-    .youtube2{
-        width: 428px;
-        height: 242px;
-        margin-left: 20px;
-    }
-}
+
 /*-***Media query- Mobile***-*/
-@media  screen and (min-width:375px) and (max-width:425px){   
+@media  screen and (max-width:500px){   
 
     .bars{
         display: block;
     }
-.nav {
+    .nav {
     min-height: 6vh;
 }
 #img{
@@ -2969,11 +2725,38 @@ button {
     flex-direction: column;
     }
 #boxFooter{
-    height: 100vh;
+    min-height: 100vh;
     }
 #boxLiensreseauxsociaux{
     width: 100%;
     height: 40vh;
+    }
+
+    #boxFooter {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #boxContainer {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+    }
+
+    footer  p{
+        font-size: 0.9rem;
+    }
+
+   
+    #boxAdresse {
+        width: 100%;
+    }
+
+    #boxEntreprise > #boxParagrapheentreprise > p{
+        line-height: 15px;
+        font-size: 0.9rem;
     }
 }
 

@@ -296,7 +296,7 @@ function createApp(main) {
 	createElement('div', 'boxLigne1', 'boxLigne1', boxInformation);
 
 	/*Création box ligne 1*/
-	createElement('p', 'infosOne', 'infosOne', boxLigne1);
+	createElement('div', 'infosOne', 'infosOne', boxLigne1);
 	createElement('a', 'lienInfosone', 'lienInfosone', infosOne);
 	lienInfosone.textContent =
 		'Contact | Qui sommes-nous | Publicité | Politique de cookies | Donnés Personelles  |  Les services';
