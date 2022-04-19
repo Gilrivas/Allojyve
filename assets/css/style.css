@@ -2486,6 +2486,14 @@ button {
     .nav {
     min-height: 6vh;
 }
+
+.header{
+    min-height: 25vh;
+}
+
+#boxMain{
+    min-height: inherit;
+}
 #img{
         width: 173px;
         margin-left: -10px;
