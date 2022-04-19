@@ -371,15 +371,12 @@ button {
     transition: all 0.3s ease;
 }
 /*NAV PORTABLE JORGE*/
-
-
 .none{
     display: none !important;
 }
 .openNav{
     height: 300px !important;
 }
-
 .bars{
     display: none;
     width: 50px;
@@ -392,8 +389,6 @@ button {
   
     margin-top: 25px;
 }
-
-
 #mobileNavArea{
     overflow: hidden;
     position: fixed;
@@ -407,8 +402,6 @@ button {
     align-items: center;
     transition: all 0.2s ease 0s;
 }
-
-
 /* FIN NAV PORTABLE JORGE*/
 .modal{
     position: fixed;
@@ -425,8 +418,6 @@ button {
     transition: all 1s ease 0s;
     flex-direction: row-reverse;
 }
-
-
 .modaleContainer{
     display: flex;
     width: 100%;
@@ -443,25 +434,19 @@ button {
 }
 .close{
     width: 50px;
-   
 }
-
 .modaleContainer2{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
-
 .modaleText > h2{
     position: relative;
 }
-
 .modaleText > h2::first-letter{
-    color: #FBDD00;
-
+ 
 }
-
 .modaleText > h2::before {
     position: absolute;
     content: "";
@@ -470,18 +455,15 @@ button {
     width: 80%;
     background-color: rgb(251, 221, 0);
 }
-
 .imgModale{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .modaleText{
     width: 50%
 }
-
 .synopsisBox{
     width: 100%;
     display: flex;
@@ -489,13 +471,11 @@ button {
     align-items: center;
     justify-content: center;
 }
-
 .synopsisBox > h2{
     position: relative;
     width: 80%;
 
 }
-
 .synopsisBox >h2::before {
     position: absolute;
     content: "";
@@ -507,28 +487,22 @@ button {
 .synopsisBox > h2::first-letter{
     color: #FBDD00;
 }
-
 .synopsisBox > p{
     width: 80%;
 }
-
 .modalVideo{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .modalVideo > h2{
     width: 80%;
     position: relative;
-   
-
 }
 .modalVideo > h2::first-letter{
     color: #FBDD00;
 }
-
 .modalVideo > h2::before {
     position: absolute;
     content: "";
@@ -537,8 +511,6 @@ button {
     width: 80%;
     background-color: rgb(251, 221, 0);
 }
-
-
 /*   FIN  MODAL JORGE        */ 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*                   DEBUT CHRIS   PARTIE SECRTION 3 FILM A VENIR -CHRIS -PC              */
@@ -1999,20 +1971,20 @@ button {
         font-weight: 100;
     }
     /*-****Fléches****-*/
-    .controls, .controls2, .controls3{
-        width:98%;
-    }
     .controls {
-        top: 113%;
-        margin-left: 0px; 
+        top: 115%;
+        margin-left: 0px;
+        width:98%; 
     }
     .controls2{
-        top: 187%;
-        margin-left: 0px; 
+        top: 184%;
+        margin-left: 0px;
+        width:98%; 
     }
     .controls3 {
-        top: 249%; 
+        top: 247%; 
         margin-left: -3px;
+        width:98%;
     }
     button {
         background-color: transparent;
@@ -2265,19 +2237,34 @@ button {
     }
     /*-****cartes****-*/
     .mySlider{
-        width: 90%;
-        margin-left: 0px;
+        width: 91%;
+        margin-left: 11px;
     }   
     .mySlider2{
         width: 90%;
-        margin-left:-20px;
+        margin-left:-15px;
     }
     .mySlider3 {
         width: 90%;
-        margin-left: 20px;
+        margin-left: 10px;
+    }
+    .controls {
+        width: 98%;
+        top: 110%;
+        margin-left: 0px; 
+    }
+    .controls2{
+        width: 98%;
+        top: 178%;
+        margin-left: 0px; 
+    }
+    .controls3 {
+        width: 98%;
+        top: 236%; 
+        margin-left: -12px;
     }
     #cartes> .tns-item{
-        margin-left: 1px;
+        margin-left: 0.5px;
         font-size: 0px;
         padding-left: 0px;
     }
@@ -2287,13 +2274,13 @@ button {
         padding-left: 0px;
     }
     #cartes3> .tns-item{
-        margin-left: 1px;
+        margin-left: 1.25px;
         font-size: 0px;
         padding-left: 0px;
     }
     #cartes-mw{
         margin-left: -15px;
-        padding: 22px;
+        padding: 20px;
         margin-top: -8px;
     }
     #cartes2-mw{
@@ -2332,22 +2319,7 @@ button {
         font-weight: 100;
     }
     /*-****Fléches****-*/
-    .controls, .controls2, .controls3{
-        width:98%;
-    }
-    .controls {
-        top: 113%;
-        margin-left: 0px; 
-    }
-    .controls2{
-        top: 182%;
-        margin-left: 0px; 
-    }
-    .controls3 {
-        top: 241%; 
-        margin-left: 0px;
-    }
-    button {
+     button {
         background-color: transparent;
         border: 0px;
     }
@@ -2369,7 +2341,7 @@ button {
         font-weight: 100;
     }
     #petitCarre3{
-        margin-top: -73px;
+        margin-top: -78px;
         width: 40px;
         height: 40px;
     }
@@ -2386,111 +2358,84 @@ button {
         height: 350px;
         margin-left: 0px;
     }
-
     /*Laetitia*/
-
     #boxContainer{
         flex-direction: column;
     }
     #boxFooter{
         width: 100%;
     }
-
     #boxLiensreseauxsociaux{
         width: 100%;
     }
-
     #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
         padding: 10px 19px;
     }
-
     #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
         padding: 15px 15px;
     }
-
     #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
         padding: 15px 15px;
     }
-
     #boxLiensreseauxsociaux > #boxIcone{
         margin-bottom: 20px;
          width: 50%;
     }
-
     #boxAdresse{
         width: 100%;
     }
-
     #boxAdresse > #boxTittle > #titleAdress{
         margin: 69px 8px 31px 5px;
     }
-
     #boxAdresse > #boxParagrapheadresse{
         margin: -12px 0px 35px 0px;
     }
-
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
         width: 100%;
         font-size: 15px;
     }
-
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
         font-size: 15px;
     }
-
     #boxEntreprise > #boxParagrapheentreprise > p{
         margin: -7px -52px 7px -44px;
         font-size: 15px;
     }
-
-    
-
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
         font-size: 13px;
     }
-
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
         font-size: 13px;
     }
-
     #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
         font-size: 13px;
     }
-
     #boxInformation > #boxLigne2 > #infosFive{
         font-size: 13px;
     }
-
     #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
         font-size: 13px;
     }
-
     #boxInformation > #boxLigne2 > #infosHeight{
         font-size: 13px;
     }
-
     #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 13px;
     }
-
-    
 }
-
 /*-***Media query- Mobile***-*/
 @media  screen and (max-width:500px){   
 
-    .bars{
+.bars{
         display: block;
     }
-    .nav {
+.nav {
     min-height: 6vh;
 }
-
 .header{
     min-height: 25vh;
 }
-
 #boxMain{
     min-height: inherit;
 }
@@ -2589,28 +2534,54 @@ button {
             margin-left: 44px;
         }
         /*-****cartes****-*/
-.mySlider, .mySlider2, .mySlider3 {
-            width: 85%;
-            margin-left:-4px;
+.mySlider{
+    width: 89%;
+    margin-left:0px;
+    background-color: #FBDD00;
          }
+.mySlider2 {
+    width: 85%;
+    margin-left:-4px;
+        }
+.mySlider3 {
+    width: 89%;
+    margin-left:3px;
+   
+         }
+.controls{
+    width:99%;
+    margin-left: 12px; 
+    top: 108%;
+}
+.controls2 {
+    width:99%;
+    top: 170%;
+    margin-left: 15px; 
+}
+.controls3{
+    width:98%;
+    top: 239%;
+    margin-left: 0px; 
+}
 #cartes> .tns-item{
             margin-left: 0.5px;
             font-size: 0px;
             padding-left: 0px;
         }
 #cartes2> .tns-item{
-            margin-left: 0.5px;
-            font-size: 0px;
-            padding-left: 0px;
+    margin-left: 0.5px;
+    font-size: 0px;
+    padding-left: 0px;
         }
 #cartes3> .tns-item{
-            margin-left: 0.5px;
+            margin-left: 0.90px;
             font-size: 0px;
             padding-left: 0px;
         }
 #cartes-mw{
-            margin-left: -5px;
-            padding: 10px;
+            margin-left: -10px;
+            margin-right: 10px;
+           
         }
 #cartes2-mw{
             margin-left: -3px;
@@ -2618,12 +2589,12 @@ button {
             padding-top: 0px;
         }
 #cartes3-mw{
-            margin-left: 10px;
+            margin-left: -5px;
             padding: 10px;
         }
 #cartes>div>img{
-            width: 120px;
-            height: 180px;
+        width: 120px;
+        height: 180px;
         }
 #cartes2>div>img{
             width: 120px;
@@ -2644,90 +2615,91 @@ button {
         }
 .card-body h2{
             text-align: center;
-            font-size: 0.70rem;
+            font-size: 0.65rem;
             font-weight: 100;
         }
         /*-****Fléches****-*/
-.controls, .controls2, .controls3{
-            width:100%;
-            margin-left: 0px; 
-        }
-.controls {
-            top: 134%;
-        }
-.controls2{
-            top: 196%;
-            margin-left: 15px; 
-        }
-.controls3 {
-            top: 265%; 
-        }
+.controls{
+    width:99%;
+    margin-left: 0px; 
+    top: 108%;
+}
+.controls2 {
+    width:99%;
+    top: 170%;
+    margin-left: 15px; 
+}
+.controls3{
+    width:98%;
+    top: 239%;
+    margin-left: 0px; 
+}
 .rightArrow, .rightArrow2, .rightArrow3{
             font-size: 6rem;
             width: 80%;
             height: 40%;
-        }
+}
 .leftArrow, .leftArrow2, .leftArrow3{
             width: 80%;
             height: 40%;
             font-size: 6rem;
-        }
+}
 #leftBoton, #leftBoton2, #leftBoton3{
             left: 0;
             opacity: 1;
             transition: all 0.3s ease;
-        }
+}
 #leftBoton, #leftBoton2, #leftBoton3 :hover{
             transform: scale(1.1) ;
             opacity: 0.6;
             transition: all 0.3s ease;
-        }
+}
 #rightBoton, #leftBoton2, #leftBoton3{
             right: 0;
             opacity: 1;
             transition: all 0.3s ease;
-        }
+}
 #rightBoton, #leftBoton2, #leftBoton3:hover{
             transform: scale(1.1) ;
             opacity: 0.6;
             transition: all 0.3s ease;
-        }
+}
         /*-*****section bande annonce*-**********/
 #boxBandeFilm{
             width: 100%;
             height: 150px;
             margin-top: 100px;
-        }
+}
 #bandeFilm{
     height: 20vh;
-        }
+}
 #boxBande1>.bande1{
            font-size: 1.25em;
            margin-left: 20px;
            margin-top: 20px;
-        }
+}
 #boxBande2>.bande2{
             font-size: 1em;
             margin-left: 20px;
             margin-top: 40px;
-        }
+}
 #petitCarre3{
             margin-top: -40px;
             width: 40px;
             height: 40px;
-        }
+}
 #boxBandeH3>.bandeH3{
         font-size: 1em;
         margin-left: 10px;
-        }
+}
 .boxYoutube{
         margin-left: 0px;
-        } 
+} 
 .youtube2{
             width: 100%;
             height: 200px;
             margin-left: 10px;
-        }
+}
     /*-***Media query Laetitia-375px***-*/
 #boxContainer{
     flex-direction: column;
@@ -2739,30 +2711,24 @@ button {
     width: 100%;
     height: 40vh;
     }
-
-    #boxFooter {
+#boxFooter {
         width: 100%;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
-
-    #boxContainer {
+#boxContainer {
         flex-direction: column;
         width: 100%;
         display: flex;
     }
-
-    footer  p{
+footer  p{
         font-size: 0.9rem;
     }
-
-   
-    #boxAdresse {
+#boxAdresse {
         width: 100%;
     }
-
-    #boxEntreprise > #boxParagrapheentreprise > p{
+#boxEntreprise > #boxParagrapheentreprise > p{
         line-height: 15px;
         font-size: 0.9rem;
     }
