@@ -100,23 +100,35 @@ function createCard(array, container) {
 		modaleText.classList = 'modaleText';
 
 		var modaleSyp = document.createElement('div');
-		modaleSyp.id = 'sypnosisBox'
-		modaleSyp.classList = 'sypnosisBox'
+		modaleSyp.id = 'synopsisBox'
+		modaleSyp.classList = 'synopsisBox'
 
 		var modalYoutube = document.createElement('div')
 		modalYoutube.id = 'modalVideo'
 		modalYoutube.classList = 'modalVideo'
 
+		var modaleContainer2 = document.createElement('div')
+		modaleContainer2.id = 'modaleContainer2'
+		modaleContainer2.classList = 'modaleContainer2'
+
+		var synopsisH2 = document.createElement('h2')
+		synopsisH2.textContent = 'Synopsis'
+
+		var bandeAnnonce = document.createElement('h2')
+		bandeAnnonce.textContent = 'Bande Annonce'
 
 		modale.appendChild(modaleContainer);
+		modalYoutube.appendChild(bandeAnnonce)
+		modaleContainer.appendChild(modaleContainer2)
 		modale.appendChild(close);
-		modaleContainer.appendChild(imgModale)
+		modaleContainer2.appendChild(imgModale)
 		imgModale.appendChild(movieImg);
-		modaleContainer.appendChild(modaleText)
+		modaleContainer2.appendChild(modaleText)
 		modaleText.appendChild(title2);
 		modaleText.appendChild(date);
 		modaleText.appendChild(popularity);
-		modaleContainer.appendChild(modaleSyp)
+		modaleContainer2.appendChild(modaleSyp)
+		modaleSyp.appendChild(synopsisH2)
 		modaleSyp.appendChild(synopsis);
 
 		main.appendChild(modale);
@@ -149,8 +161,9 @@ function createCard(array, container) {
 				youtubeTrailer.style.height = '300px';
 
 
-				modaleContainer.appendChild(modalYoutube)
+				
 				modalYoutube.appendChild(youtubeTrailer);
+				modaleContainer2.appendChild(modalYoutube)
 
 			});
 	}
@@ -341,3 +354,5 @@ function createCard(array, container) {
 		},
 	});
 }
+
+
