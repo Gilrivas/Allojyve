@@ -1,24 +1,39 @@
 function createApp(main) {
 	// HEADER //
-	createElement('header', 'header', 'header', main);
-	createElement('nav', 'nav', 'nav', header);
 
+	
+	createElement('nav', 'nav', 'nav', main);
+
+	createElement('div', 'none', 'mobileNavArea', main)
+	createElement('header', 'header', 'header', main);
+	
+
+	
 	createElement('div', 'boxImg', 'logo', nav);
 	createElement('a', 'linkIndex', 'linkIndex', logo);
 	createElement('ul', 'menu', 'menu', nav);
 	createElement('img', 'img', 'img', linkIndex);
 	img.src = 'assets/img/logo.png';
+
+	createElement('img', 'bars', 'burger', nav)
+	burger.src = 'assets/img/burger.png'
 	linkIndex.setAttribute('href', 'index.html');
+	
+
+
+
+	
+	
+
 
 	//HEADER LINKS//
 
 	createElement('a', 'populaires', 'populaires', menu);
 	createElement('a', 'lastMovie', 'lastMovie', menu);
 	createElement('a', 'aVenir', 'aVenir', menu);
-
 	populaires.textContent = 'Populaires';
-	populaires.href = '#popular';
 
+	populaires.href = '#popular';
 	lastMovie.textContent = 'Derniers Sortis';
 	lastMovie.href = '#nowPlaying';
 
