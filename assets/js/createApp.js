@@ -17,11 +17,25 @@ function createApp(main) {
 
 	createElement('img', 'bars', 'burger', nav)
 	burger.src = 'assets/img/burger.png'
+
+	createElement("img", "none", "closeNav", nav)
+	closeNav.src = 'assets/img/close.png'
 	linkIndex.setAttribute('href', 'index.html');
 	
 
 
+	createElement('a', 'populaires', 'populaires', mobileNavArea);
+	createElement('a', 'lastMovie', 'lastMovie', mobileNavArea);
+	createElement('a', 'aVenir', 'aVenir', mobileNavArea);
 
+	populaires.textContent = 'Populaires';
+	populaires.href = '#popular';
+
+	lastMovie.textContent = 'Derniers Sortis';
+	lastMovie.href = '#nowPlaying';
+
+	aVenir.textContent = 'À venir';
+	aVenir.href = '#upcoming';
 	
 	
 
@@ -31,9 +45,10 @@ function createApp(main) {
 	createElement('a', 'populaires', 'populaires', menu);
 	createElement('a', 'lastMovie', 'lastMovie', menu);
 	createElement('a', 'aVenir', 'aVenir', menu);
-	populaires.textContent = 'Populaires';
 
+	populaires.textContent = 'Populaires';
 	populaires.href = '#popular';
+
 	lastMovie.textContent = 'Derniers Sortis';
 	lastMovie.href = '#nowPlaying';
 

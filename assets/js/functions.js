@@ -32,8 +32,11 @@ function createCard(array, container) {
 		container.appendChild(card);
 
 		card.onclick = function () {
+			setTimeout(() => {
 			getMovieInfos(this.id).then((res) => {
 				createModale(res);
+			}, 200);
+
 			});
 		};
 	}
@@ -157,8 +160,7 @@ function createCard(array, container) {
 				youtubeTrailer.setAttribute('src', youtube2);
 				youtubeTrailer.setAttribute('allowFullscreen', 'True');
 				youtubeTrailer.setAttribute('frameborder', '0');
-				youtubeTrailer.style.width = '500px';
-				youtubeTrailer.style.height = '300px';
+			
 
 				modalYoutube.appendChild(youtubeTrailer);
 				modaleContainer2.appendChild(modalYoutube);

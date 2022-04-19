@@ -59,7 +59,7 @@ h1::before{
 .headerTitle{
     display: flex;
     width: 100%;
-    margin: 140px 0px 0px 0px;
+    margin: 110px 0px 0px 0px;
     align-items: center;
 }
 .tittle{
@@ -109,13 +109,13 @@ a{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
 }
 .boxText h2{
     font-size: 1.875em;
 }
 .boxText p{
-    width: 100%;
+    width: 70%;
     font-size: 1.5em;
     text-align: justify;
 }
@@ -128,8 +128,8 @@ a{
     height: 40px;
 }
 .youtube{
-    width: 80%;
-    height: 150%;
+    width: 90%;
+    height: 500px;
 }
 /*            SECTION 1    JORGE               */
 #popular{
@@ -371,24 +371,33 @@ button {
     transition: all 0.3s ease;
 }
 /*NAV PORTABLE JORGE*/
+
+
 .none{
     display: none !important;
 }
 .openNav{
     height: 300px !important;
 }
+
 .bars{
     display: none;
-    width: 50px;
-    position: fixed;
-    height: 50px;
+    width: 30px;
     cursor: pointer;
-    margin-right: 50px;
-    position: fixed;
+    margin-right: 30px;
     z-index: 50;   
-  
-    margin-top: 25px;
+    
 }
+
+#closeNav{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+    z-index: 50;   
+   
+}
+
+
 #mobileNavArea{
     overflow: hidden;
     position: fixed;
@@ -397,17 +406,21 @@ button {
     height: 0px;
     background: black;
     color: white;
+    flex-direction: column;
     display: flex;
-    justify-content: flex-start;
+    justify-content: end;
     align-items: center;
     transition: all 0.2s ease 0s;
 }
+
+
 /* FIN NAV PORTABLE JORGE*/
 .modal{
     position: fixed;
-    width: 60%;
+    width: 50%;
     z-index: 56;
-    min-height: 100vh;
+    min-height: 0vh;
+    max-height: 100vh;
     top: 0%;
     left: 0%;
     bottom: 0%;
@@ -415,9 +428,12 @@ button {
     background: black;
     color: white;
     display: flex;
+    
     transition: all 1s ease 0s;
     flex-direction: row-reverse;
 }
+
+
 .modaleContainer{
     display: flex;
     width: 100%;
@@ -425,6 +441,7 @@ button {
     align-items: flex-start;
     justify-content: center;
     text-align: start;
+    min-height: 100vh;
 }
 .closeModaleBtn{
     position: absolute;
@@ -432,21 +449,36 @@ button {
     margin: 20px;
     cursor: pointer;
 }
-.close{
-    width: 50px;
-}
+
 .modaleContainer2{ 
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
+
+.modaleText{
+    height: 20%;
+}
+
 .modaleText > h2{
     position: relative;
+    font-size: 1.5vw;
 }
+
+.modaleText > p{
+    font-size: 0.9vw;
+    text-align: justify;
+}
+
 .modaleText > h2::first-letter{
- 
+    color: #FBDD00;
+
 }
+
 .modaleText > h2::before {
     position: absolute;
     content: "";
@@ -455,15 +487,23 @@ button {
     width: 80%;
     background-color: rgb(251, 221, 0);
 }
+
 .imgModale{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.imgModale img{
+    width: 12vw;
+
+}
+
 .modaleText{
     width: 50%
 }
+
 .synopsisBox{
     width: 100%;
     display: flex;
@@ -471,11 +511,15 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+
 .synopsisBox > h2{
     position: relative;
     width: 80%;
+    font-size: 1.5vw;
 
 }
+
 .synopsisBox >h2::before {
     position: absolute;
     content: "";
@@ -487,22 +531,34 @@ button {
 .synopsisBox > h2::first-letter{
     color: #FBDD00;
 }
+
 .synopsisBox > p{
     width: 80%;
+    font-size: 0.8vw;
 }
+
 .modalVideo{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .modalVideo > h2{
     width: 80%;
     position: relative;
+    font-size: 1.5vw;
+}
+
+.modalVideo  iframe{
+   width: 80%;
+   height: 300px;
+   
 }
 .modalVideo > h2::first-letter{
     color: #FBDD00;
 }
+
 .modalVideo > h2::before {
     position: absolute;
     content: "";
@@ -511,6 +567,8 @@ button {
     width: 80%;
     background-color: rgb(251, 221, 0);
 }
+
+
 /*   FIN  MODAL JORGE        */ 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*                   DEBUT CHRIS   PARTIE SECRTION 3 FILM A VENIR -CHRIS -PC              */
@@ -762,7 +820,6 @@ button {
     margin: 0px 0px 0px 0px;
     font-size: 1.1rem;
     line-height: 23px;
-    margin-bottom: 15px;
 }
 /*-********Box Adresse********/
 #boxAdresse{
@@ -921,559 +978,8 @@ button {
 /*-*****************************************Fin du Footer **************************-*/
 /* MEDIA QUERY ICI*/
 /*-***Media query- PC***-*/
-@media  screen and (min-width:1024px) and (max-width:1439px) {
 
-    
-    .tittle{
-        font-size: 3em;
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-    .petitCarre{
-        margin-left: 10px;
-        width: 30px;
-        height: 30px;
-        margin-top: -25px;
-        }
-    .menu{
-        display: block;
-        font-size: 1em;
-    }
-    #img{
-        max-width: 250px;
-        margin-left: -15px;
-    }
-    .boxMorbius{
-        width: 100%;
-        height: 100px;
-        }
-    #morbius{
-        font-size: 4.375em;
-        font-weight: 100;
-        margin-left: 20px;
-    }
-    .boxText h2{
-        display: block;
-        font-size: 1.875em;
-        margin-left: 10px;
-    }
-    .boxText p{
-        width: 100%;
-        display: block;
-        font-size: 1.5em;
-        margin: 10px;
-        text-align: justify;
-    }
-    #morbiusText{
-       width: auto;
-       height: auto;
-   }
-    .boxVideo{
-       margin-left: 20px;
-        }
-    .youtube{
-        width:100%;
-        height: 100%;
-    }
-    #popular{
-        max-width: 100%;
-        min-height: 40vh;
-    }
-    .boxMain{
-        min-height: 75vh;
-    }
-    .header{
-        min-height: 80vh ; 
-    }
-    .cartes, .cartes2, .cartes3{
-        width: 30%;
-        overflow: hidden;
-    }
-/*-***Media query Chris - 428px***-*/
-    #nowPlaying{
-        max-width: 100%;
-        min-height: 75vh;
-    }
-    #upcoming{
-        max-width: 100%;
-        min-height: 40vh;
-    }
-    .h2Section{
-        font-size: 1.875em;
-        margin: 10px 0px 0px 10px;
-    }
-    .h2Section2,.h2Section3{
-        font-size: 1.875em;
-        margin: 10px 0px 0px 10px;
-    }
-    .titleSection::before{
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 11px;
-    }
-    .h2Section2::before{
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 2px;
-    }
-    .h2Section3::before{
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 2px;
-    }
-        /*Icon Film-*/
-    .boxImgS,.boxImgS2{
-        margin-top: 15px;
-        max-width: 25px;
-        height: 25px;
-        margin-left: 110px;
-    }
-    .boxImgS3{
-        margin-top: 15px;
-        max-width: 25px;
-        height: 25px;
-        margin-left: 108px;
-    }
-        /*-****cartes****-*/
-   
-    #cartes>div>img{
-        width: 200px;
-        height: 300px;
-    }
-    #cartes2>div>img{
-        width: 200px;
-        height: 300px;
-    }
-    #cartes3>div>img{
-        width: 200px;
-        height: 300px;
-    }
-    .card h2{
-        margin: 0px;
-    }
-    .card-body{
-        margin: 0px;
-        width: 200px;
-        height: 50px;
-    }
-    .card-body h2{
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 100;
-    }
-    /*-****Fléches****-*/
-  
-    button {
-        background-color: transparent;
-        border: 0px;
-    }
-    /*-****section bande annonce****/
-    #boxBandeFilm{
-        width: 100%;
-        height: 8vh;
-    }
-    #boxBande1>.bande1{
-       font-size: 1.90em;
-       margin-left: 20px;
-       margin-top: 15px;
-       font-weight: 100;
-    }
-    #boxBande2>.bande2{
-        font-size: 1.7em;
-        margin-left: 20px;
-        margin-top: 35px;
-        font-weight: 100;
-    }
-    #petitCarre3{
-        margin-top: -73px;
-        width: 40px;
-        height: 40px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 1.3em;
-        margin-left: 20px;
-    }
-    .boxYoutube{
-    width: 100%;
-       margin-left: 0px;
-    } 
-    .youtube2{
-        width: 100%;
-        height: 500px;
-        margin-left: 0px;
-    }
 
-    /*Laetitia*/
-
-    #boxContainer{
-        flex-direction: row;
-    }
-    #boxFooter{
-        width: 100%;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
-        padding: 10px 18px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
-        padding: 17px 15px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
-        padding: 17px 15px;
-    }
-
-    #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
-        margin: -14px 8px 30px 10px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone{
-        margin: -16px 13px 0px 7px;
-        width: 80%;
-    }
-
-    #boxEntreprise{
-        width: 75%;
-    }
-
-    #boxEntreprise > #boxParagrapheentreprise > p{
-        margin: -5px -50px 10px -41px;
-    }
-
-    #boxAdresse > #boxTittle > #titleAdress{
-        margin: 90px 8px 31px 5px;
-    }
-
-    #boxAdresse > #boxParagrapheadresse{
-        margin: 5px 8px 31px 5px;
-    }
-
-    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
-        font-size: 1rem;
-    }
-
-    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
-        margin: 0px;
-    }
-}
-@media  screen and (min-width:901px) and (max-width:1024px) {
-    .bars{
-        display: block;
-    }
-    .tittle{
-        font-size: 2.375em;
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-    .petitCarre{
-        margin-left: 10px;
-        width: 30px;
-        height: 30px;
-        margin-top: -25px;
-        }
-    .menu{
-            display: none;
-    }
-    #img{
-        max-width: 250px;
-        margin-left: -15px;
-    }
-    .boxMorbius{
-        width: 100%;
-        height: 64px;
-        }
-    #morbius{
-        font-size: 3.125em;
-        font-weight: 100;
-        margin-left: 20px;
-    }
-    .boxText h2{
-        display: block;
-        font-size: 1.6em;
-        margin-left: 10px;
-    }
-    .boxText p{
-        width: 100%;
-        display: block;
-        font-size: 1.3em;
-        margin: 10px;
-        text-align: justify;
-    }
-    #morbiusText{
-       width: auto;
-       height: auto;
-   }
-    .boxVideo{
-       margin-left: 20px;
-        }
-    .youtube{
-        width:100%;
-        height: 100%;
-    }
-    #popular{
-        max-width: 100%;
-        min-height: 40vh;
-    }
-    .boxMain{
-        min-height: 75vh;
-    }
-    .header{
-        min-height: 80vh ; 
-    }
-/*-***Media query Chris - 428px***-*/
-    #nowPlaying{
-        max-width: 100%;
-        min-height: 75vh;
-    }
-    #upcoming{
-        max-width: 100%;
-        min-height: 40vh;
-    }
-    .h2Section{
-        font-size: 1.875em;
-        margin: 10px 0px 0px 10px;
-    }
-    .h2Section2,.h2Section3{
-        font-size: 1.875em;
-        margin: 10px 0px 0px 10px;
-    }
-    .titleSection::before{
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 11px;
-    }
-    .h2Section2::before{
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 2px;
-    }
-    .h2Section3::before{
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 2px;
-    }
-        /*Icon Film-*/
-    .boxImgS,.boxImgS2{
-        margin-top: 15px;
-        max-width: 25px;
-        height: 25px;
-        margin-left: 110px;
-    }
-    .boxImgS3{
-        margin-top: 15px;
-        max-width: 25px;
-        height: 25px;
-        margin-left: 108px;
-    }
-        /*-****cartes****-*/
-    .mySlider{
-        width: 90%;
-        margin-left: 78px;
-    }   
-    .mySlider2{
-        width: 90%;
-        margin-left:50px;
-    }
-    .mySlider3 {
-        width: 90%;
-        margin-left: 94px;
-    }
-    #cartes> .tns-item{
-        margin-left: 5px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-    #cartes2> .tns-item{
-        margin-left: 5px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-    #cartes3> .tns-item{
-        margin-left: 1px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-    #cartes-mw{
-        margin-left: -15px;
-        padding: 22px;
-        margin-top: -8px;
-    }
-    #cartes2-mw{
-        margin-left: -3px;
-        padding: 18px;
-        padding-top: 0px;
-    }
-    #cartes3-mw{
-        margin-left: -3px;
-        padding: 12px;
-        margin-top: -8px;
-        }
-    #cartes>div>img{
-        width: 200px;
-        height: 300px;
-    }
-    #cartes2>div>img{
-        width: 200px;
-        height: 300px;
-    }
-    #cartes3>div>img{
-        width: 200px;
-        height: 300px;
-    }
-    .card h2{
-        margin: 0px;
-    }
-    .card-body{
-        margin: 0px;
-        width: 200px;
-        height: 50px;
-    }
-    .card-body h2{
-        text-align: center;
-        font-size: 0.60rem;
-        font-weight: 100;
-    }
-    /*-****Fléches****-*/
-    .controls, .controls2, .controls3{
-        width:98%;
-    }
-    .controls {
-        top: 116%;
-        margin-left: 0px; 
-    }
-    .controls2{
-        top: 191%;
-        margin-left: 0px; 
-    }
-    .controls3 {
-        top: 253%; 
-        margin-left: -3px;
-    }
-    button {
-        background-color: transparent;
-        border: 0px;
-    }
-    /*-****section bande annonce****/
-    #boxBandeFilm{
-        width: 100%;
-        height: 8vh;
-    }
-    #boxBande1>.bande1{
-       font-size: 1.90em;
-       margin-left: 20px;
-       margin-top: 15px;
-       font-weight: 100;
-    }
-    #boxBande2>.bande2{
-        font-size: 1.7em;
-        margin-left: 20px;
-        margin-top: 35px;
-        font-weight: 100;
-    }
-    #petitCarre3{
-        margin-top: -73px;
-        width: 40px;
-        height: 40px;
-    }
-    #boxBandeH3>.bandeH3{
-        font-size: 1.3em;
-        margin-left: 20px;
-    }
-    .boxYoutube{
-    width: 100%;
-       margin-left: 0px;
-    } 
-    .youtube2{
-        width: 100%;
-        height: 500px;
-        margin-left: 0px;
-    }
-
-    /*Laetitia*/
-
-    #boxContainer{
-        flex-direction: row;
-    }
-    #boxFooter{
-        width: 100%;
-    }
-    
-    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
-        padding: 10px 18px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
-        padding: 17px 15px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
-        padding: 17px 15px;
-    }
-
-    #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
-        margin: -14px 8px 30px 10px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone{
-        margin: -19px -18px 0px -23px;
-    }
-
-    #boxEntreprise{
-        width: 75%;
-    }
-
-    #boxEntreprise > #boxParagrapheentreprise > p{
-        margin: 2px -50px 10px -41px;
-    }
-
-    #boxAdresse > #boxTittle > #titleAdress{
-        margin: 74px 8px 31px 5px;
-    }
-
-    #boxAdresse > #boxParagrapheadresse{
-        margin: 3px 0px 31px 0px;
-    }
-
-    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
-        width: 100%;
-    }
-
-    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
-        margin: 0px;
-        font-size: 15px;
-    }
-
-    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
-        font-size: 15px;
-    }
-
-    #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
-        font-size: 15px;
-    }
-
-    #boxInformation > #boxLigne2 > #infosFive{
-        font-size: 15px;
-    }
-
-    #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
-        font-size: 15px;
-    }
-
-    #boxInformation > #boxLigne2 > #infosHeight{
-        font-size: 15px;
-    }
-
-    #boxInformation > #boxLigne3 > p.infosNine{
-        font-size: 15px;
-    }
-}
 /*-***Media query- Tablette***-*/
 @media  screen and (min-width:801px) and (max-width:900px) {
     .bars{
@@ -1975,20 +1481,20 @@ button {
         font-weight: 100;
     }
     /*-****Fléches****-*/
+    .controls, .controls2, .controls3{
+        width:98%;
+    }
     .controls {
-        top: 115%;
-        margin-left: 0px;
-        width:98%; 
+        top: 113%;
+        margin-left: 0px; 
     }
     .controls2{
-        top: 184%;
-        margin-left: 0px;
-        width:98%; 
+        top: 187%;
+        margin-left: 0px; 
     }
     .controls3 {
-        top: 247%; 
+        top: 249%; 
         margin-left: -3px;
-        width:98%;
     }
     button {
         background-color: transparent;
@@ -2241,34 +1747,19 @@ button {
     }
     /*-****cartes****-*/
     .mySlider{
-        width: 91%;
-        margin-left: 11px;
+        width: 90%;
+        margin-left: 0px;
     }   
     .mySlider2{
         width: 90%;
-        margin-left:-15px;
+        margin-left:-20px;
     }
     .mySlider3 {
         width: 90%;
-        margin-left: 10px;
-    }
-    .controls {
-        width: 98%;
-        top: 110%;
-        margin-left: 0px; 
-    }
-    .controls2{
-        width: 98%;
-        top: 178%;
-        margin-left: 0px; 
-    }
-    .controls3 {
-        width: 98%;
-        top: 236%; 
-        margin-left: -12px;
+        margin-left: 20px;
     }
     #cartes> .tns-item{
-        margin-left: 0.5px;
+        margin-left: 1px;
         font-size: 0px;
         padding-left: 0px;
     }
@@ -2278,13 +1769,13 @@ button {
         padding-left: 0px;
     }
     #cartes3> .tns-item{
-        margin-left: 1.25px;
+        margin-left: 1px;
         font-size: 0px;
         padding-left: 0px;
     }
     #cartes-mw{
         margin-left: -15px;
-        padding: 20px;
+        padding: 22px;
         margin-top: -8px;
     }
     #cartes2-mw{
@@ -2323,7 +1814,22 @@ button {
         font-weight: 100;
     }
     /*-****Fléches****-*/
-     button {
+    .controls, .controls2, .controls3{
+        width:98%;
+    }
+    .controls {
+        top: 113%;
+        margin-left: 0px; 
+    }
+    .controls2{
+        top: 182%;
+        margin-left: 0px; 
+    }
+    .controls3 {
+        top: 241%; 
+        margin-left: 0px;
+    }
+    button {
         background-color: transparent;
         border: 0px;
     }
@@ -2345,7 +1851,7 @@ button {
         font-weight: 100;
     }
     #petitCarre3{
-        margin-top: -78px;
+        margin-top: -73px;
         width: 40px;
         height: 40px;
     }
@@ -2362,48 +1868,61 @@ button {
         height: 350px;
         margin-left: 0px;
     }
+
     /*Laetitia*/
+
     #boxContainer{
         flex-direction: column;
     }
     #boxFooter{
         width: 100%;
     }
+
     #boxLiensreseauxsociaux{
         width: 100%;
     }
+
     #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
         padding: 10px 19px;
     }
+
     #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
         padding: 15px 15px;
     }
+
     #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
         padding: 15px 15px;
     }
+
     #boxLiensreseauxsociaux > #boxIcone{
         margin-bottom: 20px;
          width: 50%;
     }
+
     #boxAdresse{
         width: 100%;
     }
+
     #boxAdresse > #boxTittle > #titleAdress{
         margin: 69px 8px 31px 5px;
     }
+
     #boxAdresse > #boxParagrapheadresse{
-        margin: -25px 0px 20px 0px;
+        margin: -12px 0px 35px 0px;
     }
+
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
         width: 100%;
-        font-size: 14px;
+        font-size: 15px;
     }
+
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
-        font-size: 14px;
+        font-size: 15px;
     }
+
     #boxEntreprise > #boxParagrapheentreprise > p{
-        margin: 0px -50px 20px -44px;
-        font-size: 14px;
+        margin: -7px -52px 7px -44px;
+        font-size: 15px;
     }
     #boxInformation > #boxLigne1 > #infosOne{
         flex-direction: column;
@@ -2418,50 +1937,50 @@ button {
 
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
-        font-size: 14px;
+        font-size: 13px;
     }
+
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
-        font-size: 14px;
+        font-size: 13px;
     }
+
     #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    #boxInformation > #boxLigne2{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 10px 8px 10px 8px;
-    }
     #boxInformation > #boxLigne2 > #infosFive{
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    #boxInformation > #boxLigne2 > #infosSeven {
-        margin: 10px 0px 10px 0px;
-    }
     #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
-        font-size: 14px;
+        font-size: 13px;
     }
+
     #boxInformation > #boxLigne2 > #infosHeight{
-        font-size: 14px;
+        font-size: 13px;
     }
+
     #boxInformation > #boxLigne3 > p.infosNine{
-        font-size: 14px;
+        font-size: 13px;
     }
+
+    
 }
+
 /*-***Media query- Mobile***-*/
 @media  screen and (max-width:500px){   
 
-.bars{
+    .bars{
         display: block;
     }
-.nav {
+    .nav {
     min-height: 6vh;
 }
+
 .header{
     min-height: 25vh;
 }
+
 #boxMain{
     min-height: inherit;
 }
@@ -2560,54 +2079,28 @@ button {
             margin-left: 44px;
         }
         /*-****cartes****-*/
-.mySlider{
-    width: 89%;
-    margin-left:0px;
-    background-color: #FBDD00;
+.mySlider, .mySlider2, .mySlider3 {
+            width: 85%;
+            margin-left:-4px;
          }
-.mySlider2 {
-    width: 85%;
-    margin-left:-4px;
-        }
-.mySlider3 {
-    width: 89%;
-    margin-left:3px;
-   
-         }
-.controls{
-    width:99%;
-    margin-left: 12px; 
-    top: 108%;
-}
-.controls2 {
-    width:99%;
-    top: 170%;
-    margin-left: 15px; 
-}
-.controls3{
-    width:98%;
-    top: 239%;
-    margin-left: 0px; 
-}
 #cartes> .tns-item{
             margin-left: 0.5px;
             font-size: 0px;
             padding-left: 0px;
         }
 #cartes2> .tns-item{
-    margin-left: 0.5px;
-    font-size: 0px;
-    padding-left: 0px;
+            margin-left: 0.5px;
+            font-size: 0px;
+            padding-left: 0px;
         }
 #cartes3> .tns-item{
-            margin-left: 0.90px;
+            margin-left: 0.5px;
             font-size: 0px;
             padding-left: 0px;
         }
 #cartes-mw{
-            margin-left: -10px;
-            margin-right: 10px;
-           
+            margin-left: -5px;
+            padding: 10px;
         }
 #cartes2-mw{
             margin-left: -3px;
@@ -2615,12 +2108,12 @@ button {
             padding-top: 0px;
         }
 #cartes3-mw{
-            margin-left: -5px;
+            margin-left: 10px;
             padding: 10px;
         }
 #cartes>div>img{
-        width: 120px;
-        height: 180px;
+            width: 120px;
+            height: 180px;
         }
 #cartes2>div>img{
             width: 120px;
@@ -2641,86 +2134,85 @@ button {
         }
 .card-body h2{
             text-align: center;
-            font-size: 0.65rem;
+            font-size: 0.70rem;
             font-weight: 100;
         }
         /*-****Fléches****-*/
-.controls{
-    width:99%;
-    margin-left: 0px; 
-    top: 108%;
-}
-.controls2 {
-    width:99%;
-    top: 170%;
-    margin-left: 15px; 
-}
-.controls3{
-    width:98%;
-    top: 239%;
-    margin-left: 0px; 
-}
+.controls, .controls2, .controls3{
+            width:100%;
+            margin-left: 0px; 
+        }
+.controls {
+            top: 134%;
+        }
+.controls2{
+            top: 196%;
+            margin-left: 15px; 
+        }
+.controls3 {
+            top: 265%; 
+        }
 .rightArrow, .rightArrow2, .rightArrow3{
             font-size: 6rem;
             width: 80%;
             height: 40%;
-}
+        }
 .leftArrow, .leftArrow2, .leftArrow3{
             width: 80%;
             height: 40%;
             font-size: 6rem;
-}
+        }
 #leftBoton, #leftBoton2, #leftBoton3{
             left: 0;
             opacity: 1;
             transition: all 0.3s ease;
-}
+        }
 #leftBoton, #leftBoton2, #leftBoton3 :hover{
             transform: scale(1.1) ;
             opacity: 0.6;
             transition: all 0.3s ease;
-}
+        }
 #rightBoton, #leftBoton2, #leftBoton3{
             right: 0;
             opacity: 1;
             transition: all 0.3s ease;
-}
+        }
 #rightBoton, #leftBoton2, #leftBoton3:hover{
             transform: scale(1.1) ;
             opacity: 0.6;
             transition: all 0.3s ease;
-}
+        }
         /*-*****section bande annonce*-**********/
 #boxBandeFilm{
             width: 100%;
             height: 150px;
             margin-top: 100px;
-}
+        }
 #bandeFilm{
     height: 20vh;
-}
+        }
 #boxBande1>.bande1{
            font-size: 1.25em;
            margin-left: 20px;
            margin-top: 20px;
-}
+        }
 #boxBande2>.bande2{
             font-size: 1em;
             margin-left: 20px;
             margin-top: 40px;
-}
+        }
 #petitCarre3{
             margin-top: -40px;
             width: 40px;
             height: 40px;
-}
+        }
 #boxBandeH3>.bandeH3{
         font-size: 1em;
         margin-left: 10px;
-}
+        }
 .boxYoutube{
         margin-left: 0px;
-} 
+        } 
 .youtube2{
             width: 100%;
             height: 200px;
@@ -2730,12 +2222,16 @@ button {
     #boxContainer{
         flex-direction: column;
     }
-    #boxFooter{
-        width: 100%;
+#boxLiensreseauxsociaux{
+    width: 100%;
+    height: 40vh;
     }
 
     #boxLiensreseauxsociaux{
         width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
@@ -2757,6 +2253,7 @@ button {
 
     #boxAdresse{
         width: 100%;
+        display: flex;
     }
 
     #boxAdresse > #boxTittle > #titleAdress{
@@ -2773,8 +2270,9 @@ button {
         font-size: 14px;
     }
 
-    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
-        font-size: 14px;
+   
+    #boxAdresse {
+        width: 100%;
     }
 
     #boxEntreprise > #boxLogo{
