@@ -162,19 +162,23 @@ function createCard(array, container) {
 				gutter: 10,
 			},
 			1024: {
-				items: 3,
+				items: 4,
 				gutter: 10,
 			},
 			800: {
 				items: 3,
 				gutter: 10,
 			},
-			600: {
-				items: 2,
+			750: {
+				items: 3,
+				gutter: 10,
+			},
+			601: {
+				items: 3,
 				gutter: 20,
 			},
-			500: {
-				items: 2,
+			501: {
+				items: 3,
 				gutter: 20,
 			},
 			375: {
@@ -221,19 +225,23 @@ function createCard(array, container) {
 				gutter: 10,
 			},
 			1024: {
-				items: 3,
+				items: 4,
 				gutter: 10,
 			},
 			800: {
 				items: 3,
 				gutter: 10,
 			},
-			600: {
-				items: 2,
+			750: {
+				items: 3,
+				gutter: 10,
+			},
+			601: {
+				items: 3,
 				gutter: 20,
 			},
-			500: {
-				items: 2,
+			501: {
+				items: 3,
 				gutter: 20,
 			},
 			375: {
@@ -271,7 +279,7 @@ function createCard(array, container) {
 				items: 6,
 				gutter: 20,
 			},
-			1400: {
+			1440: {
 				items: 5,
 				gutter: 10,
 			},
@@ -280,28 +288,28 @@ function createCard(array, container) {
 				gutter: 10,
 			},
 			1024: {
-				items: 3,
+				items: 4,
 				gutter: 10,
 			},
 			800: {
 				items: 3,
 				gutter: 10,
 			},
+			750: {
+				items: 3,
+				gutter: 10,
+			},
 			600: {
-				items: 2,
+				items: 3,
 				gutter: 10,
 			},
-			500: {
-				items: 2,
-				gutter: 10,
-			},
-			375: {
-				items: 2,
+			501: {
+				items: 3,
 				gutter: 10,
 			},
 			375: {
 				items: 2,
-				gutter: 20,
+				gutter: 10,
 			},
 			300: {
 				items: 1,
