@@ -774,6 +774,11 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+#boxEntreprise > #boxLogo >#logoFooter{
+    width: 80%;
+}
+
 #boxEntreprise > #boxParagrapheentreprise{
     width: 60%;
     text-align: center; 
@@ -787,6 +792,7 @@ button {
     margin: 0px 0px 0px 0px;
     font-size: 1.1rem;
     line-height: 23px;
+    margin-bottom: 15px;
 }
 /*-********Box Adresse********/
 #boxAdresse{
@@ -1157,6 +1163,7 @@ button {
 
     #boxLiensreseauxsociaux > #boxIcone{
         margin: -16px 13px 0px 7px;
+        width: 80%;
     }
 
     #boxEntreprise{
@@ -1454,7 +1461,6 @@ button {
 
     #boxEntreprise > #boxParagrapheentreprise > p{
         margin: 2px -50px 10px -41px;
-        font-size: 15px;
     }
 
     #boxAdresse > #boxTittle > #titleAdress{
@@ -2426,52 +2432,72 @@ button {
     }
 
     #boxAdresse > #boxParagrapheadresse{
-        margin: -12px 0px 35px 0px;
+        margin: -25px 0px 20px 0px;
     }
+    
 
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
         width: 100%;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #boxEntreprise > #boxParagrapheentreprise > p{
-        margin: -7px -52px 7px -44px;
-        font-size: 15px;
+        margin: 0px -50px 20px -44px;
+        font-size: 14px;
     }
 
-    
+    #boxInformation > #boxLigne1 > #infosOne{
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
+        margin: 10px 0px 0px 0px;
+    }
 
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
     }
 
     #boxInformation > #boxLigne2 > #infosFive{
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosSeven {
+        margin: 10px 0px 10px 0px;
     }
 
     #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation > #boxLigne2 > #infosHeight{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation > #boxLigne3 > p.infosNine{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     
@@ -2720,43 +2746,118 @@ button {
             height: 200px;
             margin-left: 10px;
         }
-    /*-***Media query Laetitia-375px***-*/
-#boxContainer{
-    flex-direction: column;
-    }
-#boxFooter{
-    min-height: 100vh;
-    }
-#boxLiensreseauxsociaux{
-    width: 100%;
-    height: 40vh;
-    }
 
-    #boxFooter {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
+    /*Laetitia*/
+
+    #boxContainer{
         flex-direction: column;
     }
-
-    #boxContainer {
-        flex-direction: column;
+    #boxFooter{
         width: 100%;
-        display: flex;
     }
 
-    footer  p{
-        font-size: 0.9rem;
+    #boxLiensreseauxsociaux{
+        width: 100%;
     }
 
-   
-    #boxAdresse {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
+        padding: 10px 19px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
+        padding: 15px 15px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
+        padding: 15px 15px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone{
+        margin-bottom: 20px;
+         width: 70%;
+    }
+
+    #boxAdresse{
         width: 100%;
+    }
+
+    #boxAdresse > #boxTittle > #titleAdress{
+        margin: 69px 8px 31px 5px;
+    }
+
+    #boxAdresse > #boxParagrapheadresse{
+        margin: -25px 0px 20px 0px;
+    }
+    
+
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
+        font-size: 14px;
+    }
+
+    #boxEntreprise > #boxLogo{
+        width: 80%;
     }
 
     #boxEntreprise > #boxParagrapheentreprise > p{
-        line-height: 15px;
-        font-size: 0.9rem;
+        margin: 0px -50px 20px -44px;
+        font-size: 15px;
     }
+
+
+    #boxInformation > #boxLigne1 > #infosOne{
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
+        margin: 10px 0px 0px 0px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosFive{
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosSeven {
+        margin: 10px 0px 10px 0px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne2 > #infosHeight{
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne3 > p.infosNine{
+        font-size: 14px;
+    } 
+
 }
 
