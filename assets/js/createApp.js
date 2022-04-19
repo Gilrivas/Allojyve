@@ -31,7 +31,6 @@ function createApp(main) {
 
 	createElement('div', 'boxMain', 'boxMain', header);
 	createElement('div', 'headerTitle', 'headerTitle', boxMain);
-
 	createElement('div', 'boxMorbius', 'boxMorbius', boxMain);
 	createElement('div', 'boxTeaser', 'boxTeaser', boxMain);
 	createElement('div', 'boxVideo', 'boxVideo', boxTeaser);
