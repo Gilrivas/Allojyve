@@ -91,13 +91,33 @@ function createCard(array, container) {
 		var synopsis = document.createElement('p');
 		synopsis.innerHTML = movie.overview;
 
+		var imgModale = document.createElement('div');
+		imgModale.id = 'imgModale';
+		imgModale.classList = 'imgModale';
+
+		var modaleText = document.createElement('div');
+		modaleText.id = 'modaleText';
+		modaleText.classList = 'modaleText';
+
+		var modaleSyp = document.createElement('div');
+		modaleSyp.id = 'sypnosisBox'
+		modaleSyp.classList = 'sypnosisBox'
+
+		var modalYoutube = document.createElement('div')
+		modalYoutube.id = 'modalVideo'
+		modalYoutube.classList = 'modalVideo'
+
+
 		modale.appendChild(modaleContainer);
 		modale.appendChild(close);
-		modaleContainer.appendChild(movieImg);
-		modaleContainer.appendChild(title2);
-		modaleContainer.appendChild(date);
-		modaleContainer.appendChild(popularity);
-		modaleContainer.appendChild(synopsis);
+		modaleContainer.appendChild(imgModale)
+		imgModale.appendChild(movieImg);
+		modaleContainer.appendChild(modaleText)
+		modaleText.appendChild(title2);
+		modaleText.appendChild(date);
+		modaleText.appendChild(popularity);
+		modaleContainer.appendChild(modaleSyp)
+		modaleSyp.appendChild(synopsis);
 
 		main.appendChild(modale);
 
@@ -125,10 +145,13 @@ function createCard(array, container) {
 				youtubeTrailer.setAttribute('src', youtube2);
 				youtubeTrailer.setAttribute('allowFullscreen', 'True');
 				youtubeTrailer.setAttribute('frameborder', '0');
-				youtubeTrailer.style.width = '640px';
-				youtubeTrailer.style.height = '480px';
+				youtubeTrailer.style.width = '500px';
+				youtubeTrailer.style.height = '300px';
 
-				modaleContainer.appendChild(youtubeTrailer);
+
+				modaleContainer.appendChild(modalYoutube)
+				modalYoutube.appendChild(youtubeTrailer);
+
 			});
 	}
 
