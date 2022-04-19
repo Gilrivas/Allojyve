@@ -746,11 +746,9 @@ button {
     align-items: center;
     justify-content: center;
 }
-
 #boxEntreprise > #boxLogo >#logoFooter{
     width: 80%;
 }
-
 #boxEntreprise > #boxParagrapheentreprise{
     width: 60%;
     text-align: center; 
@@ -2407,6 +2405,17 @@ button {
         margin: 0px -50px 20px -44px;
         font-size: 14px;
     }
+    #boxInformation > #boxLigne1 > #infosOne{
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
+    }
+    
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
+        margin: 10px 0px 0px 0px;
+    }
+
+
     #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
         font-size: 14px;
@@ -2717,27 +2726,49 @@ button {
             height: 200px;
             margin-left: 10px;
 }
-    /*-***Media query Laetitia-375px***-*/
-#boxContainer{
-    flex-direction: column;
-    }
-#boxFooter{
-    min-height: 100vh;
+    /*Laetitia média 500px*/
+    #boxContainer{
+        flex-direction: column;
     }
     #boxFooter{
         width: 100%;
     }
-#boxFooter {
+
+    #boxLiensreseauxsociaux{
         width: 100%;
     }
-#boxContainer {
-        flex-direction: column;
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
+        padding: 10px 19px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
+        padding: 15px 15px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
+        padding: 15px 15px;
+    }
+
+    #boxLiensreseauxsociaux > #boxIcone{
+        margin-bottom: 20px;
+         width: 70%;
+    }
+
+    #boxAdresse{
         width: 100%;
     }
-footer  p{
-        font-size: 0.9rem;
+
+    #boxAdresse > #boxTittle > #titleAdress{
+        margin: 69px 8px 31px 5px;
     }
-#boxAdresse {
+
+    #boxAdresse > #boxParagrapheadresse{
+        margin: -25px 0px 20px 0px;
+    }
+    
+
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
         width: 100%;
         font-size: 14px;
     }
@@ -2749,9 +2780,30 @@ footer  p{
     #boxEntreprise > #boxLogo{
         width: 80%;
     }
-#boxEntreprise > #boxParagrapheentreprise > p{
-        line-height: 15px;
-        font-size: 0.9rem;
+
+    #boxEntreprise > #boxParagrapheentreprise > p{
+        margin: 0px -50px 20px -44px;
+        font-size: 15px;
+    }
+
+
+    #boxInformation > #boxLigne1 > #infosOne{
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
+        margin: 10px 0px 0px 0px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
+        font-size: 14px;
     }
 
     #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
@@ -2784,6 +2836,5 @@ footer  p{
     #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 14px;
     } 
-
 }
 
