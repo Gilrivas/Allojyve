@@ -2212,7 +2212,34 @@ height: 255px;
     .mySlider,
     .mySlider2,
     .mySlider3 {
-        width: 50%;
+        width: 60%;
         margin-left: 4px;
+    }
+
+    #cartes>div>img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #cartes2>div>img {
+        width: 200px;
+        height: 300px;
+    }
+
+
+    #cartes3>div>img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card-body {
+        margin: 0px;
+        width: 200px;
+        height: 55px;
+    }
+
+    .controls, .controls2, .controls3 {
+        
+        transform: translatey(-180%);
     }
 }
