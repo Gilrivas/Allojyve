@@ -138,6 +138,9 @@ function createCard(array, container) {
 		modaleText.appendChild(title2);
 		modaleText.appendChild(date);
 		modaleText.appendChild(popularity);
+		modaleContainer2.appendChild(modaleSyp);
+		modaleSyp.appendChild(synopsisH2);
+		modaleSyp.appendChild(synopsis);
 
 		main.appendChild(modale);
 
