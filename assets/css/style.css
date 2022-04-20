@@ -1231,18 +1231,6 @@ button {
     /*Laetitia*/
 
 
-    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
-        padding: 10px 18px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
-        padding: 17px 15px;
-    }
-
-    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
-        padding: 17px 15px;
-    }
-
     #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
         margin: 28px 8px 30px 10px;
     }
@@ -1622,8 +1610,7 @@ button {
     } 
     .youtube2{
         width: 100%;
-        height: 350px;
-        margin-left: 0px;
+    
     }
 
     /*Laetitia*/
@@ -1638,15 +1625,15 @@ button {
     }
 
     #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
-        padding: 10px 19px;
+        padding: 10px 11px;
     }
 
     #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
-        padding: 15px 15px;
+        padding: 16px 12px;
     }
 
     #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
-        padding: 15px 15px;
+        padding: 14px 11px;
     }
 
     #boxLiensreseauxsociaux>#boxIcone {

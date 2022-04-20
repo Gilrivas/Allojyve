@@ -93,7 +93,7 @@ function createApp(main) {
 	createElement('div', 'titleSection', 'titleSection', popular);
 	//création img icon dans section films populaire
 	createElement('img', 'boxImgS', 'boxImgS', titleSection);
-	boxImgS.src = './assets/img/vectorFilm.png';
+	boxImgS.src = './assets/img/cinéma.svg';
 	boxImgS.alt = "icon d'une  pellicule de film";
 
 	createElement('div', 'controls', 'controls', popular);
@@ -151,7 +151,7 @@ function createApp(main) {
 	createElement('div', 'titleSection3', 'titleSection3', upcoming);
 	//création img icon dans section films à venir
 	createElement('img', 'boxImgS3', 'boxImgS3', titleSection3);
-	boxImgS3.src = './assets/img/vectorFilm.png';
+	boxImgS3.src = './assets/img/cinéma.svg';
 	boxImgS3.alt = "icon d'une  pellicule de film";
 
 	createElement('h2', 'h2Section3', 'h2Section3', titleSection3);
