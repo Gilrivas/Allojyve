@@ -279,20 +279,12 @@ button {
     padding: 0;
     position: absolute;
     width: 97%; 
-    transform: translatey(-50%);
+    transform: translatey(50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.controls {
-    top: 155%;
-}
-.controls2{
-    top: 261%;
-}
-.controls3 {
-    top: 356%;   
-}
+
 .controls1,.controls2, .controls3:focus{
     outline: none;
 }
@@ -535,6 +527,7 @@ button {
 .synopsisBox > p{
     width: 80%;
     font-size: 0.8vw;
+    text-align: justify;
 }
 
 .modalVideo{
@@ -985,6 +978,12 @@ button {
     .bars{
         display: block;
     }
+
+    .controls, .controls2, .controls3{
+      
+        
+        
+    }
     
     .tittle{
         font-size: 2.375em;
@@ -1167,15 +1166,15 @@ button {
         width:98%;
     }
     .controls {
-        top: 120%;
+        
         margin-left: 0px; 
     }
     .controls2{
-        top: 191%;
+        
         margin-left: 0px; 
     }
     .controls3 {
-        top: 253%; 
+         
         margin-left: -3px;
     }
     button {
@@ -1302,7 +1301,7 @@ button {
         font-size: 15px;
     }
 }
-@media  screen and (min-width:701px) and (max-width:800px) {
+@media  screen and (max-width:800px) {
 
     .bars{
         display: block;
@@ -1485,15 +1484,15 @@ button {
         width:98%;
     }
     .controls {
-        top: 113%;
+        
         margin-left: 0px; 
     }
     .controls2{
-        top: 187%;
+        
         margin-left: 0px; 
     }
     .controls3 {
-        top: 249%; 
+     
         margin-left: -3px;
     }
     button {
@@ -1621,7 +1620,7 @@ button {
         font-size: 13px;
     }
 }
-@media  screen and (min-width:501px) and (max-width:700px){
+@media  screen and (max-width:700px){
 
     .bars{
         display: block;
@@ -1818,15 +1817,15 @@ button {
         width:98%;
     }
     .controls {
-        top: 113%;
+        
         margin-left: 0px; 
     }
     .controls2{
-        top: 182%;
+        
         margin-left: 0px; 
     }
     .controls3 {
-        top: 241%; 
+        
         margin-left: 0px;
     }
     button {
@@ -2143,14 +2142,14 @@ button {
             margin-left: 0px; 
         }
 .controls {
-            top: 134%;
+          
         }
 .controls2{
-            top: 196%;
+           
             margin-left: 15px; 
         }
 .controls3 {
-            top: 265%; 
+            
         }
 .rightArrow, .rightArrow2, .rightArrow3{
             font-size: 6rem;
@@ -2224,7 +2223,6 @@ button {
     }
 #boxLiensreseauxsociaux{
     width: 100%;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     }
