@@ -194,19 +194,19 @@ function createCard(array, container) {
 			},
 			1150: {
 				items: 4,
-				gutter: 10,
+				gutter: 20,
 			},
 			1024: {
 				items: 4,
-				gutter: 10,
+				gutter: 20,
 			},
 			800: {
-				items: 3,
+				items: 4,
 				gutter: 10,
 			},
 			750: {
 				items: 3,
-				gutter: 10,
+				gutter: 20,
 			},
 			601: {
 				items: 3,
@@ -216,13 +216,13 @@ function createCard(array, container) {
 				items: 3,
 				gutter: 20,
 			},
-			375: {
+			395: {
 				items: 2,
-				gutter: 20,
+				gutter:20,
 			},
 			300: {
 				items: 1,
-				gutter: 20,
+				gutter: 50,
 			},
 		},
 	});
@@ -230,13 +230,10 @@ function createCard(array, container) {
 	let slider2 = tns({
 		container: '.cartes2',
 		items: 20,
-		mouseDrag: true,
 		slideBy: 'page',
 		speed: 800,
 		loop: false,
-		touch: true,
 		nav: false,
-		autoHeight: true,
 		controlsContainer: '#controls2',
 		responsive: {
 			2560: {
@@ -257,19 +254,19 @@ function createCard(array, container) {
 			},
 			1150: {
 				items: 4,
-				gutter: 10,
+				gutter: 20,
 			},
 			1024: {
 				items: 4,
-				gutter: 10,
+				gutter: 20,
 			},
 			800: {
-				items: 3,
+				items: 4,
 				gutter: 10,
 			},
 			750: {
 				items: 3,
-				gutter: 10,
+				gutter: 20,
 			},
 			601: {
 				items: 3,
@@ -279,13 +276,13 @@ function createCard(array, container) {
 				items: 3,
 				gutter: 20,
 			},
-			375: {
+			395: {
 				items: 2,
-				gutter: 20,
+				gutter:20,
 			},
 			300: {
 				items: 1,
-				gutter: 20,
+				gutter: 50,
 			},
 		},
 	});
@@ -293,62 +290,60 @@ function createCard(array, container) {
 	let slider3 = tns({
 		container: '.cartes3',
 		items: 20,
-		mouseDrag: true,
 		slideBy: 'page',
 		speed: 800,
 		loop: false,
-		touch: true,
 		nav: false,
-		autoHeight: true,
 		controlsContainer: '#controls3',
 		responsive: {
 			2560: {
 				items: 9,
-				gutter: 0,
+				gutter: 20,
 			},
 			1900: {
 				items: 7,
-				gutter: 10,
+				gutter: 20,
 			},
 			1750: {
 				items: 6,
 				gutter: 20,
 			},
-			1440: {
+			1400: {
 				items: 5,
-				gutter: 10,
+				gutter: 20,
 			},
 			1150: {
 				items: 4,
-				gutter: 10,
+				gutter: 20,
 			},
 			1024: {
 				items: 4,
-				gutter: 10,
+				gutter: 20,
 			},
 			800: {
-				items: 3,
+				items: 4,
 				gutter: 10,
 			},
 			750: {
 				items: 3,
-				gutter: 10,
+				gutter: 20,
 			},
-			600: {
+			601: {
 				items: 3,
-				gutter: 10,
+				gutter: 20,
 			},
 			501: {
 				items: 3,
-				gutter: 10,
+				gutter: 20,
 			},
-			375: {
+			
+			395: {
 				items: 2,
-				gutter: 10,
+				gutter:20,
 			},
 			300: {
 				items: 1,
-				gutter: 10,
+				gutter: 50,
 			},
 		},
 	});
