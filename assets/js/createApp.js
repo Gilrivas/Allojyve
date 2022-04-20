@@ -24,18 +24,18 @@ function createApp(main) {
 	
 
 
-	createElement('a', 'populaires', 'populaires', mobileNavArea);
-	createElement('a', 'lastMovie', 'lastMovie', mobileNavArea);
-	createElement('a', 'aVenir', 'aVenir', mobileNavArea);
+	createElement('a', 'populaires', 'populaires2', mobileNavArea);
+	createElement('a', 'lastMovie', 'lastMovie2', mobileNavArea);
+	createElement('a', 'aVenir', 'aVenir2', mobileNavArea);
 
-	populaires.textContent = 'Populaires';
-	populaires.href = '#popular';
+	populaires2.textContent = 'Populaires';
+	populaires2.href = '#popular';
 
-	lastMovie.textContent = 'Derniers Sortis';
-	lastMovie.href = '#nowPlaying';
+	lastMovie2.textContent = 'Derniers Sortis';
+	lastMovie2.href = '#nowPlaying';
 
-	aVenir.textContent = 'À venir';
-	aVenir.href = '#upcoming';
+	aVenir2.textContent = 'À venir';
+	aVenir2.href = '#upcoming';
 	
 	
 
