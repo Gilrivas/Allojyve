@@ -120,13 +120,22 @@ function createCard(array, container) {
 		var bandeAnnonce = document.createElement('h2');
 		bandeAnnonce.textContent = 'Bande Annonce';
 
+		var boxTitleImg = document.createElement('div')
+		boxTitleImg.classList = 'boxTitleImg'
+		boxTitleImg.id = 'boxTitleImg'
+
+
+
 		modale.appendChild(modaleContainer);
 		modalYoutube.appendChild(bandeAnnonce);
+		modaleContainer2.appendChild(boxTitleImg);
 		modaleContainer.appendChild(modaleContainer2);
 		modale.appendChild(close);
-		modaleContainer2.appendChild(imgModale);
+	
+		boxTitleImg.appendChild(modaleText)
+		boxTitleImg.appendChild(imgModale)
 		imgModale.appendChild(movieImg);
-		modaleContainer2.appendChild(modaleText);
+		
 		modaleText.appendChild(title2);
 		modaleText.appendChild(date);
 		modaleText.appendChild(popularity);
