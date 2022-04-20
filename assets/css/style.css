@@ -408,7 +408,6 @@ button {
     background: black;
     color: white;
     display: flex;
-    
     transition: all 1s ease 0s;
     flex-direction: row-reverse;
 }
@@ -423,6 +422,14 @@ button {
     text-align: start;
     min-height: 100vh;
 }
+.boxTitleImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    }
+
 .closeModaleBtn{
     position: absolute;
     width: 20px;
@@ -1283,6 +1290,57 @@ button {
     #infosTen{
         margin: 0px;
     }
+
+
+    /* MODAL*/
+    .modaleContainer2 {
+        min-height: 100vh;
+        }
+        .boxTitleImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+        .modaleText {
+        width: 50%;
+        margin-left: 22px;
+        }
+        .imgModale img {
+        width: 20vw;
+        margin-top: 25px;
+        margin-left: -163px;
+        }
+        .modaleText>h2 {
+        position: relative;
+        font-size: 2vw;
+        margin-left: -70px;
+        }
+        .modaleText>p {
+        font-size: 1.5vw;
+        margin-top: 15px;
+        margin-left: -70px;
+        }
+        .synopsisBox>h2 {
+        position: relative;
+        width: 80%;
+        font-size: 2vw;
+        }
+        .synopsisBox>p {
+        width: 80%;
+        font-size: 1vw;
+        text-align: justify;
+        }
+        .modalVideo>h2 {
+        width: 80%;
+        position: relative;
+        font-size: 2vw;
+        }
+        .modalVideo iframe {
+        width: 80%;
+        height: 255px;
+        }
 }
 
 
@@ -1307,11 +1365,6 @@ button {
         font-size: 1.875em;
         margin: 10px 0px 0px 10px;
     }
-
-    
-
-   
-
 
     /*-****Fléches****-*/
     .controls,
@@ -1431,6 +1484,57 @@ button {
 
     #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 13px;
+    }
+
+
+     /*modal media query */
+    .modaleContainer2 {
+    min-height: 100vh;
+    }
+    .boxTitleImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .modaleText {
+    width: 50%;
+    margin-left: 22px;
+    }
+    .imgModale img {
+    width: 20vw;
+    margin-top: 25px;
+    margin-left: -163px;
+    }
+    .modaleText>h2 {
+    position: relative;
+    font-size: 2vw;
+    margin-left: -70px;
+    }
+    .modaleText>p {
+    font-size: 1.5vw;
+    margin-top: 15px;
+    margin-left: -70px;
+    }
+    .synopsisBox>h2 {
+    position: relative;
+    width: 80%;
+    font-size: 2vw;
+    }
+    .synopsisBox>p {
+    width: 80%;
+    font-size: 1vw;
+    text-align: justify;
+    }
+    .modalVideo>h2 {
+    width: 80%;
+    position: relative;
+    font-size: 2vw;
+    }
+    .modalVideo iframe {
+    width: 80%;
+    height: 255px;
     }
 }
 
@@ -1720,6 +1824,57 @@ button {
         
     }
 
+         /*modal media query */
+.modaleContainer2 {
+min-height: 100vh;
+}
+.boxTitleImg {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.modaleText {
+width: 50%;
+margin-left: 22px;
+}
+.imgModale img {
+width: 20vw;
+margin-top: 25px;
+margin-left: -136px;
+}
+.modaleText>h2 {
+position: relative;
+font-size: 2vw;
+margin-left: -62px;
+}
+.modaleText>p {
+font-size: 1.5vw;
+margin-top: 15px;
+margin-left: -62px;
+}
+.synopsisBox>h2 {
+position: relative;
+width: 80%;
+font-size: 2vw;
+}
+.synopsisBox>p {
+width: 80%;
+font-size: 1vw;
+text-align: justify;
+}
+.modalVideo>h2 {
+width: 80%;
+position: relative;
+font-size: 2vw;
+}
+.modalVideo iframe {
+width: 80%;
+height: 255px;
+}
+/*fin modal media query*/
+
 }
 
 /*-***Media query- Mobile***-*/
@@ -1989,6 +2144,65 @@ button {
         width: 100%;
        
     }
+
+
+    /*modal media query */
+.modaleContainer2 {
+    min-height: 90vh;
+    }
+    .boxTitleImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .modaleText {
+    width: 50%;
+    margin-left: 22px;
+    }
+    .imgModale img {
+    width: 20vw;
+    margin-top: 25px;
+    margin-left: -90px;
+    }
+    .modaleText>h2 {
+    position: relative;
+    font-size: 2vw;
+    margin-left: -45px;
+    }
+    .modaleText>p {
+    font-size: 1.5vw;
+    margin-top: 15px;
+    margin-left: -45px;
+    }
+    .synopsisBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    }
+    .synopsisBox>h2 {
+    position: relative;
+    width: 80%;
+    font-size: 2vw;
+    }
+    .synopsisBox>p {
+    width: 80%;
+    font-size: 1vw;
+    text-align: justify;
+    }
+    .modalVideo>h2 {
+    width: 80%;
+    position: relative;
+    font-size: 2vw;
+    }
+    .modalVideo iframe {
+    width: 80%;
+    height: 270px;
+    }
+     /*fin modal media query*/
 
     
 }
