@@ -710,7 +710,7 @@ button {
     font-size: 1.56rem;
     font-family: Ubuntu;
     font-weight: 500;
-    margin: 10px 10px 30px 10px;
+    margin: 65px 10px 30px 10px;
 }
 /*-********Box Icone********/
 #boxLiensreseauxsociaux > #boxIcone {
@@ -719,6 +719,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    margin: 52px 0px 23px 0px;
 }
 /*-********Facebook********/
 #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook{
@@ -792,14 +793,11 @@ button {
 }
 #boxEntreprise > #boxLogo{
     width: 100%;
-    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#boxEntreprise > #boxLogo >#logoFooter{
-    width: 80%;
-}
+
 #boxEntreprise > #boxParagrapheentreprise{
     width: 60%;
     text-align: center; 
@@ -810,7 +808,7 @@ button {
     line-height: 14.06px;
 } 
 #boxEntreprise > #boxParagrapheentreprise > p{
-    margin: 0px 0px 0px 0px;
+    margin: -29px 0px 20px 0px;
     font-size: 1.1rem;
     line-height: 23px;
 }
@@ -850,7 +848,9 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 7px 0px -22px 0px;
 }
+
 #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
     width: 40%;
     text-align: center; 
@@ -893,6 +893,8 @@ button {
 }
 #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
     cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA{
     color:#FBDD00;
@@ -900,11 +902,11 @@ button {
 #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
     color: white;
     margin: 0px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
     color:#FBDD00;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2 > span.infosFour{
     color: white;
@@ -920,7 +922,7 @@ button {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     margin: 0px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne2 > #infosFive > p{
     font-size: 1.56rem;
@@ -938,14 +940,14 @@ button {
     font-weight: 500;
     margin: 0px 15px ;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne2 > #infosHeight{
     color: white;
     font-family: Roboto;
     font-weight: 500;
     margin: 0px 0px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne2 > #infosHeight > p{
     font-size: 1.56rem;
@@ -960,7 +962,7 @@ button {
     color: white;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
 #boxInformation > #boxLigne3 > p.infosNine > a.infosTen{
     color: #FBDD00;
@@ -980,9 +982,7 @@ button {
     }
 
     .controls, .controls2, .controls3{
-      
-        
-        
+         
     }
     
     .tittle{
@@ -1239,11 +1239,11 @@ button {
     }
 
     #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
-        margin: -14px 8px 30px 10px;
+        margin: 28px 8px 30px 10px;
     }
 
     #boxLiensreseauxsociaux > #boxIcone{
-        margin: -16px -69px 0px -74px;
+        margin: 29px -69px 0px -74px;
     }
 
     #boxEntreprise{
@@ -1256,11 +1256,11 @@ button {
     }
 
     #boxAdresse > #boxTittle > #titleAdress{
-        margin: 67px 8px 31px 5px;
+        margin: 130px 8px 24px 5px;
     }
 
     #boxAdresse > #boxParagrapheadresse{
-        margin: 3px 0px 31px 0px;
+        margin: 57px 0px 31px 0px;
     }
 
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
@@ -1300,6 +1300,8 @@ button {
     #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 15px;
     }
+}
+@media screen and (max-height:375px){
 }
 @media  screen and (max-width:800px) {
 
@@ -1561,7 +1563,7 @@ button {
     }
 
     #boxLiensreseauxsociaux > #boxIcone{
-        margin: 0px;
+        margin: 26px 0px 11px 0px;
     }
 
     #boxAdresse{
@@ -1569,11 +1571,11 @@ button {
     }
 
     #boxAdresse > #boxTittle > #titleAdress{
-        margin: 90px 8px 31px 5px;
+        margin: 103px 8px 31px 5px;
     }
 
     #boxAdresse > #boxParagrapheadresse{
-        margin: 8px 0px 35px 0px;
+        margin: 28px 0px -8px 0px;
     }
 
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
@@ -1586,7 +1588,7 @@ button {
     }
 
     #boxEntreprise > #boxParagrapheentreprise > p{
-        margin: -7px -52px 7px -44px;
+        margin: -31px -52px 26px -44px;
         font-size: 15px;
         line-height: 20px;
     }
@@ -1894,8 +1896,8 @@ button {
     }
 
     #boxLiensreseauxsociaux > #boxIcone{
-        margin-bottom: 20px;
-         width: 50%;
+        width: 50%;
+        margin: 73px 0px 37px 0px;
     }
 
     #boxAdresse{
@@ -1906,8 +1908,12 @@ button {
         margin: 69px 8px 31px 5px;
     }
 
+    #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
+       margin: 81px 10px 30px 10px;
+    }
+
     #boxAdresse > #boxParagrapheadresse{
-        margin: -12px 0px 35px 0px;
+        margin: 27px 0px 16px 0px;
     }
 
     #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
@@ -1945,6 +1951,10 @@ button {
 
     #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
         font-size: 13px;
+    }
+
+    #boxInformation > #boxLigne2{
+        flex-direction: column;
     }
 
     #boxInformation > #boxLigne2 > #infosFive{
@@ -2240,8 +2250,8 @@ button {
     }
 
     #boxLiensreseauxsociaux > #boxIcone{
-        margin-bottom: 20px;
-         width: 70%;
+        width: 70%;
+        margin: 12px 0px 28px 0px;
     }
 
     #boxAdresse{
@@ -2254,7 +2264,7 @@ button {
     }
 
     #boxAdresse > #boxParagrapheadresse{
-        margin: -25px 0px 20px 0px;
+        margin: -9px 0px 9px 0px;
     }
     
 
