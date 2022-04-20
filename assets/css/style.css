@@ -1,49 +1,39 @@
 @font-face {
-    font-family: Kanit;
+    font-family:Kanit;
     src: url(../fonts/Kanit-Bold.ttf);
 }
-
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
 @font-face {
     font-family: Ubuntu;
     src: url(../fonts/Ubuntu-Medium.ttf);
 }
-
-@font-face {
+@font-face{
     font-family: Maguntia;
-    src: url(../fonts/UnifrakturMaguntia-Book.ttf);
+    src:url(../fonts/UnifrakturMaguntia-Book.ttf);
 }
-
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
-body {
+body{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-
-h2 {
+h2{
     font-family: "Ubuntu", sans-serif;
 }
-
-p {
+p{
     font-family: 'Roboto', sans-serif;
 }
-
 /*------------------------------JORGE----------------------------------------*/
-.header {
+.header{
     min-height: 100vh;
 }
-
-h1 {
+h1{
     position: relative;
 }
-
-h1::before {
+h1::before{
     position: absolute;
     content: '';
     top: 100%;
@@ -51,8 +41,7 @@ h1::before {
     width: 100%;
     background-color: #FBDD00;
 }
-
-.nav {
+.nav{
     display: flex;
     position: fixed;
     width: 100%;
@@ -62,35 +51,29 @@ h1::before {
     min-height: 6vh;
     z-index: 6;
 }
-
-.boxMain {
+.boxMain{
     display: flex;
     min-height: 90vh;
     flex-direction: column;
 }
-
-.headerTitle {
+.headerTitle{
     display: flex;
     width: 100%;
     margin: 110px 0px 0px 0px;
     align-items: center;
 }
-
-.tittle {
+.tittle{
     font-family: "Ubuntu", sans-serif;
     margin-left: 40px;
     font-size: 3em;
 }
-
-#img {
+#img{
     max-width: 250px;
 }
-
-.menu {
+.menu{
     margin-right: 60px;
 }
-
-.boxMorbius {
+.boxMorbius{
     background-color: black;
     color: white;
     width: 100%;
@@ -99,101 +82,82 @@ h1::before {
     display: flex;
     margin: 20px 0px 30px 0px;
 }
-
-#morbius {
+#morbius{
     font-size: 4.375em;
     margin: 0px 0px 0px 40px;
 }
-
-a {
+a{
     color: white;
     font-family: "Ubuntu", sans-serif;
     text-decoration: none;
     margin: 20px;
     font-size: 1.2em;
 }
-
-.boxTeaser {
+.boxTeaser{
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 30px 0px;
 }
-
-.boxVideo {
+.boxVideo{
     display: flex;
     justify-content: center;
     width: 60%;
 }
-
-.boxText {
+.boxText{
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     width: 50%;
 }
-
-.boxText h2 {
+.boxText h2{
     font-size: 1.875em;
 }
-
-.boxText p {
+.boxText p{
     width: 70%;
     font-size: 1.5em;
     text-align: justify;
 }
-
-.boxImg {
+.boxImg{
     margin-left: -7px;
 }
-
-.petitCarre {
+.petitCarre{
     margin-left: 10px;
     width: 40px;
     height: 40px;
 }
-
-.youtube {
+.youtube{
     width: 90%;
     height: 500px;
 }
-
 /*            SECTION 1    JORGE               */
-#popular {
+#popular{
     max-width: 100%;
     min-height: 100vh;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-
-.section {
+.section{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
 /*-***********************************PC WIDTH 1440px height 900px****************************************-*/
 /*Titres: Section1 Film Populaire / Section 2 Film derniers sortis / Section 3 Films à venir */
-.titleSection,
-.titleSection2,
-.titleSection3 {
+.titleSection, .titleSection2, .titleSection3 {
     position: relative;
     width: 100%;
     margin: 0px 0px 80px 0px;
     display: flex;
 }
-
-.h2Section,
-.h2Section2,
-.h2Section3 {
+.h2Section, .h2Section2,.h2Section3{
     font-size: 3em;
     margin: 0px 0px 0px 10px;
 }
-
-.titleSection::before {
+.titleSection::before{
     position: absolute;
     content: '';
     background: #FBDD00;
@@ -203,8 +167,7 @@ a {
     transform: skew(-60deg);
     left: calc(54% - 50%);
 }
-
-.h2Section2::before {
+.h2Section2::before{
     position: absolute;
     content: '';
     background: #FBDD00;
@@ -214,8 +177,7 @@ a {
     transform: skew(-60deg);
     left: calc(54% - 50%);
 }
-
-.h2Section3::before {
+.h2Section3::before{
     position: absolute;
     content: '';
     background: #FBDD00;
@@ -225,95 +187,74 @@ a {
     transform: skew(-60deg);
     left: calc(54% - 50%);
 }
-
 /*Icon Film-*/
-.boxImgS,
-.boxImgS2,
-.boxImgS3 {
+.boxImgS, .boxImgS2,.boxImgS3{
     margin-top: 10px;
     max-width: 38px;
     height: 38px;
     margin-left: 105px;
 }
-
 /*-*****************Carrousel section1 Jorge /section2 Laeti / Section3 Chris******************************-*/
-.mySlider,
-.mySlider2,
-.mySlider3 {
+.mySlider, .mySlider2, .mySlider3 {
     position: relative;
     width: 91%;
     margin-left: 0px;
     margin-right: 0px;
-}
-
+ }
 /*-****cartes****-*/
-.cartes,
-.cartes2,
-.cartes3 {
+.cartes, .cartes2, .cartes3{
     width: 30%;
     overflow: hidden;
 }
-
-#cartes>.tns-item {
+#cartes> .tns-item{
     margin-left: 0px;
     font-size: 0px;
     padding-left: 25px;
 }
-
-#cartes2>.tns-item {
+#cartes2> .tns-item{
     margin-left: 0px;
     font-size: 0px;
     padding-left: 30px;
 }
-
-#cartes3>.tns-item {
+#cartes3> .tns-item{
     margin-left: -1px;
     font-size: 0px;
     padding-left: 35px;
 }
-
-#cartes-mw {
+#cartes-mw{
     margin-left: -20px;
     padding: 25px;
 }
-
-#cartes2-mw {
+#cartes2-mw{
     margin-left: -20px;
     padding: 25px;
     padding-bottom: 35px;
 }
-
-#cartes3-mw {
+#cartes3-mw{
     margin-left: -20px;
     padding: 25px;
 }
-
-#cartes>div>img {
+#cartes>div>img{
     width: 200px;
     height: 300px;
 }
-
-#cartes2>div>img {
+#cartes2>div>img{
     width: 200px;
     height: 300px;
 }
-
-#cartes3>div>img {
+#cartes3>div>img{
     width: 200px;
     height: 300px;
 }
-
-.card {
+.card{
     margin-bottom: 20px;
     cursor: pointer;
 }
-
-.card h2 {
+.card h2{
     margin: 0px;
     font-size: 1.2rem;
 }
-
-.card-body {
+.card-body{
     display: flex;
     filter: drop-shadow(0px 4px 2px #404040);
     background-color: white;
@@ -323,160 +264,133 @@ a {
     align-items: center;
     justify-content: center;
 }
-
-.card-body h2 {
+.card-body h2{
     text-align: center;
     font-size: 0.95rem;
     font-weight: 100;
 }
-
 /*-****Fléches****-*/
 button {
     background-color: transparent;
     border: 0px;
 }
-
-.controls,
-.controls2,
-.controls3 {
+.controls, .controls2, .controls3{
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 97%;
+    width: 97%; 
     transform: translatey(50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.controls1,
-.controls2,
-.controls3:focus {
+.controls1,.controls2, .controls3:focus{
     outline: none;
 }
-
-.rightArrow,
-.rightArrow2,
-.rightArrow3 {
+.rightArrow, .rightArrow2, .rightArrow3{
+    font-family: 'Maguntia', cursive ;
+    font-size: 7rem;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+}
+.leftArrow, .leftArrow2, .leftArrow3{
     font-family: 'Maguntia', cursive;
     font-size: 7rem;
     cursor: pointer;
     width: 100%;
     height: 50%;
 }
-
-.leftArrow,
-.leftArrow2,
-.leftArrow3 {
-    font-family: 'Maguntia', cursive;
-    font-size: 7rem;
-    cursor: pointer;
-    width: 100%;
-    height: 50%;
-}
-
-#leftBoton {
+#leftBoton{
     left: 0;
     opacity: 1;
     transition: all 0.3s ease;
 }
-
-#leftBoton2 {
+#leftBoton2{
     left: 0;
     opacity: 1;
     transition: all 0.3s ease;
 }
-
-#leftBoton3 {
+#leftBoton3{ 
     left: 0;
     opacity: 1;
     transition: all 0.3s ease;
 }
-
-#leftBoton:hover {
-    transform: scale(1.1);
+#leftBoton:hover{
+    transform: scale(1.1) ;
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
-#leftBoton2:hover {
-    transform: scale(1.1);
+#leftBoton2:hover{
+    transform: scale(1.1) ;
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
-#leftBoton3:hover {
-    transform: scale(1.1);
+#leftBoton3:hover{
+    transform: scale(1.1) ;
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
-#rightBoton {
+#rightBoton{
     right: 0;
     opacity: 1;
     transition: all 0.3s ease;
 }
-
-#leftBoton2 {
+#leftBoton2{
     right: 0;
     opacity: 1;
     transition: all 0.3s ease;
 }
-
-#leftBoton3 {
+#leftBoton3{
     right: 0;
     opacity: 1;
     transition: all 0.3s ease;
 }
-
-#rightBoton:hover {
-    transform: scale(1.1);
+#rightBoton:hover{
+    transform: scale(1.1) ;
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
-#leftBoton2:hover {
-    transform: scale(1.1);
+#leftBoton2:hover{
+    transform: scale(1.1) ;
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
-#leftBoton3:hover {
-    transform: scale(1.1);
+#leftBoton3:hover{
+    transform: scale(1.1) ;
     opacity: 0.6;
     transition: all 0.3s ease;
 }
-
 /*NAV PORTABLE JORGE*/
 
 
-.none {
+.none{
     display: none !important;
 }
-
-.openNav {
+.openNav{
     height: 300px !important;
 }
 
-.bars {
+.bars{
     display: none;
     width: 30px;
     cursor: pointer;
     margin-right: 30px;
-    z-index: 50;
-
+    z-index: 50;   
+    
 }
 
-#closeNav {
+#closeNav{
     width: 20px;
     cursor: pointer;
     margin-right: 30px;
-    z-index: 50;
-
+    z-index: 50;   
+   
 }
 
 
-#mobileNavArea {
+#mobileNavArea{
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -493,7 +407,7 @@ button {
 
 
 /* FIN NAV PORTABLE JORGE*/
-.modal {
+.modal{
     position: fixed;
     width: 50%;
     z-index: 56;
@@ -506,13 +420,13 @@ button {
     background: black;
     color: white;
     display: flex;
-
+    
     transition: all 1s ease 0s;
     flex-direction: row-reverse;
 }
 
 
-.modaleContainer {
+.modaleContainer{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -521,21 +435,14 @@ button {
     text-align: start;
     min-height: 100vh;
 }
-.boxTitleImg{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-.closeModaleBtn {
+.closeModaleBtn{
     position: absolute;
     width: 20px;
     margin: 20px;
     cursor: pointer;
 }
 
-.modaleContainer2 {
+.modaleContainer2{ 
     min-height: 100vh;
     display: flex;
     flex-direction: row;
@@ -545,26 +452,26 @@ button {
     width: 100%;
 }
 
-.modaleText {
+.modaleText{
     height: 20%;
 }
 
-.modaleText>h2 {
+.modaleText > h2{
     position: relative;
     font-size: 1.5vw;
 }
 
-.modaleText>p {
+.modaleText > p{
     font-size: 0.9vw;
     text-align: justify;
 }
 
-.modaleText>h2::first-letter {
+.modaleText > h2::first-letter{
     color: #FBDD00;
 
 }
 
-.modaleText>h2::before {
+.modaleText > h2::before {
     position: absolute;
     content: "";
     top: 100%;
@@ -573,23 +480,23 @@ button {
     background-color: rgb(251, 221, 0);
 }
 
-.imgModale {
+.imgModale{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgModale img {
+.imgModale img{
     width: 12vw;
 
 }
 
-.modaleText {
+.modaleText{
     width: 50%
 }
 
-.synopsisBox {
+.synopsisBox{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -598,14 +505,14 @@ button {
 }
 
 
-.synopsisBox>h2 {
+.synopsisBox > h2{
     position: relative;
     width: 80%;
     font-size: 1.5vw;
 
 }
 
-.synopsisBox>h2::before {
+.synopsisBox >h2::before {
     position: absolute;
     content: "";
     top: 100%;
@@ -613,41 +520,39 @@ button {
     width: 80%;
     background-color: rgb(251, 221, 0);
 }
-
-.synopsisBox>h2::first-letter {
+.synopsisBox > h2::first-letter{
     color: #FBDD00;
 }
 
-.synopsisBox>p {
+.synopsisBox > p{
     width: 80%;
     font-size: 0.8vw;
     text-align: justify;
 }
 
-.modalVideo {
+.modalVideo{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.modalVideo>h2 {
+.modalVideo > h2{
     width: 80%;
     position: relative;
     font-size: 1.5vw;
 }
 
-.modalVideo iframe {
-    width: 80%;
-    height: 300px;
-
+.modalVideo  iframe{
+   width: 80%;
+   height: 300px;
+   
 }
-
-.modalVideo>h2::first-letter {
+.modalVideo > h2::first-letter{
     color: #FBDD00;
 }
 
-.modalVideo>h2::before {
+.modalVideo > h2::before {
     position: absolute;
     content: "";
     top: 100%;
@@ -657,19 +562,18 @@ button {
 }
 
 
-/*   FIN  MODAL JORGE        */
+/*   FIN  MODAL JORGE        */ 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*                   DEBUT CHRIS   PARTIE SECRTION 3 FILM A VENIR -CHRIS -PC              */
-#upcoming {
+#upcoming{
     max-width: 100%;
     min-height: 100vh;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-
 /*-******************Partie section 4  Bande Annonce - CHRIS - PC**********-*/
-#bandeFilm {
+#bandeFilm{
     width: 100%;
     height: 90vh;
     display: flex;
@@ -677,8 +581,7 @@ button {
     justify-content: center;
     flex-direction: column;
 }
-
-#boxBandeFilm {
+#boxBandeFilm{
     width: 100%;
     background: #000000;
     display: flex;
@@ -687,116 +590,101 @@ button {
     flex-direction: column;
     margin-top: 100px;
 }
-
-#boxBande1 {
+#boxBande1{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
 }
-
-#boxBande1>.bande1 {
-    color: white;
-    font-family: Ubuntu;
-    font-size: 3.125em;
-    margin-left: 40px;
-    margin-bottom: -32px;
+#boxBande1>.bande1{
+   color:white;
+   font-family: Ubuntu;
+   font-size: 3.125em;
+   margin-left: 40px;
+   margin-bottom: -32px;
 }
-
-#boxBande2 {
+#boxBande2{
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     flex-direction: row;
 }
-
-#boxBande2>.bande2 {
-    color: white;
+#boxBande2>.bande2{
+    color:white;
     font-family: Ubuntu;
     font-size: 2.5em;
     margin-left: 40px;
 }
-
-.boxCarreJaune {
-    width: 100%;
-    display: flex;
+.boxCarreJaune{
+    width:100%;
+    display:flex;
     align-items: center;
     justify-content: flex-end;
-    flex-direction: row;
+    flex-direction:row;
 }
-
-#petitCarre3 {
+#petitCarre3{
     position: relative;
     margin-left: 20px;
     width: 80px;
     height: 80px;
     transform: rotate(90deg);
     margin-top: -80px;
-
+   
 }
-
-#boxBandeH3 {
+#boxBandeH3{
     width: 100%;
-    display: flex;
+    display:flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
 }
-
-#boxBandeH3>.bandeH3 {
+#boxBandeH3>.bandeH3{
     font-family: Roboto;
     font-size: 1.563em;
     margin-left: 40px;
     margin-top: 75px;
 }
-
-.boxYoutube {
-    margin-left: 40px;
+.boxYoutube{
+   margin-left: 40px;
 }
-
-.youtube2 {
+.youtube2{
     width: 640px;
     height: 460px;
-}
-
+   }
 /*     FIN CHRIS    */
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /* LAETITIA */
 /*-************************************Début du carousel films derniers sortis **********************/
-#nowPlaying {
+#nowPlaying{
     max-width: 100%;
     min-height: 100vh;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-
 /*-******** Début du Footer********/
-#Footer {
+#Footer{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
 }
-
-#boxFooter {
+#boxFooter{
     width: 100%;
     display: flex;
     flex-direction: column
 }
-
-#boxContainer {
+#boxContainer{
     width: 100%;
-
+    
     display: flex;
 }
-
 /*-********Box Liens réseaux sociaux********/
-#boxLiensreseauxsociaux {
+#boxLiensreseauxsociaux{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -806,49 +694,44 @@ button {
     border-right-style: inset;
     border-bottom-width: thin;
     border-right-width: thin;
-    border-color: #C4C4C480;
+    border-color:#C4C4C480;
 }
-
-#boxLiensreseauxsociaux>#boxTitle {
+#boxLiensreseauxsociaux > #boxTitle{
     width: 100%;
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-#boxLiensreseauxsociaux>#boxTitle>#titleFollow {
+#boxLiensreseauxsociaux > #boxTitle > #titleFollow{
     color: white;
     text-decoration: underline;
     text-decoration-color: #C4C4C480;
     font-size: 1.56rem;
     font-family: Ubuntu;
     font-weight: 500;
-    margin: 10px 10px 30px 10px;
+    margin: 65px 10px 30px 10px;
 }
-
 /*-********Box Icone********/
-#boxLiensreseauxsociaux>#boxIcone {
+#boxLiensreseauxsociaux > #boxIcone {
     width: 90%;
     height: 7vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+    margin: 52px 0px 23px 0px;
 }
-
 /*-********Facebook********/
-#boxLiensreseauxsociaux>#boxIcone>#iconeFacebook {
+#boxLiensreseauxsociaux > #boxIcone > #iconeFacebook{
     width: 30%;
     display: flex;
     justify-content: center;
 }
-
-#boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>img.lienFacebook {
+#boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > img.lienFacebook {
     width: 35px;
     height: 25px;
 }
-
-#boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
+#boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
     background-color: white;
     border-radius: 50%;
     padding: 10px 10px;
@@ -857,20 +740,17 @@ button {
     justify-content: center;
     cursor: pointer;
 }
-
 /*-********Twitter********/
-#boxLiensreseauxsociaux>#boxIcone>#iconeTwitter {
+#boxLiensreseauxsociaux > #boxIcone > #iconeTwitter{
     width: 30%;
     display: flex;
     justify-content: center;
 }
-
-#boxLiensreseauxsociaux>#boxIcone>#iconeTwitter>img.lienTwitter {
+#boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > img.lienTwitter {
     width: 35px;
     height: 25px;
 }
-
-#boxLiensreseauxsociaux>#boxIcone>#iconeTwitter>a {
+#boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
     background-color: white;
     border-radius: 50%;
     padding: 17px 10px;
@@ -879,20 +759,17 @@ button {
     justify-content: center;
     cursor: pointer;
 }
-
 /*-********Instagram********/
-#boxLiensreseauxsociaux>#boxIcone>#iconeInstagram {
+#boxLiensreseauxsociaux > #boxIcone > #iconeInstagram{
     width: 30%;
     display: flex;
     justify-content: center;
 }
-
-#boxLiensreseauxsociaux>#boxIcone>#iconeInstagram>img.lienInstagram {
+#boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > img.lienInstagram{
     width: 35px;
     height: 25px;
 }
-
-#boxLiensreseauxsociaux>#boxIcone>#iconeInstagram>a {
+#boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
     background-color: white;
     border-radius: 50%;
     padding: 15px 10px;
@@ -901,9 +778,8 @@ button {
     justify-content: center;
     cursor: pointer;
 }
-
 /*-********Box Entreprise********/
-#boxEntreprise {
+#boxEntreprise{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -913,12 +789,10 @@ button {
     border-right-style: inset;
     border-bottom-width: thin;
     border-right-width: thin;
-    border-color: #C4C4C480;
+    border-color:#C4C4C480;
 }
-
-#boxEntreprise>#boxLogo {
+#boxEntreprise > #boxLogo{
     width: 100%;
-    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -928,22 +802,20 @@ button {
 
 #boxEntreprise>#boxParagrapheentreprise {
     width: 60%;
-    text-align: center;
+    text-align: center; 
     color: white;
     font-size: 0.75rem;
     font-family: Roboto;
     font-weight: 400;
     line-height: 14.06px;
-}
-
-#boxEntreprise>#boxParagrapheentreprise>p {
-    margin: 0px 0px 0px 0px;
+} 
+#boxEntreprise > #boxParagrapheentreprise > p{
+    margin: -29px 0px 20px 0px;
     font-size: 1.1rem;
     line-height: 23px;
 }
-
 /*-********Box Adresse********/
-#boxAdresse {
+#boxAdresse{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -953,18 +825,16 @@ button {
     border-right-style: inset;
     border-bottom-width: thin;
     border-right-width: thin;
-    border-color: #C4C4C480;
+    border-color:#C4C4C480;
 }
-
-#boxAdresse>#boxTittle {
+#boxAdresse > #boxTittle{
     width: 100%;
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-#boxAdresse>#boxTittle>#titleAdress {
+#boxAdresse > #boxTittle > #titleAdress{
     color: white;
     text-decoration: underline;
     text-decoration-color: #C4C4C480;
@@ -974,18 +844,18 @@ button {
     margin: 0px;
     height: 11vh;
 }
-
-#boxAdresse>#boxParagrapheadresse {
+#boxAdresse > #boxParagrapheadresse{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 7px 0px -22px 0px;
 }
 
-#boxAdresse>#boxParagrapheadresse>#paragrapheAdresse {
+#boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
     width: 40%;
-    text-align: center;
+    text-align: center; 
     color: white;
     font-size: 1.1rem;
     font-family: Roboto;
@@ -993,9 +863,8 @@ button {
     line-height: 14.06px;
     margin: 0px 0px 0px 0px;
 }
-
-#boxAdresse>#boxParagrapheadresse>#paragrapheAdresse2 {
-    text-align: center;
+#boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
+    text-align: center; 
     color: white;
     font-size: 1.1rem;
     font-family: Roboto;
@@ -1003,23 +872,20 @@ button {
     line-height: 25.06px;
     margin: 0px 0px 0px 0px;
 }
-
 /*-********Box Information********/
-#boxInformation {
+#boxInformation{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px ;
 }
-
 /*-********Box Ligne 1********/
-#boxInformation>#boxLigne1 {
+#boxInformation > #boxLigne1{
     margin: 0px;
 }
-
-#boxInformation>#boxLigne1>#infosOne {
+#boxInformation > #boxLigne1 > #infosOne{
     color: white;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -1027,376 +893,321 @@ button {
     display: flex;
     align-items: center;
 }
-
-#boxInformation>#boxLigne1>#infosOne>a.lienInfosone {
+#boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
     cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne1>#infosOne>a.lienInfosone>span.lettreA {
-    color: #FBDD00;
+#boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA{
+    color:#FBDD00;
 }
-
-#boxInformation>#boxLigne1>#infosOne>a.lienInfosone>span.lettreA>a.infosTwo {
+#boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
     color: white;
     margin: 0px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne1>#infosOne>#copyRight>#infosThree>span.lettreA2 {
-    color: #FBDD00;
-    font-size: 1.1rem;
+#boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
+    color:#FBDD00;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne1>#infosOne>#copyRight>#infosThree>span.lettreA2>span.infosFour {
+#boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2 > span.infosFour{
     color: white;
 }
-
 /*-********Box Ligne 2*******-*/
-#boxInformation>#boxLigne2 {
+#boxInformation > #boxLigne2{
     margin: 0px;
     display: flex;
     align-items: center;
 }
-
-#boxInformation>#boxLigne2>#infosFive {
+#boxInformation > #boxLigne2 > #infosFive{
     color: white;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     margin: 0px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne2>#infosFive>p {
+#boxInformation > #boxLigne2 > #infosFive > p{
     font-size: 1.56rem;
 }
-
-#boxInformation>#boxLigne2>#infosFive>span.lettreA3 {
-    color: #FBDD00;
+#boxInformation > #boxLigne2 > #infosFive > span.lettreA3{
+    color:#FBDD00;
     margin: 5px;
 }
-
-#boxInformation>#boxLigne2>#infosFive>span.lettreA3>span.infosSix {
+#boxInformation > #boxLigne2 > #infosFive > span.lettreA3 > span.infosSix{
     color: white;
 }
-
-#boxInformation>#boxLigne2>#infosSeven>a.numéro {
+#boxInformation > #boxLigne2 > #infosSeven > a.numéro{
     color: #FBDD00;
     font-family: Roboto;
     font-weight: 500;
-    margin: 0px 15px;
+    margin: 0px 15px ;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne2>#infosHeight {
+#boxInformation > #boxLigne2 > #infosHeight{
     color: white;
     font-family: Roboto;
     font-weight: 500;
     margin: 0px 0px;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne2>#infosHeight>p {
+#boxInformation > #boxLigne2 > #infosHeight > p{
     font-size: 1.56rem;
 }
-
 /*-********Box Ligne 3*******-*/
-#boxInformation>#boxLigne3 {
-    margin: 0px;
-    display: flex;
+#boxInformation > #boxLigne3{
+    margin:0px;
+    display: flex;  
     align-items: center;
 }
-
-#boxInformation>#boxLigne3>p.infosNine {
+#boxInformation > #boxLigne3 > p.infosNine{
     color: white;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 14px;
 }
-
-#boxInformation>#boxLigne3>p.infosNine>a.infosTen {
+#boxInformation > #boxLigne3 > p.infosNine > a.infosTen{
     color: #FBDD00;
     font-family: Roboto;
     font-weight: 500;
     cursor: pointer;
 }
-
 /*-*****************************************Fin du Footer **************************-*/
 /* MEDIA QUERY ICI*/
+/*-***Media query- PC***-*/
 
 
 /*-***Media query- Tablette***-*/
-@media screen and (max-width:1024px) {
-    .bars {
+@media  screen and (max-width:1024px) {
+    .bars{
         display: block;
     }
 
-    #morbiusText {
-        width: auto;
-        height: auto;
-    }
+    
 
     .tittle {
         font-size: 2.375em;
-        margin-left: 20px;
+        margin-top: -25px;
+        }
+    .menu{
+            display: none;
     }
-
-    .petitCarre {
-        margin-left: 10px;
-        width: 30px;
-        height: 30px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    #img {
-
+    #img{
+        max-width: 250px;
         margin-left: -15px;
     }
-
-    .boxMorbius {
+    .boxMorbius{
         width: 100%;
         height: 64px;
-    }
-
-    #morbius {
+        }
+    #morbius{
         font-size: 3.125em;
-        
+        font-weight: 100;
         margin-left: 20px;
     }
-
-    .boxText h2 {
-        
+    .boxText h2{
+        display: block;
+        font-size: 1.6em;
+        margin-left: 10px;
+    }
+    .boxText p{
+        width: 100%;
+        display: block;
         font-size: 1.3em;
-        
-    }
-
-    .boxText{
-        width: 30%;
-        margin-left: 5px;
-    }
-
-    .boxText p {
-        font-size: 1em;
+        margin: 10px;
         text-align: justify;
     }
-
-   
-    .youtube {
-        width: 100%;
+    #morbiusText{
+       width: auto;
+       height: auto;
+   }
+    .boxVideo{
+       margin-left: 20px;
+        }
+    .youtube{
+        width:100%;
         height: 100%;
     }
-
-    #popular {
+    #popular{
         max-width: 100%;
         min-height: 80vh;
     }
-
-    .boxMain {
+    .boxMain{
         min-height: 75vh;
     }
-
-    .header {
-        min-height: 80vh;
+    .header{
+        min-height: 80vh ; 
     }
-
-    /*-***Media query Chris - 428px***-*/
-    #nowPlaying {
+/*-***Media query Chris - 428px***-*/
+    #nowPlaying{
         max-width: 100%;
         min-height: 75vh;
     }
-
-    #upcoming {
+    #upcoming{
         max-width: 100%;
         min-height: 40vh;
     }
-
-    .h2Section {
+    .h2Section{
         font-size: 1.875em;
         margin: 10px 0px 0px 10px;
     }
-
-    .h2Section2,
-    .h2Section3 {
+    .h2Section2,.h2Section3{
         font-size: 1.875em;
         margin: 10px 0px 0px 10px;
     }
-
-    .titleSection::before {
+    .titleSection::before{
         width: 340px;
         height: 32px;
         left: calc(56% - 50%);
         margin-top: 11px;
     }
-
-    .h2Section2::before {
+    .h2Section2::before{
         width: 340px;
         height: 32px;
         left: calc(56% - 50%);
         margin-top: 2px;
     }
-
-    .h2Section3::before {
+    .h2Section3::before{
         width: 340px;
         height: 32px;
         left: calc(56% - 50%);
         margin-top: 2px;
     }
-
-    /*Icon Film-*/
-    .boxImgS,
-    .boxImgS2 {
+        /*Icon Film-*/
+    .boxImgS,.boxImgS2{
         margin-top: 15px;
         max-width: 25px;
         height: 25px;
         margin-left: 102px;
     }
-
-    .boxImgS3 {
+    .boxImgS3{
         margin-top: 15px;
         max-width: 25px;
         height: 25px;
         margin-left: 97px;
     }
-
-    /*-****cartes****-*/
-    .mySlider {
+        /*-****cartes****-*/
+    .mySlider{
         width: 90%;
         margin-left: 78px;
-    }
-
-    .mySlider2 {
+    }   
+    .mySlider2{
         width: 90%;
-        margin-left: 50px;
+        margin-left:50px;
     }
-
     .mySlider3 {
         width: 90%;
         margin-left: 93px;
     }
-
-    #cartes>.tns-item {
+    #cartes> .tns-item{
         margin-left: 5px;
         font-size: 0px;
         padding-left: 0px;
     }
-
-    #cartes2>.tns-item {
+    #cartes2> .tns-item{
         margin-left: 5px;
         font-size: 0px;
         padding-left: 0px;
     }
-
-    #cartes3>.tns-item {
+    #cartes3> .tns-item{
         margin-left: 1px;
         font-size: 0px;
         padding-left: 0px;
     }
-
-    #cartes-mw {
+    #cartes-mw{
         margin-left: -15px;
         padding: 22px;
         margin-top: -8px;
     }
-
-    #cartes2-mw {
+    #cartes2-mw{
         margin-left: -3px;
         padding: 18px;
         padding-top: 0px;
     }
-
-    #cartes3-mw {
+    #cartes3-mw{
         margin-left: -3px;
         padding: 12px;
         margin-top: -8px;
-    }
-
-    #cartes>div>img {
+        }
+    #cartes>div>img{
         width: 150px;
         height: 220px;
     }
-
-    #cartes2>div>img {
+    #cartes2>div>img{
         width: 150px;
         height: 220px;
     }
-
-    #cartes3>div>img {
+    #cartes3>div>img{
         width: 150px;
         height: 220px;
     }
-
-    .card h2 {
+    .card h2{
         margin: 0px;
     }
-
-    .card-body {
+    .card-body{
         margin: 0px;
         width: 150px;
         height: 35px;
     }
-
-    .card-body h2 {
+    .card-body h2{
         text-align: center;
         font-size: 0.60rem;
         font-weight: 100;
     }
-
     /*-****Fléches****-*/
-    .controls,
-    .controls2,
-    .controls3 {
-        width: 98%;
+    .controls, .controls2, .controls3{
+        width:98%;
     }
-
-    
+    .controls {
+        
+        margin-left: 0px; 
+    }
+    .controls2{
+        
+        margin-left: 0px; 
+    }
+    .controls3 {
+         
+        margin-left: -3px;
+    }
     button {
         background-color: transparent;
         border: 0px;
     }
-
     /*-****section bande annonce****/
-    #boxBandeFilm {
+    #boxBandeFilm{
         width: 100%;
-        height: 74px;
+        height: 8vh;
     }
-
-    #boxBande1>.bande1 {
-        font-size: 1.90em;
-        margin-left: 20px;
-        margin-top: 15px;
-        font-weight: 100;
+    #boxBande1>.bande1{
+       font-size: 1.90em;
+       margin-left: 20px;
+       margin-top: 15px;
+       font-weight: 100;
     }
-
-    #boxBande2>.bande2 {
+    #boxBande2>.bande2{
         font-size: 1.7em;
         margin-left: 20px;
         margin-top: 35px;
         font-weight: 100;
     }
-
-    #petitCarre3 {
+    #petitCarre3{
         margin-top: -73px;
         width: 40px;
         height: 40px;
     }
-
-    #boxBandeH3>.bandeH3 {
+    #boxBandeH3>.bandeH3{
         font-size: 1.3em;
         margin-left: 20px;
     }
-
-    .boxYoutube {
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .youtube2 {
+    .boxYoutube{
+    width: 100%;
+       margin-left: 0px;
+    } 
+    .youtube2{
         width: 100%;
         height: 350px;
-        
+        margin-left: 0px;
     }
 
     /*Laetitia*/
@@ -1405,89 +1216,90 @@ button {
 
     
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
         padding: 10px 18px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeTwitter>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
         padding: 17px 15px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeInstagram>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
         padding: 17px 15px;
     }
 
-    #boxLiensreseauxsociaux>#boxTitle>#titleFollow {
-        margin: -14px 8px 30px 10px;
+    #boxLiensreseauxsociaux > #boxTitle > #titleFollow{
+        margin: 28px 8px 30px 10px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone {
-        margin: -16px -69px 0px -74px;
+    #boxLiensreseauxsociaux > #boxIcone{
+        margin: 29px -69px 0px -74px;
     }
 
     
 
-    #boxEntreprise>#boxParagrapheentreprise>p {
+    #boxEntreprise > #boxParagrapheentreprise > p{
         margin: 1px -50px 23px -41px;
         font-size: 15px;
     }
 
-    #boxAdresse>#boxTittle>#titleAdress {
-        margin: 67px 8px 31px 5px;
+    #boxAdresse > #boxTittle > #titleAdress{
+        margin: 130px 8px 24px 5px;
     }
 
-    #boxAdresse>#boxParagrapheadresse {
-        margin: 3px 0px 31px 0px;
+    #boxAdresse > #boxParagrapheadresse{
+        margin: 57px 0px 31px 0px;
     }
 
-    #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse {
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
         width: 100%;
         font-size: 15px;
     }
 
-    #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse2 {
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne1>#infosOne>a.lienInfosone {
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne1>#infosOne>a.lienInfosone>span.lettreA>a.infosTwo {
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne1>#infosOne>#copyRight>#infosThree>span.lettreA2 {
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne2>#infosFive {
+    #boxInformation > #boxLigne2 > #infosFive{
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne2>#infosSeven>a.numéro {
+    #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne2>#infosHeight {
+    #boxInformation > #boxLigne2 > #infosHeight{
         font-size: 15px;
     }
 
-    #boxInformation>#boxLigne3>p.infosNine {
+    #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 15px;
     }
 }
 
-@media screen and (max-width:800px) {
 
-    .bars {
+@media  screen and (max-width:800px) {
+
+    .bars{
         display: block;
     }
-
-    .tittle {
+    .tittle{
         font-size: 2em;
-
+        margin-top: 0px;
+        margin-left: 20px;
     }
 
 
@@ -1499,12 +1311,11 @@ button {
    
     .h2Section {
         font-size: 1.875em;
-        
+        margin: 10px 0px 0px 10px;
     }
-
-    .h2Section2,
-    .h2Section3 {
+    .h2Section2,.h2Section3{
         font-size: 1.875em;
+        margin: 10px 0px 0px 10px;
     }
 
     
@@ -1536,20 +1347,17 @@ button {
         margin-left: 20px;
         font-weight: 100;
     }
-
-    #boxBande2>.bande2 {
+    #boxBande2>.bande2{
         font-size: 1.7em;
         margin-left: 20px;
         font-weight: 100;
     }
-
-    #petitCarre3 {
+    #petitCarre3{
         margin-top: -73px;
         width: 40px;
         height: 40px;
     }
-
-    #boxBandeH3>.bandeH3 {
+    #boxBandeH3>.bandeH3{
         font-size: 1.3em;
         margin-left: 20px;
     }
@@ -1561,82 +1369,83 @@ button {
 
    
 
-    #boxLiensreseauxsociaux {
+    #boxLiensreseauxsociaux{
         width: 30%;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
         padding: 10px 19px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeTwitter>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
         padding: 15px 15px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeInstagram>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
         padding: 15px 15px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone {
-        margin: 0px;
+    #boxLiensreseauxsociaux > #boxIcone{
+        margin: 26px 0px 11px 0px;
     }
 
-    #boxAdresse {
+    #boxAdresse{
         flex-direction: column;
     }
 
-    #boxAdresse>#boxTittle>#titleAdress {
-        margin: 90px 8px 31px 5px;
+    #boxAdresse > #boxTittle > #titleAdress{
+        margin: 103px 8px 31px 5px;
     }
 
-    #boxAdresse>#boxParagrapheadresse {
-        margin: 8px 0px 35px 0px;
+    #boxAdresse > #boxParagrapheadresse{
+        margin: 28px 0px -8px 0px;
     }
 
-    #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse {
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse{
         width: 100%;
         font-size: 13px;
     }
 
-    #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse2 {
+    #boxAdresse > #boxParagrapheadresse > #paragrapheAdresse2{
         font-size: 13px;
     }
 
-    #boxEntreprise>#boxParagrapheentreprise>p {
-        margin: -7px -52px 7px -44px;
+    #boxEntreprise > #boxParagrapheentreprise > p{
+        margin: -31px -52px 26px -44px;
         font-size: 15px;
         line-height: 20px;
     }
 
-    #boxInformation>#boxLigne1>#infosOne>a.lienInfosone {
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone{
         margin: 0px;
         font-size: 13px;
     }
 
-    #boxInformation>#boxLigne1>#infosOne>a.lienInfosone>span.lettreA>a.infosTwo {
+    #boxInformation > #boxLigne1 > #infosOne > a.lienInfosone > span.lettreA > a.infosTwo{
         font-size: 13px;
     }
 
-    #boxInformation>#boxLigne1>#infosOne>#copyRight>#infosThree>span.lettreA2 {
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight > #infosThree > span.lettreA2{
         font-size: 13px;
     }
 
-    #boxInformation>#boxLigne2>#infosFive {
+    #boxInformation > #boxLigne2 > #infosFive{
         font-size: 13px;
     }
 
-    #boxInformation>#boxLigne2>#infosSeven>a.numéro {
+    #boxInformation > #boxLigne2 > #infosSeven > a.numéro{
         font-size: 13px;
     }
 
-    #boxInformation>#boxLigne2>#infosHeight {
+    #boxInformation > #boxLigne2 > #infosHeight{
         font-size: 13px;
     }
 
-    #boxInformation>#boxLigne3>p.infosNine {
+    #boxInformation > #boxLigne3 > p.infosNine{
         font-size: 13px;
     }
 }
+
 
 @media screen and (max-width:600px) {
 
@@ -1652,9 +1461,8 @@ button {
         font-size: 1.2em;
         margin-top: 0px;
         margin-left: 20px;
-    }
-
-    .petitCarre {
+        }
+    .petitCarre{
         margin-left: 10px;
         width: 20px;
         height: 20px;
@@ -1674,8 +1482,7 @@ button {
         margin-left: 10px;
         width: 40%;
     }
-
-    .boxText h2 {
+    .boxText h2{
         display: block;
         font-size: 1.1em;
        
@@ -1706,31 +1513,25 @@ button {
         left: calc(56% - 50%);
         margin-top: 11px;
     }
-
-    .h2Section2::before {
+    .h2Section2::before{
         width: 340px;
         height: 32px;
         left: calc(56% - 50%);
         margin-top: 2px;
     }
-
-    .h2Section3::before {
+    .h2Section3::before{
         width: 340px;
         height: 32px;
         left: calc(56% - 50%);
         margin-top: 2px;
     }
-
-    /*Icon Film-*/
-    .boxImgS,
-    .boxImgS2,
-    .boxImgS3 {
+        /*Icon Film-*/
+    .boxImgS,.boxImgS2,.boxImgS3{
         margin-top: 17px;
         max-width: 22px;
         height: 22px;
         margin-left: 64px;
     }
-
     /*-****cartes****-*/
 
 
@@ -1739,132 +1540,107 @@ button {
         font-size: 0px;
         padding-left: 0px;
     }
-
-    #cartes2>.tns-item {
+    #cartes2> .tns-item{
         margin-left: 0px;
         font-size: 0px;
         padding-left: 0px;
     }
-
-    #cartes3>.tns-item {
+    #cartes3> .tns-item{
         margin-left: 1px;
         font-size: 0px;
         padding-left: 0px;
     }
-
-    #cartes-mw {
+    #cartes-mw{
         margin-left: -15px;
         padding: 22px;
         margin-top: -8px;
     }
-
-    #cartes2-mw {
+    #cartes2-mw{
         margin-left: -3px;
         padding: 18px;
         padding-top: 0px;
     }
-
-    #cartes3-mw {
+    #cartes3-mw{
         margin-left: -3px;
         padding: 12px;
         margin-top: -8px;
-    }
-
-    #cartes>div>img {
+        }
+    #cartes>div>img{
         width: 120px;
         height: 180px;
     }
-
-    #cartes2>div>img {
+    #cartes2>div>img{
         width: 120px;
         height: 180px;
     }
-
-    #cartes3>div>img {
+    #cartes3>div>img{
         width: 120px;
         height: 180px;
     }
-
-    .card h2 {
+    .card h2{
         margin: 0px;
     }
-
-    .card-body {
+    .card-body{
         margin: 0px;
         width: 120px;
         height: 35px;
     }
-
-    .card-body h2 {
+    .card-body h2{
         text-align: center;
         font-size: 0.60rem;
         font-weight: 100;
     }
-
     /*-****Fléches****-*/
-    .controls,
-    .controls2,
-    .controls3 {
-        width: 98%;
+    .controls, .controls2, .controls3{
+        width:98%;
     }
-
     .controls {
-
-        margin-left: 0px;
+        
+        margin-left: 0px; 
     }
-
-    .controls2 {
-
-        margin-left: 0px;
+    .controls2{
+        
+        margin-left: 0px; 
     }
-
     .controls3 {
-
+        
         margin-left: 0px;
     }
-
     button {
         background-color: transparent;
         border: 0px;
     }
-
     /*-****section bande annonce****/
-    #boxBandeFilm {
+    #boxBandeFilm{
         width: 100%;
         height: 8vh;
     }
-
-    #boxBande1>.bande1 {
-        font-size: 1.90em;
-        margin-left: 20px;
-        margin-top: 15px;
-        font-weight: 100;
+    #boxBande1>.bande1{
+       font-size: 1.90em;
+       margin-left: 20px;
+       margin-top: 15px;
+       font-weight: 100;
     }
-
-    #boxBande2>.bande2 {
+    #boxBande2>.bande2{
         font-size: 1.7em;
         margin-left: 20px;
         margin-top: 35px;
         font-weight: 100;
     }
-
-    #petitCarre3 {
+    #petitCarre3{
         margin-top: -73px;
         width: 40px;
         height: 40px;
     }
-
-    #boxBandeH3>.bandeH3 {
+    #boxBandeH3>.bandeH3{
         font-size: 1.3em;
         margin-left: 20px;
     }
-
-    .boxYoutube {
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .youtube2 {
+    .boxYoutube{
+    width: 100%;
+       margin-left: 0px;
+    } 
+    .youtube2{
         width: 100%;
         height: 350px;
         margin-left: 0px;
@@ -1881,15 +1657,15 @@ button {
         flex-direction: column;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeFacebook > a{
         padding: 10px 19px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeTwitter>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeTwitter > a{
         padding: 15px 15px;
     }
 
-    #boxLiensreseauxsociaux>#boxIcone>#iconeInstagram>a {
+    #boxLiensreseauxsociaux > #boxIcone > #iconeInstagram > a{
         padding: 15px 15px;
     }
 
@@ -1898,12 +1674,12 @@ button {
         width: 70%;
     }
 
-    #boxAdresse {
+    #boxAdresse{
         width: 100%;
         display: flex;
     }
 
-    #boxAdresse>#boxTittle>#titleAdress {
+    #boxAdresse > #boxTittle > #titleAdress{
         margin: 69px 8px 31px 5px;
     }
 
@@ -1937,8 +1713,8 @@ button {
         text-align: center;
         margin: 10px 8px 10px 8px;
     }
-
-    #boxInformation>#boxLigne1>#infosOne>#copyRight {
+    
+    #boxInformation > #boxLigne1 > #infosOne > #copyRight{
         margin: 10px 0px 0px 0px;
     }
 
@@ -1985,90 +1761,75 @@ button {
 }
 
 /*-***Media query- Mobile***-*/
-@media screen and (max-width:500px) {
+@media  screen and (max-width:500px){   
 
-    .bars {
+    .bars{
         display: block;
     }
-
     .nav {
-        min-height: 6vh;
-    }
+    min-height: 6vh;
+}
 
-    .header {
-        min-height: 25vh;
-    }
+.header{
+    min-height: 25vh;
+}
 
-    #boxMain {
-        min-height: inherit;
-    }
-
-    #img {
+#boxMain{
+    min-height: inherit;
+}
+#img{
         width: 173px;
         margin-left: -10px;
     }
-
-    #tittle {
+#tittle{
         font-size: 1.1em;
         margin-top: 0px;
         margin-left: 20px;
     }
-
-    .menu {
-        display: none;
+.menu{
+            display: none;
     }
-
-    .boxMorbius {
+.boxMorbius{
         height: 70px;
     }
-
-    #morbius {
+#morbius{
         font-size: 2.188em;
         font-weight: 100;
         margin-left: 20px;
     }
-
-    .boxTeaser {
+.boxTeaser{
         width: 100%;
     }
-
-    .boxVideo {
+.boxVideo{
         width: 100%;
         margin-left: 0px;
     }
-
-    .boxText {
+.boxText{
         display: none;
     }
-
-    .boxText h2 {
+.boxText h2{
         display: none;
     }
-
-    .boxText p {
+.boxText p{
         display: none;
     }
-
-    .youtube {
+.youtube{
         width: 100%;
         height: 280px;
     }
-
-    .petitCarre {
+.petitCarre{
         margin-left: 10px;
         width: 30px;
         height: 30px;
         margin-top: -35px;
     }
-
-    #popular {
+#popular{
         max-width: 100%;
         min-height: 60vh;
         align-items: center;
         display: flex;
         flex-direction: column;
     }
-
     /*-***Media query Chris- 375px***-*/
     #nowPlaying {
         max-width: 100%;
@@ -2282,9 +2043,8 @@ button {
     #boxBandeH3>.bandeH3 {
         font-size: 1em;
         margin-left: 10px;
-    }
-
-    .boxYoutube {
+        }
+.boxYoutube{
         margin-left: 0px;
     }
 
