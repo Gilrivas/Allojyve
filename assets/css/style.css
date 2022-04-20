@@ -924,9 +924,7 @@ button {
     justify-content: center;
 }
 
-#boxEntreprise>#boxLogo>#logoFooter {
-    width: 80%;
-}
+
 
 #boxEntreprise>#boxParagrapheentreprise {
     width: 60%;
@@ -1131,6 +1129,11 @@ button {
 @media screen and (max-width:1024px) {
     .bars {
         display: block;
+    }
+
+    #morbiusText {
+        width: auto;
+        height: auto;
     }
 
     .tittle {
@@ -1400,9 +1403,7 @@ button {
 
   
 
-    #boxFooter {
-        width: 100%;
-    }
+    
 
     #boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
         padding: 10px 18px;
@@ -1424,9 +1425,7 @@ button {
         margin: -16px -69px 0px -74px;
     }
 
-    #boxEntreprise {
-        width: 75%;
-    }
+    
 
     #boxEntreprise>#boxParagrapheentreprise>p {
         margin: 1px -50px 23px -41px;
@@ -1491,9 +1490,6 @@ button {
 
     }
 
-  
-
-   
 
  
 
@@ -1511,162 +1507,39 @@ button {
         font-size: 1.875em;
     }
 
-    .titleSection::before {
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 11px;
-    }
+    
+
+    /*-****cartes****-*/
+   
+
+   
+
+   
 
     
 
-    .h2Section3::before {
-        width: 340px;
-        height: 32px;
-        left: calc(56% - 50%);
-        margin-top: 2px;
-    }
-
-    /*Icon Film-*/
-    .boxImgS,
-    .boxImgS2 {
-        margin-top: 17px;
-        max-width: 22px;
-        height: 22px;
-        margin-left: 102px;
-    }
-
-    .boxImgS3 {
-        margin-left: 97px;
-    }
-
-    /*-****cartes****-*/
-    .mySlider {
-        width: 90%;
-        margin-left: 78px;
-    }
-
-    .mySlider2 {
-        width: 90%;
-        margin-left: 50px;
-    }
-
-    .mySlider3 {
-        width: 90%;
-        margin-left: 93px;
-    }
-
-    #cartes>.tns-item {
-        margin-left: 5px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-
-    #cartes2>.tns-item {
-        margin-left: 5px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-
-    #cartes3>.tns-item {
-        margin-left: 1px;
-        font-size: 0px;
-        padding-left: 0px;
-    }
-
-    #cartes-mw {
-        margin-left: -15px;
-        padding: 22px;
-        margin-top: -8px;
-    }
-
-    #cartes2-mw {
-        margin-left: -3px;
-        padding: 18px;
-        padding-top: 0px;
-    }
-
-    #cartes3-mw {
-        margin-left: -3px;
-        padding: 12px;
-        margin-top: -8px;
-    }
-
-    #cartes>div>img {
-        width: 150px;
-        height: 220px;
-    }
-
-    #cartes2>div>img {
-        width: 150px;
-        height: 220px;
-    }
-
-    #cartes3>div>img {
-        width: 150px;
-        height: 220px;
-    }
-
-    .card h2 {
-        margin: 0px;
-    }
-
-    .card-body {
-        margin: 0px;
-        width: 150px;
-        height: 35px;
-    }
-
-    .card-body h2 {
-        text-align: center;
-        font-size: 0.60rem;
-        font-weight: 100;
-    }
+   
+   
 
     /*-****Fléches****-*/
     .controls,
     .controls2,
     .controls3 {
-        width: 98%;
+        width: 97%;
     }
 
-    .controls {
+    
 
-        margin-left: 0px;
-    }
-
-    .controls2 {
-
-        margin-left: 0px;
-    }
-
-    .controls3 {
-
-        margin-left: -3px;
-    }
-
-    button {
-        background-color: transparent;
-        border: 0px;
-    }
-
-    /*-****section bande annonce****/
-    #boxBandeFilm {
-        width: 100%;
-        height: 8vh;
-    }
 
     #boxBande1>.bande1 {
         font-size: 1.90em;
         margin-left: 20px;
-        margin-top: 15px;
         font-weight: 100;
     }
 
     #boxBande2>.bande2 {
         font-size: 1.7em;
         margin-left: 20px;
-        margin-top: 35px;
         font-weight: 100;
     }
 
@@ -1681,26 +1554,12 @@ button {
         margin-left: 20px;
     }
 
-    .boxYoutube {
-        width: 100%;
-        margin-left: 0px;
-    }
+   
 
-    .youtube2 {
-        width: 100%;
-        height: 350px;
-        margin-left: 0px;
-    }
 
     /*Laetitia*/
 
-    #boxContainer {
-        flex-direction: row;
-    }
-
-    #boxFooter {
-        width: 100%;
-    }
+   
 
     #boxLiensreseauxsociaux {
         width: 30%;
@@ -1779,20 +1638,10 @@ button {
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
 
-    .bars {
-        display: block;
-    }
-
-    .headerTitle {
-        width: 100%;
-    }
-
-    .nav {
-        width: 100%;
-        min-height: 6vh;
-    }
+ 
+    
 
     #img {
         width: 173px;
@@ -1800,108 +1649,57 @@ button {
     }
 
     .tittle {
-        font-size: 1.65em;
+        font-size: 1.2em;
         margin-top: 0px;
         margin-left: 20px;
     }
 
     .petitCarre {
         margin-left: 10px;
-        width: 30px;
-        height: 30px;
-        margin-top: -25px;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .boxMorbius {
-        width: 100%;
-        height: 64px;
-    }
 
     #morbius {
-        font-size: 3em;
-        font-weight: 100;
+        font-size: 2em;
+        font-weight: 400;
         margin-left: 20px;
     }
 
-    .boxTeaser {
-        width: 100%;
-    }
+  
 
     .boxText {
-        display: block;
-        width: 55%;
+        margin-left: 10px;
+        width: 40%;
     }
 
     .boxText h2 {
         display: block;
-        font-size: 1.25em;
-        margin-left: 10px;
+        font-size: 1.1em;
+       
     }
 
     .boxText p {
-        width: 100%;
-        display: block;
-        font-size: 1em;
-        margin: 10px;
-        text-align: justify;
+        font-size: 0.8em;
+       
     }
 
-    #morbiusText {
-        width: auto;
-        height: auto;
-    }
-
+ 
     .boxVideo {
-        display: flex;
-        justify-content: left;
-        width: 45%;
-        margin-left: 20px;
+
+        width: 40%;
     }
 
-    .youtube {
-        width: 100%;
-        height: 100%;
-    }
+    
 
-    #popular {
-        max-width: 100%;
-        min-height: 40vh;
-    }
-
-    .boxMain {
-        min-height: 75vh;
-    }
-
-    .header {
-        min-height: 80vh;
-    }
+ 
 
     /*-***Media query Chris - 428px***-*/
-    #nowPlaying {
-        max-width: 100%;
-        min-height: 75vh;
-    }
+    
 
-    #upcoming {
-        max-width: 100%;
-        min-height: 40vh;
-    }
-
-    .h2Section {
-        font-size: 1.875em;
-        margin: 10px 0px 0px 10px;
-    }
-
-    .h2Section2,
-    .h2Section3 {
-        font-size: 1.875em;
-        margin: 10px 0px 0px 10px;
-    }
-
+    
     .titleSection::before {
         width: 340px;
         height: 32px;
@@ -1934,20 +1732,7 @@ button {
     }
 
     /*-****cartes****-*/
-    .mySlider {
-        width: 90%;
-        margin-left: 0px;
-    }
 
-    .mySlider2 {
-        width: 90%;
-        margin-left: -20px;
-    }
-
-    .mySlider3 {
-        width: 90%;
-        margin-left: 20px;
-    }
 
     #cartes>.tns-item {
         margin-left: 1px;
@@ -2086,17 +1871,14 @@ button {
     }
 
     /*Laetitia*/
-
     #boxContainer {
         flex-direction: column;
     }
 
-    #boxFooter {
-        width: 100%;
-    }
-
     #boxLiensreseauxsociaux {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     #boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
@@ -2113,11 +1895,12 @@ button {
 
     #boxLiensreseauxsociaux>#boxIcone {
         margin-bottom: 20px;
-        width: 50%;
+        width: 70%;
     }
 
     #boxAdresse {
         width: 100%;
+        display: flex;
     }
 
     #boxAdresse>#boxTittle>#titleAdress {
@@ -2125,22 +1908,29 @@ button {
     }
 
     #boxAdresse>#boxParagrapheadresse {
-        margin: -12px 0px 35px 0px;
+        margin: -25px 0px 20px 0px;
     }
+
 
     #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse {
         width: 100%;
-        font-size: 15px;
+        font-size: 14px;
     }
 
-    #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse2 {
-        font-size: 15px;
+
+    #boxAdresse {
+        width: 100%;
+    }
+
+    #boxEntreprise>#boxLogo {
+        width: 80%;
     }
 
     #boxEntreprise>#boxParagrapheentreprise>p {
-        margin: -7px -52px 7px -44px;
+        margin: 0px -50px 20px -44px;
         font-size: 15px;
     }
+
 
     #boxInformation>#boxLigne1>#infosOne {
         flex-direction: column;
@@ -2152,36 +1942,45 @@ button {
         margin: 10px 0px 0px 0px;
     }
 
-
     #boxInformation>#boxLigne1>#infosOne>a.lienInfosone {
         margin: 0px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation>#boxLigne1>#infosOne>a.lienInfosone>span.lettreA>a.infosTwo {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation>#boxLigne1>#infosOne>#copyRight>#infosThree>span.lettreA2 {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    #boxInformation>#boxLigne2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 8px 10px 8px;
     }
 
     #boxInformation>#boxLigne2>#infosFive {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    #boxInformation>#boxLigne2>#infosSeven {
+        margin: 10px 0px 10px 0px;
     }
 
     #boxInformation>#boxLigne2>#infosSeven>a.numéro {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation>#boxLigne2>#infosHeight {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #boxInformation>#boxLigne3>p.infosNine {
-        font-size: 13px;
+        font-size: 14px;
     }
-
 
 }
 
@@ -2400,19 +2199,11 @@ button {
     .controls,
     .controls2,
     .controls3 {
-        width: 100%;
-        margin-left: 0px;
+        justify-content: end;
+    transform: translatey(-110%);
     }
 
-    .controls {}
-
-    .controls2 {
-
-        margin-left: 15px;
-    }
-
-    .controls3 {}
-
+   
     .rightArrow,
     .rightArrow2,
     .rightArrow3 {
@@ -2468,9 +2259,7 @@ button {
         margin-top: 100px;
     }
 
-    #bandeFilm {
-        height: 20vh;
-    }
+   
 
     #boxBande1>.bande1 {
         font-size: 1.25em;
@@ -2501,119 +2290,8 @@ button {
 
     .youtube2 {
         width: 100%;
-        height: 200px;
-        margin-left: 10px;
+       
     }
 
-    /*Laetitia média 500px*/
-    #boxContainer {
-        flex-direction: column;
-    }
-
-    #boxLiensreseauxsociaux {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #boxLiensreseauxsociaux>#boxIcone>#iconeFacebook>a {
-        padding: 10px 19px;
-    }
-
-    #boxLiensreseauxsociaux>#boxIcone>#iconeTwitter>a {
-        padding: 15px 15px;
-    }
-
-    #boxLiensreseauxsociaux>#boxIcone>#iconeInstagram>a {
-        padding: 15px 15px;
-    }
-
-    #boxLiensreseauxsociaux>#boxIcone {
-        margin-bottom: 20px;
-        width: 70%;
-    }
-
-    #boxAdresse {
-        width: 100%;
-        display: flex;
-    }
-
-    #boxAdresse>#boxTittle>#titleAdress {
-        margin: 69px 8px 31px 5px;
-    }
-
-    #boxAdresse>#boxParagrapheadresse {
-        margin: -25px 0px 20px 0px;
-    }
-
-
-    #boxAdresse>#boxParagrapheadresse>#paragrapheAdresse {
-        width: 100%;
-        font-size: 14px;
-    }
-
-
-    #boxAdresse {
-        width: 100%;
-    }
-
-    #boxEntreprise>#boxLogo {
-        width: 80%;
-    }
-
-    #boxEntreprise>#boxParagrapheentreprise>p {
-        margin: 0px -50px 20px -44px;
-        font-size: 15px;
-    }
-
-
-    #boxInformation>#boxLigne1>#infosOne {
-        flex-direction: column;
-        text-align: center;
-        margin: 10px 8px 10px 8px;
-    }
-
-    #boxInformation>#boxLigne1>#infosOne>#copyRight {
-        margin: 10px 0px 0px 0px;
-    }
-
-    #boxInformation>#boxLigne1>#infosOne>a.lienInfosone {
-        margin: 0px;
-        font-size: 14px;
-    }
-
-    #boxInformation>#boxLigne1>#infosOne>a.lienInfosone>span.lettreA>a.infosTwo {
-        font-size: 14px;
-    }
-
-    #boxInformation>#boxLigne1>#infosOne>#copyRight>#infosThree>span.lettreA2 {
-        font-size: 14px;
-    }
-
-    #boxInformation>#boxLigne2 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 10px 8px 10px 8px;
-    }
-
-    #boxInformation>#boxLigne2>#infosFive {
-        font-size: 14px;
-    }
-
-    #boxInformation>#boxLigne2>#infosSeven {
-        margin: 10px 0px 10px 0px;
-    }
-
-    #boxInformation>#boxLigne2>#infosSeven>a.numéro {
-        font-size: 14px;
-    }
-
-    #boxInformation>#boxLigne2>#infosHeight {
-        font-size: 14px;
-    }
-
-    #boxInformation>#boxLigne3>p.infosNine {
-        font-size: 14px;
-    }
+    
 }

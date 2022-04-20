@@ -135,17 +135,13 @@ function createApp(main) {
 
 	createElement('div', 'rightBoton2', 'rightBoton2', controls2);
 
-	createElement('button2', 'leftArrow2', 'before2', leftBoton2);
+	createElement('button', 'leftArrow2', 'before2', leftBoton2);
 	before2.textContent = '<';
-
-	createElement('button2', 'rightArrow2', 'next2', rightBoton2);
-	next2.textContent = '>';
-
-	/*                  FIN TITIA SECTION 2                    */
 
 	createElement('button', 'rightArrow2', 'next2', rightBoton2);
 	next2.textContent = '>';
 
+	
 	/*                  FIN TITIA SECTION 2                    */
 
 	//
@@ -171,7 +167,7 @@ function createApp(main) {
 	createElement('div', 'rightBoton3', 'rightBoton3', controls3);
 	createElement('button', 'leftArrow3', 'before3', leftBoton3);
 	before3.textContent = '<';
-	createElement('button3', 'rightArrow3', 'next3', rightBoton3);
+	createElement('button', 'rightArrow3', 'next3', rightBoton3);
 	next3.textContent = '>';
 
 	/*-**************************SECTION 4 BANDE ANNONCE - CHRIS******************************************-*/
