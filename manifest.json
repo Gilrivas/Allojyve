@@ -6,7 +6,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "allojyvé",
-  "start_url": "/",
+  "start_url": "/allojyve/index.html",
   "theme_color": "#ffffff",
   "icons": [
     {
