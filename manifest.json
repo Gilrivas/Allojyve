@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "jorgeg.promo-146.codeur",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "jorgeg.promo-146.codeur",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
