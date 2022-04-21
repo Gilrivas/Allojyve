@@ -18,20 +18,20 @@ window.onload = () => {
     
     this.classList.add('none');
     closeNav.classList.remove('none');
-})
+  })
 
-closeNav.addEventListener('click', function(){
+  closeNav.addEventListener('click', function(){
 
-    mobileNavArea.classList.remove('openNav');
+      mobileNavArea.classList.remove('openNav');
 
-    setTimeout(() => {
-        mobileNavArea.classList.add('none');
-    }, 200);
-   
-    this.classList.add('none');
-    burger2.classList.remove('none');
+      setTimeout(() => {
+          mobileNavArea.classList.add('none');
+      }, 200);
     
-})
+      this.classList.add('none');
+      burger2.classList.remove('none');
+      
+  })
   
 }
 

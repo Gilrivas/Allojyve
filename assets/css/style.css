@@ -86,6 +86,40 @@ h1::before {
 	max-width: 250px;
 }
 
+#alert{
+	top: calc(50% - 150px);
+	position: fixed;
+	left: calc(50% - 300px);
+	background: rgba(0, 0, 0, 0.986);
+	color: white;
+	width: 600px;
+	height: auto;
+	min-height: 300px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: start;
+	flex-direction: column;
+}
+
+#alert >  h2{
+	width: 100%;
+	text-align: center;
+
+}
+
+#alert >  ul{
+	width: 100%;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+#alert > img{
+	width: 30px;
+	height: 40px;
+	margin: 10px;
+}
 .menu {
 	margin-right: 60px;
 }
@@ -1108,6 +1142,12 @@ button {
 		display: block;
 	}
 
+	#alert{
+		top: calc(50% - 150px);
+		left: calc(50% - 200px);
+		width: 400px;
+	}
+
 	.tittle {
 		font-size: 2.375em;
 		margin-top: 25px;
@@ -2079,6 +2119,13 @@ button {
 @media screen and (max-width: 500px) {
 	.nav {
 		min-height: 6vh;
+	}
+
+	
+	#alert{
+		top: calc(50% - 150px);
+		left: calc(50% - 150px);
+		width: 300px;
 	}
 
 	.header {

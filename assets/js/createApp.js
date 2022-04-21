@@ -93,7 +93,7 @@ function createApp(main) {
 	createElement('div', 'titleSection', 'titleSection', popular);
 	//création img icon dans section films populaire
 	createElement('img', 'boxImgS', 'boxImgS', titleSection);
-	boxImgS.src = './assets/img/cinéma.svg';
+	boxImgS.src = './assets/img/cinema.svg';
 	boxImgS.alt = "icon d'une  pellicule de film";
 
 	createElement('div', 'controls', 'controls', popular);
@@ -121,7 +121,7 @@ function createApp(main) {
 
 	/*Création img et icon dans section films derniers sortis*/
 	createElement('img', 'boxImgS2', 'boxImgS2', titleSection2);
-	boxImgS2.src = './assets/img/cinéma.svg';
+	boxImgS2.src = './assets/img/cinema.svg';
 	boxImgS2.alt = "icon d'une  pellicule de film";
 
 	createElement('div', 'controls2', 'controls2', nowPlaying);
@@ -151,7 +151,7 @@ function createApp(main) {
 	createElement('div', 'titleSection3', 'titleSection3', upcoming);
 	//création img icon dans section films à venir
 	createElement('img', 'boxImgS3', 'boxImgS3', titleSection3);
-	boxImgS3.src = './assets/img/cinéma.svg';
+	boxImgS3.src = './assets/img/cinema.svg';
 	boxImgS3.alt = "icon d'une  pellicule de film";
 
 	createElement('h2', 'h2Section3', 'h2Section3', titleSection3);
@@ -361,7 +361,19 @@ function createApp(main) {
 		.then((data) => {
 			popularList = data.results;
 
-			createCard(popularList, document.getElementById('cartes'));
+			// popularList.forEach(element => {
+			//  	if (element.id === 675353) {
+			//  		element.id+=10
+			// 	}
+			// 	if (element.id === 508947) {
+			//  		element.id+=3
+			//  	}
+			//  });
+				
+			checkNewRelease(popularList, 'popular').then(res => {
+				createAlert(res);
+			});
+			createCard(popularList, document.getElementById('cartes'), 1);
 		});
 
 	fetch(
@@ -371,7 +383,7 @@ function createApp(main) {
 		.then((data) => {
 			filmsSortis = data.results;
 
-			createCard(filmsSortis, document.getElementById('cartes2'));
+			createCard(filmsSortis, document.getElementById('cartes2'), 2);
 		});
 
 	fetch(
@@ -381,6 +393,6 @@ function createApp(main) {
 		.then((data) => {
 			aVenirList = data.results;
 
-			createCard(aVenirList, document.getElementById('cartes3'));
+			createCard(aVenirList, document.getElementById('cartes3'), 3);
 		});
 }

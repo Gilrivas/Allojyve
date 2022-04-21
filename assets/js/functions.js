@@ -1,44 +1,118 @@
-function createElement(el, classname, id, container) {
-	var element = document.createElement(el);
-	element.classList.add(classname);
-	element.id = id;
+	function createElement(el, classname, id, container) {
+		var element = document.createElement(el);
+		element.classList.add(classname);
+		element.id = id;
 
-	container.appendChild(element);
-}
+		container.appendChild(element);
+	}
 
-function createCard(array, container) {
-	for (let index = 0; index < array.length; index++) {
-		const element = array[index];
-		var card = document.createElement('div');
-		card.classList.add('card');
-		card.id = element.id;
+	function createCard(array, container, index) {
+		for (let index = 0; index < array.length; index++) {
+			const element = array[index];
+			var card = document.createElement('div');
+			card.classList.add('card');
+			card.id = element.id;
 
-		var body = document.createElement('div');
-		body.classList.add('card-body');
+			var body = document.createElement('div');
+			body.classList.add('card-body');
 
-		var poster = 'https://image.tmdb.org/t/p/w200';
-		const moviePoster = (element.innerHTML = element.poster_path);
-		let photo = poster + moviePoster;
+			var poster = 'https://image.tmdb.org/t/p/w200';
+			const moviePoster = (element.innerHTML = element.poster_path);
+			let photo = poster + moviePoster;
 
-		var movieImg = document.createElement('img');
-		movieImg.src = photo;
+			var movieImg = document.createElement('img');
+			movieImg.src = photo;
 
-		var title = document.createElement('h2');
-		title.innerHTML = element.title;
+			var title = document.createElement('h2');
+			title.innerHTML = element.title;
 
-		card.appendChild(movieImg);
-		body.appendChild(title);
-		card.appendChild(body);
-		container.appendChild(card);
+			card.appendChild(movieImg);
+			body.appendChild(title);
+			card.appendChild(body);
+			container.appendChild(card);
 
-		card.onclick = function () {
-			setTimeout(() => {
-			getMovieInfos(this.id).then((res) => {
-				createModale(res);
-			}, 200);
+			card.onclick = function () {
+				setTimeout(() => {
+					getMovieInfos(this.id).then((res) => {
+						createModale(res);
+					});
+				}, 200);
 
-			});
-		};
+			};
+		}
+		var containerSlider = ".cartes";
+		var controlsContainer = "#controls";
+
+		if (index === 2) {
+			containerSlider = ".cartes2";
+			controlsContainer = "#controls2";
+		}
+
+		if (index === 3) {
+			containerSlider = ".cartes3";
+			controlsContainer = "#controls3";
+		}
+
+		let slider = tns({
+			container: containerSlider,
+			items: 20,
+			slideBy: 'page',
+			speed: 800,
+			loop: false,
+			nav: false,
+			controlsContainer: controlsContainer,
+			responsive: {
+				2560: {
+					items: 9,
+					gutter: 20,
+				},
+				1900: {
+					items: 7,
+					gutter: 20,
+				},
+				1750: {
+					items: 6,
+					gutter: 20,
+				},
+				1400: {
+					items: 5,
+					gutter: 20,
+				},
+				1150: {
+					items: 4,
+					gutter: 20,
+				},
+				1024: {
+					items: 4,
+					gutter: 20,
+				},
+				800: {
+					items: 3,
+					gutter: 20,
+				},
+				750: {
+					items: 3,
+					gutter: 10,
+				},
+				601: {
+					items: 3,
+					gutter: 20,
+				},
+				501: {
+					items: 3,
+					gutter: 20,
+				},
+				395: {
+					items: 2,
+					gutter:20,
+				},
+				300: {
+					items: 1,
+					gutter: 50,
+				},
+			},
+		});
+		
 	}
 
 	function getMovieInfos(id) {
@@ -48,7 +122,7 @@ function createCard(array, container) {
 				'GET',
 				'https://api.themoviedb.org/3/movie/' +
 					id +
-					'?api_key=6c904723a32a3fd1ccc74a46870a083b&language=fr-FR'
+					'?api_key=378bed09fc9b527f1b74e7a56ff4fe3c&language=fr-FR'
 			);
 			xhr.onload = () => {
 				var res = JSON.parse(xhr.response);
@@ -57,6 +131,77 @@ function createCard(array, container) {
 			xhr.send();
 		});
 	}
+	
+	function createAlert(movies) {
+
+		createElement('div', 'alert', 'alert', document.getElementById('main'));
+		var close = document.createElement('img');
+		close.src = "assets/img/close.png"
+		close.classList.add('close3');
+		close.addEventListener('click', function () {
+			this.parentNode.remove();
+		})
+		document.getElementById('alert').appendChild(close);
+		
+		var title3 = document.createElement('h2');
+		title3.innerHTML = "New Releases";
+		
+		document.getElementById('alert').appendChild(title3);
+		
+		var ul = document.createElement('ul');
+		ul.id = "alertUl";
+		document.getElementById('alert').appendChild(ul);
+		
+		console.log(movies);
+		movies.forEach(movie => {
+			var li = document.createElement('li');
+			li.innerHTML = movie;
+			
+			document.getElementById('alertUl').appendChild(li);
+		});
+		
+	}
+
+	Array.prototype.diff = function (a) {
+		return this.filter(function (i) {
+			return a.indexOf(i) < 0;
+		});
+	};
+	  
+	function checkNewRelease(list, listName) {
+	
+		return new Promise((resolve, reject) => {
+			var arrayId = [];
+			list.forEach(element => {
+				arrayId.push(element.id);
+			});
+			
+			if (!localStorage.getItem(listName)) {
+				localStorage.setItem(listName, JSON.stringify(arrayId));
+				return;
+			}
+			
+			var lastArrayId = JSON.parse(localStorage.getItem(listName));
+			localStorage.setItem(listName, JSON.stringify(arrayId));
+			console.log(lastArrayId)
+			
+			var newReleaseId = arrayId.diff(lastArrayId);
+			console.log(newReleaseId)
+			var newReleaseName = [];
+			newReleaseId.forEach(function (id, i) {
+				getMovieInfos(id).then(res => {
+					newReleaseName.push(res.title);
+					if (i + 1 === newReleaseId.length) {
+						resolve(newReleaseName)
+					}
+				})
+			});
+		
+		})
+		
+	}
+
+	  
 
 	function createModale(movie) {
 		var modale = document.createElement('div');
@@ -175,184 +320,4 @@ function createCard(array, container) {
 			});
 	}
 
-	let slider = tns({
-		container: '.cartes',
-		items: 20,
-		slideBy: 'page',
-		speed: 800,
-		loop: false,
-		nav: false,
-		controlsContainer: '#controls',
-		responsive: {
-			2560: {
-				items: 9,
-				gutter: 20,
-			},
-			1900: {
-				items: 7,
-				gutter: 20,
-			},
-			1750: {
-				items: 6,
-				gutter: 20,
-			},
-			1400: {
-				items: 5,
-				gutter: 20,
-			},
-			1150: {
-				items: 4,
-				gutter: 20,
-			},
-			1024: {
-				items: 4,
-				gutter: 20,
-			},
-			800: {
-				items: 4,
-				gutter: 10,
-			},
-			750: {
-				items: 3,
-				gutter: 20,
-			},
-			601: {
-				items: 3,
-				gutter: 20,
-			},
-			501: {
-				items: 3,
-				gutter: 20,
-			},
-			395: {
-				items: 2,
-				gutter:20,
-			},
-			300: {
-				items: 1,
-				gutter: 50,
-			},
-		},
-	});
 
-	let slider2 = tns({
-		container: '.cartes2',
-		items: 20,
-		slideBy: 'page',
-		speed: 800,
-		loop: false,
-		nav: false,
-		controlsContainer: '#controls2',
-		responsive: {
-			2560: {
-				items: 9,
-				gutter: 20,
-			},
-			1900: {
-				items: 7,
-				gutter: 20,
-			},
-			1750: {
-				items: 6,
-				gutter: 20,
-			},
-			1400: {
-				items: 5,
-				gutter: 20,
-			},
-			1150: {
-				items: 4,
-				gutter: 20,
-			},
-			1024: {
-				items: 4,
-				gutter: 20,
-			},
-			800: {
-				items: 4,
-				gutter: 10,
-			},
-			750: {
-				items: 3,
-				gutter: 20,
-			},
-			601: {
-				items: 3,
-				gutter: 20,
-			},
-			501: {
-				items: 3,
-				gutter: 20,
-			},
-			395: {
-				items: 2,
-				gutter:20,
-			},
-			300: {
-				items: 1,
-				gutter: 50,
-			},
-		},
-	});
-
-	let slider3 = tns({
-		container: '.cartes3',
-		items: 20,
-		slideBy: 'page',
-		speed: 800,
-		loop: false,
-		nav: false,
-		controlsContainer: '#controls3',
-		responsive: {
-			2560: {
-				items: 9,
-				gutter: 20,
-			},
-			1900: {
-				items: 7,
-				gutter: 20,
-			},
-			1750: {
-				items: 6,
-				gutter: 20,
-			},
-			1400: {
-				items: 5,
-				gutter: 20,
-			},
-			1150: {
-				items: 4,
-				gutter: 20,
-			},
-			1024: {
-				items: 4,
-				gutter: 20,
-			},
-			800: {
-				items: 4,
-				gutter: 10,
-			},
-			750: {
-				items: 3,
-				gutter: 20,
-			},
-			601: {
-				items: 3,
-				gutter: 20,
-			},
-			501: {
-				items: 3,
-				gutter: 20,
-			},
-			
-			395: {
-				items: 2,
-				gutter:20,
-			},
-			300: {
-				items: 1,
-				gutter: 50,
-			},
-		},
-	});
-}
