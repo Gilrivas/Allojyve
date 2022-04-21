@@ -10,8 +10,9 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "assets/img/favicon.png",
-      "type": "image/x-icon"
+      "src": "images/500x500.png",
+      "type": "image/png",
+      "sizes": "500x500"
     }
   ]
 }
